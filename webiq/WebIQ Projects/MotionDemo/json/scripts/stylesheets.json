@@ -1,0 +1,14 @@
+{
+    "Button_Active": {
+        "url": "css/custom/Button_Active.css",
+        "description": null,
+        "template": "iq-button",
+        "variant": null
+    },
+    "Test": {
+        "url": "css/custom/Test.css",
+        "description": null,
+        "template": "iq-alarm-info",
+        "variant": null
+    }
+}

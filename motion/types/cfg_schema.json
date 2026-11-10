@@ -1,0 +1,677 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"motion_core_fbtypes_KVPCfgSingleItemValue" : {
+"type" : "string",
+"enum": ["NONE", "KVPCfgInt64", "KVPCfgDouble", "KVPCfgBool", "KVPCfgString", "KVPCfgDoubleUnit", "KVPCfgInt64Vector", "KVPCfgDoubleVector", "KVPCfgBoolVector", "KVPCfgStringVector", "KVPCfgDoubleUnitVector", "KVPCfgDoubleUserUnit", "KVPCfgDoubleUserUnitVector", "KVPCfgConversionFactor"]
+},
+"motion_core_fbtypes_SafeAreaType" : {
+"type" : "string",
+"enum": ["SAFE_AREA", "WORK_AREA_EXCL", "WORK_AREA_INCL"]
+},
+"motion_core_fbtypes_ToolDataEdgeOri" : {
+"type" : "string",
+"enum": ["NO_ORI", "ORI1", "ORI2", "ORI3", "ORI4", "ORI5", "ORI6", "ORI7", "ORI8"]
+},
+"motion_core_fbtypes_UnitAddInfo" : {
+"type" : "string",
+"enum": ["STANDARD", "ORIENTATION", "KIN_POS"]
+},
+"motion_core_fbtypes_UnitValueType" : {
+"type" : "string",
+"enum": ["POSITION", "VELOCITY", "ACCELERATION", "JERK", "FORCE", "TORQUE", "TIME", "FREQUENCY", "TORQUE_RAMP"]
+},
+"motion_core_fbtypes_KVPCfg" : {
+"type" : "object",
+"description" : "structure for key-value-pair configuration items",
+"properties" : {
+"items" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgSingleItem"},
+"description" : "all items in the key-value-pair-map"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgBool" : {
+"type" : "object",
+"description" : "Table for just one single boolean value",
+"properties" : {
+"boolVal" : {
+"type" : "boolean",
+"description" : "the value",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgBoolVector" : {
+"type" : "object",
+"description" : "Table for a vector of boolean values",
+"properties" : {
+"boolVector" : {
+"type" : "array", "items" : {"type" : "boolean"},
+"description" : "vector of boolean numbers"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgConversionFactor" : {
+"type" : "object",
+"description" : "Table for just one single double value, which has two user-set unit (can be used for any floating point numbers, that are not unit-less)",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+},
+"unitNumerator" : {
+"type" : "string",
+"description" : "the unit of the numerator as string"
+},
+"unitDenominator" : {
+"type" : "string",
+"description" : "the unit of the denominator as string"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDouble" : {
+"type" : "object",
+"description" : "Table for just one single double value (can be used for any floating point numbers)",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUnit" : {
+"type" : "object",
+"description" : "Table for just one single double value, which has a unit (can be used for any floating point numbers, that are not unit-less)\nWhen you read the data: the unit is defined by the unit configuration of the related axis or kinematics.\nWhen you write the data: the given unit is used for scaling; when not given, then the unit for scaling is defined by the unit configuration of the related axis or kinematics.\nLeave unitType and unitAddInfo out, when you just modify the data. Use them only, when you change the type of the struct or create a new entry.",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+},
+"unit" : {
+"type" : "string",
+"description" : "the unit of the value as string"
+},
+"unitType" : {
+"$ref" : "#/definitions/motion_core_fbtypes_UnitValueType",
+"description" : "the type of the unit",
+"default" : "POSITION"
+},
+"unitAddInfo" : {
+"$ref" : "#/definitions/motion_core_fbtypes_UnitAddInfo",
+"description" : "additional information on the unit type",
+"default" : "STANDARD"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUnitVector" : {
+"type" : "object",
+"description" : "Table for a vector of double+unit values",
+"properties" : {
+"doubleVector" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUnit"},
+"description" : "vector of double numbers with units"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUserUnit" : {
+"type" : "object",
+"description" : "Table for just one single double value, which has a user-set unit (can be used for any floating point numbers, that are not unit-less)",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+},
+"unit" : {
+"type" : "string",
+"description" : "the unit of the value as string"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUserUnitVector" : {
+"type" : "object",
+"description" : "Table for a vector of double+user-unit values",
+"properties" : {
+"doubleVector" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUserUnit"},
+"description" : "vector of double numbers with units"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleVector" : {
+"type" : "object",
+"description" : "Table for a vector of double values",
+"properties" : {
+"doubleVector" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "vector of double numbers"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgInt64" : {
+"type" : "object",
+"description" : "Table for just one single int64 value (can be used for enums, bitfields, integer numbers)",
+"properties" : {
+"intVal" : {
+"type" : "integer", "minimum" : -9223372036854775808, "maximum" : 9223372036854775807,
+"description" : "the value",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgInt64Vector" : {
+"type" : "object",
+"description" : "Table for a vector of int64 values",
+"properties" : {
+"intVector" : {
+"type" : "array", "items" : {"type" : "integer", "minimum" : -9223372036854775808, "maximum" : 9223372036854775807},
+"description" : "vector of int64 numbers"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgSingleItem" : {
+"type" : "object",
+"description" : "Data of a single value/set of a key-value-pair",
+"properties" : {
+"key" : {
+"type" : "string",
+"description" : "key of the item"
+},
+"value_type" : {
+"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgSingleItemValue",
+"default" : "NONE"
+},
+"value" : {
+"anyOf": [{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgInt64" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDouble" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgBool" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgString" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUnit" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgInt64Vector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgBoolVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgStringVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUnitVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUserUnit" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUserUnitVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgConversionFactor" }],
+"description" : "entry contains a single value"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgString" : {
+"type" : "object",
+"description" : "Table for just one single string (can be used for strings and enums)",
+"properties" : {
+"stringVal" : {
+"type" : "string",
+"description" : "the value"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgStringVector" : {
+"type" : "object",
+"description" : "Table for a vector of string values",
+"properties" : {
+"stringVector" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "vector of strings"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_RTInputsCfg" : {
+"type" : "object",
+"description" : "common configuration of real-time inputs",
+"properties" : {
+"doubleArraySize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "size of the double array",
+"default" : 0
+},
+"int64ArraySize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "size of the int64 array",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfg" : {
+"type" : "object",
+"description" : "general system configuration",
+"properties" : {
+"pcs" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgPcsAll",
+"description" : "configuration of the product coordinate systems"
+},
+"function" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgFunction",
+"description" : "system function configuration"
+},
+"internal" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgInternal",
+"description" : "internal system configuration"
+},
+"safeAreas" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgSafeAreaAll",
+"description" : "configuration of the safe and work areas"
+},
+"rtInputs" : {
+"$ref" : "#/definitions/motion_core_fbtypes_RTInputsCfg",
+"description" : "configuration of the real-time inputs of the kinematics"
+},
+"toolData" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgToolDataAll",
+"description" : "configuration of the tool data"
+},
+"beltCS" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgBeltCsAll",
+"description" : "configuration of the belt cs data"
+},
+"ccs" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgCcsAll",
+"description" : "configuration of the camera coordinate system"
+},
+"uiData" : {
+"type" : "string",
+"description" : "System UI data"
+},
+"commonProperties" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgSingleItem"},
+"description" : "Common properties (as key-value-pair) of the motion system"
+},
+"devErrReaction" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfgDeviceErrorReaction",
+"description" : "device error reaction system settings"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgBeltCsAll" : {
+"type" : "object",
+"description" : "configuration of the belt coordinate system",
+"properties" : {
+"sets" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgBeltCsSet"},
+"description" : "vector of all configured BeltCS sets"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgBeltCsSet" : {
+"type" : "object",
+"description" : "configuration of a single set for the belt coordinate system",
+"properties" : {
+"setName" : {
+"type" : "string",
+"description" : "name of the set (required for load/save)"
+},
+"offsetXYZ" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "XYZ offsets (must be exactly three values)"
+},
+"orientation" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "rotation offsets as Euler angles ZY'Z'' (must be exactly three values)"
+},
+"offsetAux" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "offsets for auxilary axes (must be exactly 10 values)"
+},
+"offsetXYZUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for XYZ offsets (must be exactly three values)"
+},
+"orientationUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for rotation offsets (must be exactly three values)"
+},
+"offsetAuxUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for offsets for auxilary axes (must be exactly 10 values)"
+}
+},
+"required" : ["setName"],
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgCcsAll" : {
+"type" : "object",
+"description" : "configuration of the camera coordinate system",
+"properties" : {
+"sets" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgCcsSet"},
+"description" : "vector of all configured CCS sets"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgCcsSet" : {
+"type" : "object",
+"description" : "configuration of a single set for the camera coordinate system",
+"properties" : {
+"setName" : {
+"type" : "string",
+"description" : "name of the set (required for load/save)"
+},
+"offsetXYZ" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "XYZ offsets (must be exactly three values)"
+},
+"orientation" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "rotation offsets as Euler angles ZY'Z'' (must be exactly three values)"
+},
+"offsetAux" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "offsets for auxilary axes (must be exactly 10 values)"
+},
+"offsetXYZUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for XYZ offsets (must be exactly three values)"
+},
+"orientationUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for rotation offsets (must be exactly three values)"
+},
+"offsetAuxUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for offsets for auxilary axes (must be exactly 10 values)"
+}
+},
+"required" : ["setName"],
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgDeviceErrorReaction" : {
+"type" : "object",
+"properties" : {
+"errorGroups" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgErrorGroup"},
+"description" : "contains a list of error groups"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgErrorGroup" : {
+"type" : "object",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the error group"
+},
+"errorGroup" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "contains a single error group (names of axes, that are part of the group)"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgFunction" : {
+"type" : "object",
+"description" : "system function configuration items",
+"properties" : {
+"ignoreAxisProfiles" : {
+"type" : "boolean",
+"description" : "ignore the configured axis profiles in BOOTING?",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgInternal" : {
+"type" : "object",
+"description" : "internal system configuration items",
+"properties" : {
+"save" : {
+"type" : "boolean",
+"description" : "save the internal system configuration items also, when saving the system config to file?",
+"default" : false
+},
+"useIpoIVAJ" : {
+"type" : "boolean",
+"description" : "use the new ipo IVAJ?",
+"default" : false
+},
+"timeMeasurement" : {
+"type" : "boolean",
+"description" : "enable time measurement?",
+"default" : false
+},
+"driveResetTimeout" : {
+"type" : "number",
+"description" : "Change the timeout for the drive reset (in seconds)",
+"default" : 4.0
+},
+"driveOpModeSwitchTimeout" : {
+"type" : "number",
+"description" : "Change the timeout for the drive, when switching operation mode (in seconds)",
+"default" : 1.0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgPcsAll" : {
+"type" : "object",
+"description" : "configuration of the product coordinate system of this kinematics",
+"properties" : {
+"sets" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgPcsSet"},
+"description" : "vector of all configured PCS sets"
+},
+"groups" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgPcsGroup"},
+"description" : "vector of all configured PCS groups"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgPcsGroup" : {
+"type" : "object",
+"description" : "configuration of a single group of sets for a product coordinate system",
+"properties" : {
+"groupName" : {
+"type" : "string",
+"description" : "name of the group (required for load/save)"
+},
+"sets" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "vector of PCS sets in this group (sequence matters!)"
+}
+},
+"required" : ["groupName"],
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgPcsSet" : {
+"type" : "object",
+"description" : "configuration of a single set for the product coordiate system of a kinematics",
+"properties" : {
+"setName" : {
+"type" : "string",
+"description" : "name of the set (required for load/save)"
+},
+"offsetXYZ" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "XYZ offsets (must be exactly three values)"
+},
+"orientation" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "rotation offsets as Euler angles ZY'Z'' (must be exactly three values)"
+},
+"offsetAux" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "offsets for auxilary axes (must be exactly 10 values)"
+},
+"relativeToPCS" : {
+"type" : "boolean",
+"description" : "is this set relative to an other pcs set?",
+"default" : false
+},
+"offsetXYZUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for XYZ offsets (must be exactly three values)"
+},
+"orientationUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for rotation offsets (must be exactly three values)"
+},
+"offsetAuxUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for offsets for auxilary axes (must be exactly 10 values)"
+}
+},
+"required" : ["setName"],
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgSafeArea" : {
+"type" : "object",
+"description" : "configuration of a single safe area or work area",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the safe area (filled when reading; optional for writing [content is always ignored])"
+},
+"coordSystem" : {
+"type" : "string",
+"description" : "coordinate system of the safe area (default is \"MCS\")"
+},
+"type" : {
+"$ref" : "#/definitions/motion_core_fbtypes_SafeAreaType",
+"description" : "type of the safe area (default is \"safe area\")",
+"default" : "SAFE_AREA"
+},
+"box" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgSafeAreaBox"},
+"description" : "box data, that defines the borders of the safe area; should be exactly 16 (for ACS) or 3 for (MCS, WCS and PCS)"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgSafeAreaAll" : {
+"type" : "object",
+"description" : "configuration of all safe areas and work areas for the whole motion system",
+"properties" : {
+"safeAreas" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgSafeArea"},
+"description" : "vector of all configured safe areas"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgSafeAreaBox" : {
+"type" : "object",
+"description" : "configuration of the limits in a single dimension of the box of a single safe area",
+"properties" : {
+"min" : {
+"type" : "number",
+"description" : "minimum limit in this dimension of the box",
+"default" : 0.0
+},
+"max" : {
+"type" : "number",
+"description" : "maximum limit in this dimension of the box",
+"default" : 0.0
+},
+"unit" : {
+"type" : "string",
+"description" : "unit of min and max as configured"
+},
+"active" : {
+"type" : "boolean",
+"description" : "should this dimension being checked?",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgToolDataAll" : {
+"type" : "object",
+"description" : "configuration of the tool data system",
+"properties" : {
+"sets" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgToolDataSet"},
+"description" : "vector of all configured tool data sets"
+},
+"groups" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_SysCfgToolDataGroup"},
+"description" : "vector of all configured tool data groups"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgToolDataGroup" : {
+"type" : "object",
+"description" : "configuration of a single group of sets for tool data",
+"properties" : {
+"groupName" : {
+"type" : "string",
+"description" : "name of the group (required for load/save)"
+},
+"sets" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "vector of tool data sets in this group (sequence matters!)"
+}
+},
+"required" : ["groupName"],
+"additionalProperties" : false
+},
+"motion_core_fbtypes_SysCfgToolDataSet" : {
+"type" : "object",
+"description" : "configuration of a single set for the tool data",
+"properties" : {
+"setName" : {
+"type" : "string",
+"description" : "name of the set (required for load/save)"
+},
+"offsetXYZ" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "XYZ offsets (must be exactly three values)"
+},
+"orientation" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "rotation offsets as Euler angles ZY'Z'' (must be exactly three values)"
+},
+"toolRadius" : {
+"type" : "number",
+"description" : "offsets for radius",
+"default" : 0.0
+},
+"toolDataEdgeOri" : {
+"$ref" : "#/definitions/motion_core_fbtypes_ToolDataEdgeOri",
+"description" : "edge orientation value",
+"default" : "NO_ORI"
+},
+"offsetXYZUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for XYZ offsets (must be exactly three values)"
+},
+"orientationUnits" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Units for rotation offsets (must be exactly three values)"
+},
+"toolRadiusUnit" : {
+"type" : "string",
+"description" : "Unit for the tool radius"
+}
+},
+"required" : ["setName"],
+"additionalProperties" : false
+},
+"motion_core_fbtypes_ToolDataEdgeOriSettings" : {
+"type" : "object",
+"properties" : {
+"type" : {
+"$ref" : "#/definitions/motion_core_fbtypes_ToolDataEdgeOri",
+"default" : "NO_ORI"
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/motion_core_fbtypes_SysCfg"
+}

@@ -1,0 +1,37 @@
+{
+    "name": "motiondemo",
+    "description": "",
+    "title": "MotionDemo",
+    "type": "app",
+    "version": "1.0",
+    "published": true,
+    "requires": {
+        "visuals": "^2.16.4+69931",
+        "material-design-widgets": "^2.16.4+70756"
+    },
+    "grid": {
+        "x": 8,
+        "y": 8,
+        "visible": true,
+        "snap": false
+    },
+    "numTags": 45,
+    "numIoHandlers": 1,
+    "lastEdit": 1775505084,
+    "lastEditor": "boschrexroth",
+    "lastEditorData": {
+        "user": "KAB2HES",
+        "hostname": "AT2-C-001CN",
+        "platform": {
+            "architecture": "x64",
+            "platform": "win32",
+            "type": "Windows_NT"
+        },
+        "webiq": {
+            "connect": "2.16.4 (release/2.16.4/268e3a0e)",
+            "designer": "2.16.4 v2.16.4 bdb48388aeb887cb990f430ed5991e663eeddcaa",
+            "visuals": "2.16.4 Build 69931"
+        }
+    },
+    "lastLayout": 5
+}

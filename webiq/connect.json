@@ -1,0 +1,68 @@
+{
+    "authenticationRealms": [
+        {
+            "canCreateInitialUser": true,
+            "configuration": {
+                "password.min_length": 8,
+                "password.num_digit": 1
+            },
+            "description": "Authentication realm using an internal SQLite database.",
+            "displayName": "Internal User Database",
+            "enabled": true,
+            "libraryPath": "auth_sqlite",
+            "name": "internal",
+            "priority": 0
+        }
+    ],
+    "autostartProjects": [
+        {
+            "name": "Webiq_Demos",
+            "path": null
+        }
+    ],
+    "licenseAgentHost": {
+        "host": "ip6-localhost",
+        "port": 10121
+    },
+    "listeners": [
+        {
+            "address": "0.0.0.0",
+            "enabled": true,
+            "id": 1,
+            "optional": false,
+            "port": 10123,
+            "tls": {
+                "certificatePath": null,
+                "cipherList": null,
+                "ciphersuites": null,
+                "enabled": false,
+                "privateKeyPath": null
+            }
+        }
+    ],
+    "log": {
+        "filePath": "%configpath%/connect.log",
+        "fileRotateSize": 16777216,
+        "fileSeverity": "info",
+        "stdSeverity": "info"
+    },
+    "paths": {
+        "projectDirectory": "%configpath%/WebIQ Projects",
+        "systemDatabase": "%configpath%/connect.sqlite"
+    },
+    "projectSettings": {
+        "customDatabaseName": "custom",
+        "databaseExtension": "sqlite",
+        "parallelExtensionConnect": true,
+        "projectDatabaseSubdir": ".db",
+        "updateDatabases": true,
+        "vacuumDatabases": false
+    },
+    "runas": {
+        "group": null,
+        "user": null
+    },
+    "threadPoolConcurrency": null,
+    "upnpDiscovery": true,
+    "version": 2
+}

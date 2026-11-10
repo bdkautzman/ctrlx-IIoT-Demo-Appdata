@@ -1,0 +1,37 @@
+{
+    "blinking": {
+        "url": "css/custom/blinking.css",
+        "description": null,
+        "template": "iq-text"
+    },
+    "dark-trend-live": {
+        "url": "css/custom/dark-trend-live.css",
+        "description": null,
+        "template": null
+    },
+    "dark-trend-zoom": {
+        "url": "css/custom/dark-trend-zoom.css",
+        "description": null,
+        "template": null
+    },
+    "dark-trend": {
+        "url": "css/custom/dark-trend.css",
+        "description": null,
+        "template": null
+    },
+    "dark-trend-legend": {
+        "url": "css/custom/dark-trend-legend.css",
+        "description": null,
+        "template": null
+    },
+    "dark-trend-time": {
+        "url": "css/custom/dark-trend-time.css",
+        "description": null,
+        "template": null
+    },
+    "package": {
+        "url": "css/custom/package.css",
+        "description": null,
+        "template": null
+    }
+}

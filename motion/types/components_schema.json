@@ -1,0 +1,82 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"motion_core_fbtypes_MotionComponentType" : {
+"type" : "string",
+"enum": ["MOTION_CORE", "CORE_LIB", "EXTENSION_BUNDLE_MOTION", "EXTENSION_BUNDLE_SDK", "OTHER_BUNDLE"]
+},
+"motion_core_fbtypes_CompVersionInfos" : {
+"type" : "object",
+"description" : "array of all (registered) motion components",
+"properties" : {
+"versions" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_ComponentVersionInfo"},
+"description" : "array of all (registered) motion components"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_ComponentVersionInfo" : {
+"type" : "object",
+"description" : "version information (uses semantic versioning) of a single motion component",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the motion component"
+},
+"majorVersion" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "major version number of the motion component",
+"default" : 0
+},
+"minorVersion" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "minor version number of the motion component",
+"default" : 0
+},
+"patchVersion" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "patch version number of the motion component",
+"default" : 0
+},
+"buildNumber" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "build number of the motion component",
+"default" : 0
+},
+"branch" : {
+"type" : "string",
+"description" : "name of the branch, in which this motion component was built"
+},
+"versionString" : {
+"type" : "string",
+"description" : "complete version name string"
+},
+"commit" : {
+"type" : "string",
+"description" : "ID of the commit, that was built for the component"
+},
+"type" : {
+"$ref" : "#/definitions/motion_core_fbtypes_MotionComponentType",
+"description" : "type of the motion component",
+"default" : "MOTION_CORE"
+},
+"addInfo" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "additional informations (not yet used)"
+},
+"appName" : {
+"type" : "string",
+"description" : "name of the app, that contains the motion component"
+},
+"active" : {
+"type" : "boolean",
+"description" : "is this component active (installed, loaded and running)? This might be false for components, that were uninstalled or currently updated.",
+"default" : false
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/motion_core_fbtypes_CompVersionInfos"
+}

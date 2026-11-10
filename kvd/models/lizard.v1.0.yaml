@@ -1,0 +1,18 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: lizard
+version: 0.0.1
+elements:
+    length:
+        description: The length of the lizard.
+        nodeClass: Variable
+        mode: read-write
+        value: 85
+        typeSchema:
+            type: int32
+    threatened:
+        description: The lizard is threatened.
+        nodeClass: Variable
+        mode: read-write
+        value: true
+        typeSchema:
+            type: bool8

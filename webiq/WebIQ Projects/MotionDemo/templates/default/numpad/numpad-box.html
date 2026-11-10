@@ -1,0 +1,101 @@
+<div data-ui="numpad-background" class="iqel-numpad-background">
+    <div data-ui="numpad-content" class="iqel-numpad-container">
+        <div class="iqel-numpad-title-container">
+            <div data-ui="numpad-title" class="iqel-numpad-title"></div>
+            <div class="iqel-button" data-ui="numpad-button-close">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                    <g fill="currentColor" stroke="currentColor" stroke-width="3">
+                        <line x1="0" x2="18" y1="18" y2="0"></line>
+                        <line x1="0" x2="18" y1="0" y2="18"></line>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div data-ui="numpad-frame" class="iqel-numpad-frame">
+            <div data-ui="numpad-content" class="iqel-numpad-content">
+                <div class="iqel-wrapper">
+                    <div class="iqel-infoblock">
+                        <!-- <div data-ui="infoblock-limits-label"></div> -->
+                        <div class="iqel-infoelement">
+                            <div data-ui="input-limit-minimum-label" class="iqel-label"></div>
+                            <div data-ui="input-limit-minimum" class="iqel-value"></div>
+                            <div data-ui="input-limit-maximum-label" class="iqel-label"></div>
+                            <div data-ui="input-limit-maximum" class="iqel-value"></div>
+                        </div>
+                        <div class="iqel-display">
+                            <div data-ui="numpad-button-plusMinus" class="iqel-button">±</div>
+                            <div class="iqel-input-display">
+                                <input data-ui="numpad-input-display" type="text" value="" inputmode="none" size="1" />
+                            </div>
+                            <div data-ui="numpad-unit" class="iqel-numpad-unit"></div>
+                        </div>
+                        <div class="iqel-err-text-container">
+                            <div data-ui="error-message" class="iqel-err-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="iqel-numblock">
+                        <div class="iqel-clear"></div>
+                        <div class="iqel-button3block">
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-7">7</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-8">8</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-9">9</div>
+                            </div>
+                        </div>
+                        <div class="iqel-button3block">
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-4">4</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-5">5</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-6">6</div>
+                            </div>
+                        </div>
+                        <div class="iqel-button3block">
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-1">1</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-2">2</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-3">3</div>
+                            </div>
+                        </div>
+
+                        <div class="iqel-button3block">
+                            <div class="iqel-num-item comma">
+                                <div class="iqel-button" data-ui="numpad-button-dot">.</div>
+                            </div>
+                            <div class="iqel-num-item">
+                                <div class="iqel-button" data-ui="numpad-button-0">0</div>
+                            </div>
+                            <div class="iqel-num-item backspace">
+                                <div class="iqel-button" data-ui="numpad-button-backspace">
+                                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 18">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.047 0H21.69c1.56 0 2.811 1.231 2.811 2.737v12.526C24.5 16.77 23.249 18 21.689 18H8.047c-.947 0-1.755-.464-2.283-1.23L.5 8.997l5.269-7.783C6.29.457 7.099 0 8.047 0Zm14.47 2.737a.834.834 0 0 0-.827-.842H8.05c-.25 0-.453.115-.618.354L2.864 8.995l-.348-.514V9.51l.348-.515 4.562 6.74c.174.252.38.37.623.37H21.69c.45 0 .827-.37.827-.842V2.737Z" fill="currentColor"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m19.047 12.013-1.313 1.25-3.324-3.169-3.324 3.17-1.313-1.251 3.325-3.17-3.325-3.17 1.313-1.251 3.324 3.17 3.324-3.17 1.313 1.251-3.325 3.17 3.325 3.17Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iqel-buttonblock">
+                    <div class="iqel-button" data-ui="numpad-button-ok">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12">
+                            <path d="M16.5 1v4H4.33l3.58-3.59L6.5 0l-6 6 6 6 1.41-1.41L4.33 7H18.5V1h-2Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

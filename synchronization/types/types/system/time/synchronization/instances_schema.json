@@ -1,0 +1,1511 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"common_synchronization_fbs_Mode" : {
+"type" : "string",
+"enum": ["NONE", "CHRONYD", "PTP4L", "PHC2SYS", "REAL2MONO"]
+},
+"common_synchronization_fbs_chrony_ChronydDirectiveSet" : {
+"type" : "string",
+"enum": ["NONE", "RtcSyncOptions", "ServerOptions", "MakeStepOptions", "MaxSlewRateOptions", "MaxDistanceOptions", "BindCmdAddressOptions", "ManualOptions", "PidFileOptions"]
+},
+"common_synchronization_fbs_chrony_LeapStatus" : {
+"type" : "string",
+"enum": ["Normal", "InsertSecond", "DeleteSecond", "NotSynchronised"]
+},
+"common_synchronization_fbs_linuxptp_BMCA" : {
+"type" : "string",
+"enum": ["PTP", "Noop"]
+},
+"common_synchronization_fbs_linuxptp_ClockServo" : {
+"type" : "string",
+"enum": ["Pi", "Linreg", "Ntpshm", "Nullf"]
+},
+"common_synchronization_fbs_linuxptp_ClockType" : {
+"type" : "string",
+"enum": ["OC", "BC", "P2PTC", "E2ETC"]
+},
+"common_synchronization_fbs_linuxptp_DatasetComparison" : {
+"type" : "string",
+"enum": ["IEEE1588", "G8275X"]
+},
+"common_synchronization_fbs_linuxptp_DelayFilter" : {
+"type" : "string",
+"enum": ["MovingAverage", "MovingMedian"]
+},
+"common_synchronization_fbs_linuxptp_DelayMechanism" : {
+"type" : "string",
+"enum": ["Auto", "E2E", "P2P"]
+},
+"common_synchronization_fbs_linuxptp_HwtsFilter" : {
+"type" : "string",
+"enum": ["Normal", "Check", "Full"]
+},
+"common_synchronization_fbs_linuxptp_NetworkTransport" : {
+"type" : "string",
+"enum": ["L2", "UDPV4", "UDPV6"]
+},
+"common_synchronization_fbs_linuxptp_TimeStamping" : {
+"type" : "string",
+"enum": ["Hardware", "Software", "Legacy", "OneStep", "P2POneStep"]
+},
+"common_synchronization_fbs_linuxptp_TsProcMode" : {
+"type" : "string",
+"enum": ["Filter", "Raw", "FilterWeight", "RawWeight"]
+},
+"common_synchronization_fbs_SyncInstance" : {
+"type" : "object",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "Name of the synchronization instance [unique]\nAllowed characters:\nAny alphanumeric character, beginning with a letter and a maximum length of 15 characters [a-zA-Z][a-zA-Z0-9]{1,15}"
+},
+"properties" : {
+"$ref" : "#/definitions/common_synchronization_fbs_SyncProperties"
+}
+},
+"required" : ["name"],
+"additionalProperties" : false
+},
+"common_synchronization_fbs_SyncInstances" : {
+"type" : "object",
+"properties" : {
+"instances" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/common_synchronization_fbs_SyncInstance"}
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_SyncMode" : {
+"type" : "object",
+"properties" : {
+"modus" : {
+"$ref" : "#/definitions/common_synchronization_fbs_Mode",
+"default" : "NONE"
+},
+"chronyd" : {
+"$ref" : "#/definitions/common_synchronization_fbs_chrony_ChronydConfig"
+},
+"ptp4l" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_Ptp4lConfig"
+},
+"phc2sys" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_Phc2sysConfig"
+},
+"real2mono" : {
+"$ref" : "#/definitions/common_synchronization_fbs_real2mono_Real2monoConfig"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_SyncProperties" : {
+"type" : "object",
+"properties" : {
+"mode" : {
+"$ref" : "#/definitions/common_synchronization_fbs_SyncMode",
+"description" : "Synchronization mode including instance type and instance configuration"
+},
+"source" : {
+"type" : "string",
+"description" : "Name of source endpoint"
+},
+"target" : {
+"type" : "string",
+"description" : "Name of target endpoint"
+},
+"timeThreshold" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Threshold in time domain used to define in-sync status",
+"default" : 0
+},
+"frequencyThreshold" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Threshold in frequency domain used to define in-sync status",
+"default" : 0
+},
+"autostart" : {
+"type" : "boolean",
+"description" : "Autostart option, the instance starts automatically after its successful configuration, or in the correct order on boot/restart of Automation Core/load of configuration",
+"default" : false
+},
+"bootTimeout" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 18446744073709551615,
+"description" : "Timeout in milliseconds for boot. Only used if autostart is active. Timeouts of all sync instances are added together. The system waits before switching to SETUP state.",
+"default" : null
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_BindCmdAddressOptions" : {
+"type" : "object",
+"properties" : {
+"address" : {
+"type" : "string",
+"description" : "The bindcmdaddress directive specifies a local IP address to which chronyd will bind the UDP socket listening for monitoring command packets (issued by chronyc)."
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_ChronydConfig" : {
+"type" : "object",
+"properties" : {
+"options" : {
+"$ref" : "#/definitions/common_synchronization_fbs_chrony_ChronydOptions"
+},
+"directives" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/common_synchronization_fbs_chrony_ChronydDirective"}
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_ChronydDirective" : {
+"type" : "object",
+"properties" : {
+"directive_type" : {
+"$ref" : "#/definitions/common_synchronization_fbs_chrony_ChronydDirectiveSet",
+"default" : "NONE"
+},
+"directive" : {
+"anyOf": [{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_RtcSyncOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_ServerOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_MakeStepOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_MaxSlewRateOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_MaxDistanceOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_BindCmdAddressOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_ManualOptions" },{ "$ref" : "#/definitions/common_synchronization_fbs_chrony_PidFileOptions" }]
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_ChronydOptions" : {
+"type" : "object",
+"properties" : {
+"num4" : {
+"type" : "boolean",
+"description" : "With this option hostnames will be resolved only to IPv4 addresses and only IPv4 sockets will be created.",
+"default" : false
+},
+"num6" : {
+"type" : "boolean",
+"description" : "With this option hostnames will be resolved only to IPv6 addresses and only IPv6 sockets will be created.",
+"default" : false
+},
+"lowerF" : {
+"type" : "string",
+"description" : "This option can be used to specify an alternate location for the configuration file (default /etc/chrony/chrony.conf)."
+},
+"lowerN" : {
+"type" : "boolean",
+"description" : "When run in this mode, the program will not detach itself from the terminal.",
+"default" : false
+},
+"lowerD" : {
+"type" : "boolean",
+"description" : "When run in this mode, the program will not detach itself from the terminal, and all messages will be sent to the terminal instead of to syslog. When chronyd was compiled with debugging support, this option can be used twice to print also debugging messages.",
+"default" : false
+},
+"lowerL" : {
+"type" : "string",
+"description" : "This option enables writing of log messages to a file instead of syslog or the terminal."
+},
+"upperL" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option specifies the minimum severity level of messages to be written to the log file, syslog, or terminal.",
+"default" : null
+},
+"lowerP" : {
+"type" : "boolean",
+"description" : "When run in this mode, chronyd will print the configuration and exit.",
+"default" : false
+},
+"lowerQ" : {
+"type" : "boolean",
+"description" : "When run in this mode, chronyd will set the system clock once and exit. It will not detach from the terminal.",
+"default" : false
+},
+"upperQ" : {
+"type" : "boolean",
+"description" : "This option is similar to -q, but it will only print the offset without making corrections to the clock.",
+"default" : false
+},
+"lowerR" : {
+"type" : "boolean",
+"description" : "This option will reload sample histories for each of the servers and refclocks being used.",
+"default" : false
+},
+"upperR" : {
+"type" : "boolean",
+"description" : "When this option is used, the initstepslew directive and the makestep directive used with a positive limit will be ignored.",
+"default" : false
+},
+"lowerS" : {
+"type" : "boolean",
+"description" : "This option will set the system clock from the computer's real-time clock (RTC) or to the last modification time of the file specified by the driftfile directive.",
+"default" : false
+},
+"lowerT" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option sets a timeout (in seconds) after which chronyd will exit. If the clock is not synchronised, it will exit with a non-zero status. This is useful with the -q or -Q option to shorten the maximum time waiting for measurements, or with the -r option to limit the time when chronyd is running, but still allow it to adjust the frequency of the system clock.",
+"default" : null
+},
+"lowerU" : {
+"type" : "string",
+"description" : "This option sets the name of the system user to which chronyd will switch after start in order to drop root privileges."
+},
+"upperU" : {
+"type" : "boolean",
+"description" : "This option disables a check for root privileges to allow chronyd to be started under a non-root user, assuming the process will have all capabilities needed to operate correctly in the specified configuration.",
+"default" : false
+},
+"upperF" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option configures a system call filter when chronyd is compiled with support for the Linux secure computing (seccomp) facility.",
+"default" : null
+},
+"upperP" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "On Linux, this option will select the SCHED_FIFO real-time scheduler at the specified priority (which must be between 0 and 100). On macOS, this option must have either a value of 0 to disable the thread time constraint policy or 1 for the policy to be enabled.",
+"default" : null
+},
+"lowerM" : {
+"type" : "boolean",
+"description" : "This option will lock chronyd into RAM so that it will never be paged out. This mode is only supported on Linux, FreeBSD, NetBSD, and illumos.",
+"default" : false
+},
+"lowerX" : {
+"type" : "boolean",
+"description" : "This option disables the control of the system clock. chronyd will not try to make any adjustments of the clock.",
+"default" : false
+},
+"lowerV" : {
+"type" : "boolean",
+"description" : "With this option chronyd will print version number to the terminal and exit.",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_DeleteOptions" : {
+"type" : "object",
+"properties" : {
+"hostname" : {
+"type" : "string"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_MakeStepOptions" : {
+"type" : "object",
+"properties" : {
+"threshold" : {
+"type" : ["number", "null"],
+"description" : "The threshold value for stepping the system clock if the adjustment is larger.",
+"default" : null
+},
+"limit" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The limit on the number of clock updates since chronyd was started to perform the step. A negative value disables the limit.",
+"default" : null
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_ManualOptions" : {
+"type" : "object",
+"properties" : {
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_MaxDistanceOptions" : {
+"type" : "object",
+"properties" : {
+"distance" : {
+"type" : ["number", "null"],
+"description" : "The maxdistance directive sets the maximum root distance of a source to be acceptable for synchronisation of the clock. By default, the maximum root distance is 3 seconds.",
+"default" : null
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_MaxSlewRateOptions" : {
+"type" : "object",
+"properties" : {
+"rateInPpm" : {
+"type" : ["number", "null"],
+"description" : "The maximum rate at which chronyd is allowed to slew the time. It limits the slew rate controlled by the correction time ratio.",
+"default" : null
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_PidFileOptions" : {
+"type" : "object",
+"properties" : {
+"file" : {
+"type" : "string",
+"description" : "Unless chronyd is started with the -Q option, it writes its process ID (PID) to a file, and checks this file on startup to see if another chronyd might already be running on the system. By default, the file used is @DEFAULT_PID_FILE@."
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_RtcSyncOptions" : {
+"type" : "object",
+"properties" : {
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_ServerOptions" : {
+"type" : "object",
+"properties" : {
+"hostname" : {
+"type" : "string",
+"description" : "The server can be specified by its hostname or IP address."
+},
+"minPoll" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option specifies the minimum interval between requests sent to the server as a power of 2 in seconds.",
+"default" : null
+},
+"maxPoll" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option specifies the maximum interval between requests sent to the server as a power of 2 in seconds.",
+"default" : null
+},
+"iburst" : {
+"type" : "boolean",
+"description" : "With this option, chronyd will start with a burst of 4-8 requests in order to make the first update of the clock sooner.",
+"default" : false
+},
+"burst" : {
+"type" : "boolean",
+"description" : "With this option, chronyd will send a burst of up to 4 requests when it cannot get a good measurement from the server.",
+"default" : false
+},
+"key" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The key option specifies which key (with an ID in the range 1 through 2^32-1) should chronyd use to authenticate requests sent to the server and verify its responses.",
+"default" : null
+},
+"nts" : {
+"type" : "boolean",
+"description" : "This option enables authentication using the Network Time Security (NTS) mechanism.",
+"default" : false
+},
+"certSet" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option specifies which set of trusted certificates should be used to verify the server's certificate when the nts option is enabled.",
+"default" : null
+},
+"maxDelay" : {
+"type" : ["number", "null"],
+"description" : "The level of the round-trip delay above which the measurement should be ignored.",
+"default" : null
+},
+"maxDelayRatio" : {
+"type" : ["number", "null"],
+"description" : "If the measurement has a round-trip delay that is greater than the specified ratio times the minimum delay.",
+"default" : null
+},
+"maxDelayDevRatio" : {
+"type" : ["number", "null"],
+"description" : "If a measurement has a ratio of the increase in the round-trip delay from the minimum delay to the standard deviation that is greater than the specified ratio.",
+"default" : null
+},
+"maxDelayQuant" : {
+"type" : ["number", "null"],
+"description" : "The maximum acceptable delay as a quantile of the round-trip delay.",
+"default" : null
+},
+"minDelay" : {
+"type" : ["number", "null"],
+"description" : "This option specifies a fixed minimum round-trip delay to be used instead of the minimum amongst the previous measurements.",
+"default" : null
+},
+"asymmetry" : {
+"type" : ["number", "null"],
+"description" : "This option specifies the asymmetry of the network jitter on the path to the source.",
+"default" : null
+},
+"offset" : {
+"type" : ["number", "null"],
+"description" : "This option specifies a correction (in seconds) which will be applied to offsets measured with this source.",
+"default" : null
+},
+"minSamples" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Set the minimum number of samples kept for this source. This overrides the minsamples directive.",
+"default" : null
+},
+"maxSamples" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Set the maximum number of samples kept for this source. This overrides the maxsamples directive.",
+"default" : null
+},
+"filter" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option enables a median filter to reduce noise in NTP measurements.",
+"default" : null
+},
+"offline" : {
+"type" : "boolean",
+"description" : "If the server will not be reachable when chronyd is started, the offline option can be specified.",
+"default" : false
+},
+"autoOffline" : {
+"type" : "boolean",
+"description" : "With this option, the server will be assumed to have gone offline when sending a request fails.",
+"default" : false
+},
+"prefer" : {
+"type" : "boolean",
+"description" : "Prefer this source over other selectable sources without the prefer option.",
+"default" : false
+},
+"noSelect" : {
+"type" : "boolean",
+"description" : "Never select this source. This is particularly useful for monitoring.",
+"default" : false
+},
+"trust" : {
+"type" : "boolean",
+"description" : "Assume time from this source is always true.",
+"default" : false
+},
+"require" : {
+"type" : "boolean",
+"description" : "Require that at least one of the sources specified with this option is selectable before updating the clock.",
+"default" : false
+},
+"xleave" : {
+"type" : "boolean",
+"description" : "This option enables the interleaved mode of NTP.",
+"default" : false
+},
+"pollTarget" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Target number of measurements to use for the regression algorithm which chronyd will try to maintain by adjusting the polling interval between minpoll and maxpoll.",
+"default" : null
+},
+"port" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option allows the UDP port on which the server understands NTP requests to be specified.",
+"default" : null
+},
+"ntsPort" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option specifies the TCP port on which the server is listening for NTS-KE connections when the nts option is enabled.",
+"default" : null
+},
+"presend" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "In order to avoid ARP lookup delays, the presend option can be used to send an extra pair of NTP packets before the actual measurement.",
+"default" : null
+},
+"minStratum" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Increase stratum of the source to the specified minimum, so chronyd will avoid selecting that source.",
+"default" : null
+},
+"version" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "This option sets the NTP version of packets sent to the server.",
+"default" : null
+},
+"copy" : {
+"type" : "boolean",
+"description" : "This option specifies that the server and client are closely related, allowing the client to assume the reference ID and stratum of the server.",
+"default" : false
+},
+"extField" : {
+"type" : "string",
+"description" : "This option enables an NTPv4 extension field specified by its type as a hexadecimal number. It will be included in requests sent to the server and processed in received responses if the server supports it."
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_SetTimeOptions" : {
+"type" : "object",
+"properties" : {
+"time" : {
+"type" : "string"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_SourcesOptions" : {
+"type" : "object",
+"properties" : {
+"lowerA" : {
+"type" : "boolean",
+"default" : false
+},
+"lowerV" : {
+"type" : "boolean",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_StatusCodeResult" : {
+"type" : "object",
+"properties" : {
+"statusCode" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"default" : 0
+},
+"message" : {
+"type" : "string"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_TrackingOptions" : {
+"type" : "object",
+"properties" : {
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_chrony_TrackingResult" : {
+"type" : "object",
+"properties" : {
+"referenceId" : {
+"type" : "string"
+},
+"stratum" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"default" : 0
+},
+"refTime" : {
+"type" : "string"
+},
+"systemTime" : {
+"type" : "string"
+},
+"lastOffset" : {
+"type" : "string"
+},
+"rmsOffset" : {
+"type" : "string"
+},
+"frequency" : {
+"type" : "number",
+"default" : 0.0
+},
+"resuidualFreq" : {
+"type" : "number",
+"default" : 0.0
+},
+"skew" : {
+"type" : "number",
+"default" : 0.0
+},
+"rootDelay" : {
+"type" : "number",
+"default" : 0.0
+},
+"rootDispersion" : {
+"type" : "number",
+"default" : 0.0
+},
+"leapStatus" : {
+"$ref" : "#/definitions/common_synchronization_fbs_chrony_LeapStatus",
+"default" : "Normal"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_Phc2sysConfig" : {
+"type" : "object",
+"properties" : {
+"options" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_Phc2sysOptions"
+},
+"longOptions" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_Phc2sysLongOptions"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_Phc2sysLongOptions" : {
+"type" : "object",
+"properties" : {
+"clockServo" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_ClockServo"}, {"type" : "null"}],
+"description" : "The servo which is used to synchronize the local clock. Valid values are \"pi\" for a PI controller, \"linreg\" for an adaptive controller using linear regression, \"ntpshm\" for the NTP SHM reference clock to allow another process to synchronize the local clock (the SHM segment number is set to the domain number), and \"nullf\" for a servo that always dials frequency offset zero (for use in SyncE nodes). The default is \"pi.\" Same as option -E (see above).",
+"default" : null
+},
+"domainNumber" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Specify the domain number used by phc2sys. The default is 0. Same as option -n (see above).",
+"default" : null
+},
+"firstStepThreshold" : {
+"type" : ["number", "null"],
+"description" : "Specify the step threshold applied only on the first update. It is the maximum offset that is corrected by adjusting clock. It's specified in seconds. The value of 0.0 disables stepping on start. The default is 0.00002 (20 microseconds). Same as option -F (see above).",
+"default" : null
+},
+"kernelLeap" : {
+"type" : ["boolean", "null"],
+"description" : "When a leap second is announced, let the kernel apply it by stepping the clock instead of correcting the one-second offset with servo, which would correct the one-second offset slowly by changing the clock frequency (unless the step_threshold option is set to correct such offset by stepping). Relevant only with software time stamping. The default is 1 (enabled). Same as option -x (see above).",
+"default" : null
+},
+"loggingLevel" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The maximum logging level of messages which should be printed. The default is 6 (LOG_INFO). Same as option -l (see above).",
+"default" : null
+},
+"maxFrequency" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The maximum allowed frequency adjustment of the clock in parts per billion (ppb). This is an additional limit to the maximum allowed by the hardware. When set to 0, the hardware limit will be used. The default is 900000000 (90%). This option used to be called pi_max_frequency .",
+"default" : null
+},
+"messageTag" : {
+"type" : "string",
+"description" : "The tag which is added to all messages printed to the standard output or system log. The default is an empty string (which cannot be set in the configuration file as the option requires an argument). Same as option -t (see above)."
+},
+"ntpshmSegment" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The number of the SHM segment used by ntpshm servo. The default is 0. Same as option -M (see above).",
+"default" : null
+},
+"piIntegralConst" : {
+"type" : ["number", "null"],
+"description" : "Specifies the integral constant of the PI controller. Same as option -I (see above).",
+"default" : null
+},
+"piProportionalConst" : {
+"type" : ["number", "null"],
+"description" : "Specifies the proportional constant of the PI controller. Same as option -P (see above).",
+"default" : null
+},
+"sanityFreqLimit" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The maximum allowed frequency offset between uncorrected clock and the system monotonic clock in parts per billion (ppb). This is used as a sanity check of the synchronized clock. When a larger offset is measured, a warning message will be printed and the servo will be reset. When set to 0, the sanity check is disabled. The default is 200000000 (20%). Same as option -L (see above).",
+"default" : null
+},
+"stepThreshold" : {
+"type" : ["number", "null"],
+"description" : "Specifies the step threshold of the servo. It is the maximum offset that the servo corrects by changing the clock frequency (phase when using nullf servo) instead of stepping the clock. The clock is stepped on start regardless of the option if the offset is larger than 20 microseconds (unless the -F option is used). It's specified in seconds. The value of 0.0 disables stepping after the start. The default is 0.0. Same as option -S (see above).",
+"default" : null
+},
+"transportSpecific" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The transport specific field. Must be in the range 0 to 255. The default is 0.",
+"default" : null
+},
+"udsAddress" : {
+"type" : "string",
+"description" : "Specifies the address of the server's UNIX domain socket. The default is /var/run/ptp4 Same as option -z (see above)."
+},
+"useSyslog" : {
+"type" : ["boolean", "null"],
+"description" : "Print messages to the system log if enabled. The default is 1 (enabled). Related to option -q (see above).",
+"default" : null
+},
+"verbose" : {
+"type" : ["boolean", "null"],
+"description" : "Print messages to the standard output if enabled. The default is 0 (disabled). Related to option -m (see above).",
+"default" : null
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_Phc2sysOptions" : {
+"type" : "object",
+"properties" : {
+"upperE" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_ClockServo"}, {"type" : "null"}],
+"description" : "Specify which clock servo should be used. Valid values are pi for a PI controller, linreg for an adaptive controller using linear regression, and ntpshm and refclock_sock for the NTP SHM and chrony SOCK reference clocks respectively to allow another process to synchronize the local clock. The default is pi.",
+"default" : null
+},
+"upperF" : {
+"type" : ["number", "null"],
+"description" : "Specify the step threshold applied only on the first update. It is the maximum offset that is corrected by changing the clock frequency. It's specified in seconds. The value of 0.0 disables stepping on start. The default is 0.00002 (20 microseconds).",
+"default" : null
+},
+"upperI" : {
+"type" : ["number", "null"],
+"description" : "Specify the integral constant of the PI controller. The default is 0.3.",
+"default" : null
+},
+"upperL" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The maximum allowed frequency offset between uncorrected clock and the system monotonic clock in parts per billion (ppb). This is used as a sanity check of the synchronized clock. When a larger offset is measured, a warning message will be printed and the servo will be reset. When set to 0, the sanity check is disabled. The default is 200000000 (20%).",
+"default" : null
+},
+"upperM" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The number of the SHM segment used by ntpshm servo. The default is 0.",
+"default" : null
+},
+"upperN" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "Specify the number of source clock readings used for each time sink update. Only the fastest reading is used to update the clock. This is useful to minimize the error caused by random delays in scheduling and bus utilization. The default is 5.",
+"default" : null
+},
+"upperO" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Specify the offset between the sink and source times in seconds. Not compatible with the -a option. See TIME SCALE USAGE below.",
+"default" : null
+},
+"upperP" : {
+"type" : ["number", "null"],
+"description" : "Specify the proportional constant of the PI controller. The default is 0.7.",
+"default" : null
+},
+"upperR" : {
+"type" : ["number", "null"],
+"description" : "Specify the time sink update rate when running in the direct synchronization mode. The default is 1 per second.",
+"default" : null
+},
+"upperS" : {
+"type" : ["number", "null"],
+"description" : "Specify the step threshold of the servo. It is the maximum offset that the servo corrects by changing the clock frequency instead of stepping the clock. The clock is stepped on start regardless of the option if the offset is larger than 20 microseconds (unless the -F option is used). It's specified in seconds. The value of 0.0 disables stepping after the start. The default is 0.0.",
+"default" : null
+},
+"lowerA" : {
+"type" : "boolean",
+"description" : "Read the clocks to synchronize from running ptp4l and follow changes in the port states, adjusting the synchronization direction automatically. The system clock (CLOCK_REALTIME) is not synchronized, unless the -r option is also specified.",
+"default" : false
+},
+"lowerC" : {
+"type" : "string",
+"description" : "Specify the time sink by device (e.g. /dev/ptp1) or interface (e.g. eth1) or by name. The default is CLOCK_REALTIME (the system clock). Not compatible with the -a option. This option may be given up to 128 times."
+},
+"lowerD" : {
+"type" : "string",
+"description" : "Specify the PPS device of the source clock (e.g. /dev/pps0). With this option the PPS synchronization mode is used instead of the direct mode. The matching PHC must be specified using the -s command line option. This option can be used only with the system clock as the time sink. Not compatible with the -a option."
+},
+"lowerF" : {
+"type" : "string",
+"description" : "Read configuration from the specified file. No configuration file is read by default."
+},
+"lowerH" : {
+"type" : "boolean",
+"description" : "Display a help message.",
+"default" : false
+},
+"lowerI" : {
+"type" : "string",
+"description" : "Performs the exact same function as -s for compatibility reasons. Previously enabled specifying source clock by network interface. However, this can now be done using -s and this option is no longer necessary. As such it has been deprecated, and should no longer be used."
+},
+"lowerL" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Set the maximum syslog level of messages which should be printed or sent to the system logger. The default is 6 (LOG_INFO).",
+"default" : null
+},
+"lowerM" : {
+"type" : "boolean",
+"description" : "Print messages to the standard output.",
+"default" : false
+},
+"lowerN" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Specify the domain number used by ptp4l. The default is 0.",
+"default" : null
+},
+"lowerQ" : {
+"type" : "boolean",
+"description" : "Don't send messages to the system logger.",
+"default" : false
+},
+"lowerR" : {
+"type" : "boolean",
+"description" : "Only valid together with the -a option. Instructs phc2sys to also synchronize the system clock (CLOCK_REALTIME). By default, the system clock is not considered as a possible time source. If you want the system clock to be eligible to become a time source, specify the -r option twice.",
+"default" : false
+},
+"lowerS" : {
+"type" : "string",
+"description" : "Specify the source clock by device (e.g. /dev/ptp0) or interface (e.g. eth0) or by name (e.g. CLOCK_REALTIME for the system clock). When this option is used together with the -d option, the source clock is used only to correct the offset by whole number of seconds, which cannot be fixed with PPS alone. Not compatible with the -a option. This option does not support bonded interface (e.g. bond0, team0). If ptp4l has a port on an active-backup bond or team interface, the -a option can be used to track the active interface."
+},
+"lowerT" : {
+"type" : "string",
+"description" : "Specify the tag which is added to all messages printed to the standard output or system log. The default is an empty string."
+},
+"lowerU" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "Specify the number of clock updates included in summary statistics. The statistics include offset root mean square (RMS), maximum absolute offset, frequency offset mean and standard deviation, and mean of the delay in clock readings and standard deviation. The units are nanoseconds and parts per billion (ppb). If zero, the individual samples are printed instead of the statistics. The messages are printed at the LOG_INFO level. The default is 0 (disabled).",
+"default" : null
+},
+"lowerV" : {
+"type" : "boolean",
+"description" : "Prints the software version and exits.",
+"default" : false
+},
+"lowerW" : {
+"type" : "boolean",
+"description" : "Wait until ptp4l is in a synchronized state. If the -O option is not used, also keep the offset between the sink and source times updated according to the currentUtcOffset value obtained from ptp4l and the direction of the clock synchronization. Not compatible with the -a option.",
+"default" : false
+},
+"lowerX" : {
+"type" : "boolean",
+"description" : "When a leap second is announced, don't apply it in the kernel by stepping the clock, but let the servo correct the one-second offset slowly by changing the clock frequency (unless the -S option is used).",
+"default" : false
+},
+"lowerZ" : {
+"type" : "string",
+"description" : "Specifies the address of the server's UNIX domain socket. The default is /var/run/ptp4l."
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_ProductDescription" : {
+"type" : "object",
+"properties" : {
+"manufacturerName" : {
+"type" : "string"
+},
+"modelNumber" : {
+"type" : "string"
+},
+"instanceIdentifier" : {
+"type" : "string"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_Ptp4lConfig" : {
+"type" : "object",
+"properties" : {
+"options" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_Ptp4lOptions"
+},
+"longOptions" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_Ptp4lLongOptions"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_Ptp4lLongOptions" : {
+"type" : "object",
+"properties" : {
+"bmca" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_BMCA"}, {"type" : "null"}],
+"description" : "This option enables use of static roles for master and slave devices instead of running the best master clock algorithm (BMCA) described in 1588 profile. This is useful when you know the roles of the devices in advance. When set to Ã‚Â´noop', the traditional BMCA algorithm used by 1588 is skipped. masterOnly and slaveOnly will be used to determine master or slave role for the device. In a bridge, slaveOnly (which is a global option) can be set to make all ports assume the slave role. masterOnly (which is a per-port config option) can then be used to set individual ports to take master role. BMCA is used in the Automotive profile to speed up the start time for grand master and slaves. The default value is 'ptp' which runs the BMCA related state machines.",
+"default" : null
+},
+"g8275DefaultDsLocalPriority" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The Telecom Profiles (ITU-T G.8275.1 and G.8275.2) specify an alternate Best Master Clock Algorithm (BMCA) with a unique data set comparison algorithm. The value of this option is associated with the local clock and is used as a tie breaker whenever clockClass, clockAccuracy, offsetScaledLogVariance, and priority2 are equal. This option is only used when \"dataset_comparison\" is set to \"telecom\". The default value is 128. Warning: the BMCA is guaranteed to produce a spanning tree (that is, a timing network without loops) only when using the default values of G.8275.defaultDS.localPriority and G.8275.portDS.localPriority. Careful network engineering is needed when using non-default values.",
+"default" : null
+},
+"g8275PortDsLocalPriority" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The Telecom Profiles (ITU-T G.8275.1 and G.8275.2) specify an alternate Best Master Clock Algorithm (BMCA) with a unique data set comparison algorithm. The value of this option is associated with Announce messages arriving on a particular port and is used as a tie breaker whenever clockClass, clockAccuracy, offsetScaledLogVariance, and priority2 are equal. This option is only used when \"dataset_comparison\" is set to \"telecom\". The default value is 128. Warning: the BMCA is guaranteed to produce a spanning tree (that is, a timing network without loops) only when using the default values of G.8275.defaultDS.localPriority and G.8275.portDS.localPriority. Careful network engineering is needed when using non-default values.",
+"default" : null
+},
+"announceReceiptTimeout" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The number of missed Announce messages before the last Announce messages expires. The default is 3.",
+"default" : null
+},
+"asCapable" : {
+"type" : "string",
+"description" : "If set to 'true', all the checks which can unset asCapable variable (as described in Section 10.2.4.1 of 802.1AS) are skipped. If set to 'auto', asCapable is initialized to 'false' and will be set to 'true' after the relevant checks have passed. The default value is 'auto'."
+},
+"assumeTwoStep" : {
+"type" : ["boolean", "null"],
+"description" : "Treat one-step responses as two-step if enabled. It is used to work around buggy 802.1AS switches. The default is 0 (disabled).",
+"default" : null
+},
+"boundaryClockJbod" : {
+"type" : ["boolean", "null"],
+"description" : "When running as a boundary clock (that is, when more than one network interface is configured), ptp4l performs a sanity check to make sure that all of the ports share the same hardware clock device. This option allows ptp4l to work as a boundary clock using \"just a bunch of devices\" that are not synchronized to each other. For this mode, the collection of clocks must be synchronized by an external program, for example phc2sys(8) in \"automatic\" mode. The default is 0 (disabled).",
+"default" : null
+},
+"checkFupSync" : {
+"type" : ["boolean", "null"],
+"description" : "Because of packet reordering that can occur in the network, in the hardware, or in the networking stack, a follow up message can appear to arrive in the application before the matching sync message. As this is a normal occurrence, and the sequenceID message field ensures proper matching, the ptp4l program accepts out of order packets. This option adds an additional check using the software time stamps from the networking stack to verify that the sync message did arrive first. This option is only useful if you do not trust the sequence IDs generated by the master. The default is 0 (disabled).",
+"default" : null
+},
+"clockAccuracy" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The clockAccuracy attribute of the local clock. It is used in the best master selection algorithm. The default is 0xFE.",
+"default" : null
+},
+"clockClass" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The clockClass attribute of the local clock. It denotes the traceability of the time distributed by the grandmaster clock. The default is 248.",
+"default" : null
+},
+"clockIdentity" : {
+"type" : "string",
+"description" : "The clockIdentity attribute of the local clock. The clockIdentity is an 8-octet array and should in this configuration be written in textual form, see default. It should be unique since it is used to identify the specific clock. If default is used or if not set at all, the clockIdentity will be automtically generated. The default is \"000000.0000.000000\""
+},
+"clockServo" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_ClockServo"}, {"type" : "null"}],
+"description" : "The servo which is used to synchronize the local clock. Valid values are \"pi\" for a PI controller, \"linreg\" for an adaptive controller using linear regression, \"ntpshm\" for the NTP SHM reference clock to allow another process to synchronize the local clock (the SHM segment number is set to the domain number), and \"nullf\" for a servo that always dials frequency offset zero (for use in SyncE nodes). The default is \"pi.\"",
+"default" : null
+},
+"clockType" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_ClockType"}, {"type" : "null"}],
+"description" : "Specifies the kind of PTP clock. Valid values are \"OC\" for ordinary clock, \"BC\" for boundary clock, \"P2P_TC\" for peer to peer transparent clock, and \"E2E_TC\" for end to end transparent clock. An multi-port ordinary clock will automatically be configured as a boundary clock. The default is \"OC\".",
+"default" : null
+},
+"datasetComparison" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_DatasetComparison"}, {"type" : "null"}],
+"description" : "Specifies the method to be used when comparing data sets during the Best Master Clock Algorithm. The possible values are \"ieee1588\" and \"G.8275.x\". The default is \"ieee1588\".",
+"default" : null
+},
+"delayAsymmetry" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The time difference in nanoseconds of the transmit and receive paths. This value should be positive when the master-to-slave propagation time is longer and negative when the slave-to-master time is longer. The default is 0 nanoseconds.",
+"default" : null
+},
+"delayFilter" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_DelayFilter"}, {"type" : "null"}],
+"description" : "Select the algorithm used to filter the measured delay and peer delay. Possible values are moving_average and moving_median. The default is moving_median.",
+"default" : null
+},
+"delayFilterLength" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The length of the delay filter in samples. The default is 10.",
+"default" : null
+},
+"delayMechanism" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_DelayMechanism"}, {"type" : "null"}],
+"description" : "Select the delay mechanism. Possible values are E2E, P2P and Auto. The default is E2E.",
+"default" : null
+},
+"domainNumber" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The domain attribute of the local clock. The default is 0.",
+"default" : null
+},
+"dscpEvent" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Defines the Differentiated Services Codepoint (DSCP) to be used for PTP event messages. Must be a value between 0 and 63. There are several media streaming standards out there that require specific values for this option. For example 46 (EF PHB) in AES67 or 48 (CS6 PHB) in RAVENNA. The default is 0.",
+"default" : null
+},
+"dscpGeneral" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Defines the Differentiated Services Codepoint (DSCP) to be used for PTP general messages. Must be a value between 0 and 63. There are several media streaming standards out there that recommend specific values for this option. For example 34 (AF41 PHB) in AES67 or 46 (EF PHB) in RAVENNA. The default is 0.",
+"default" : null
+},
+"egressLatency" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Specifies the difference in nanoseconds between the actual transmission time at the reference plane and the reported transmit time stamp. This value will be added to egress time stamps obtained from the hardware. The default is 0.",
+"default" : null
+},
+"faultBadpeernetInterval" : {
+"type" : "string",
+"description" : "The time in seconds between the detection of a peer network misconfiguration and the fault being reset. The port is disabled for the duration of the interval. The value is in seconds and the special key word ASAP will let the fault be reset immediately. The default is 16 seconds."
+},
+"faultResetInterval" : {
+"type" : "string",
+"description" : "The time in seconds between the detection of a port's fault and the fault being reset. This value is expressed as a power of two. Setting this value to -128 or to the special key word \"ASAP\" will let the fault be reset immediately. The default is 4 (16 seconds)."
+},
+"firstStepThreshold" : {
+"type" : ["number", "null"],
+"description" : "The maximum offset the servo will correct by changing the clock frequency instead of stepping the clock. This is only applied on the first update. It's specified in seconds. When set to 0.0, the servo won't step the clock on start. The default is 0.00002 (20 microseconds). This option used to be called pi_f_offset_const .",
+"default" : null
+},
+"followUpInfo" : {
+"type" : ["boolean", "null"],
+"description" : "Include the 802.1AS data in the Follow_Up messages if enabled. The default is 0 (disabled).",
+"default" : null
+},
+"freeRunning" : {
+"type" : ["boolean", "null"],
+"description" : "Don't adjust the local clock if enabled. The default is 0 (disabled).",
+"default" : null
+},
+"freqEstInterval" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The time interval over which is estimated the ratio of the local and peer clock frequencies. It is specified as a power of two in seconds. The default is 1 (2 seconds).",
+"default" : null
+},
+"gmCapable" : {
+"type" : ["boolean", "null"],
+"description" : "If this option is enabled, then the local clock is able to become grand master. This is only for use with 802.1AS clocks and has no effect on 1588 clocks. The default is 1 (enabled).",
+"default" : null
+},
+"hwtsFilter" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_HwtsFilter"}, {"type" : "null"}],
+"description" : "Select the hardware time stamp filter setting mode. Possible values are normal, check, full. Normal mode set the filters as needed. Check mode only check but do not set. Full mode set the receive filter to mark all packets with hardware time stamp, so all applications can get them. The default is normal.",
+"default" : null
+},
+"hybridE2e" : {
+"type" : ["boolean", "null"],
+"description" : "Enables the \"hybrid\" delay mechanism from the draft Enterprise Profile. When enabled, ports in the slave state send their delay request messages to the unicast address taken from the master's announce message. Ports in the master state will reply to unicast delay requests using unicast delay responses. This option has no effect if the delay_mechanism is set to P2P. The default is 0 (disabled).",
+"default" : null
+},
+"ignoreSourceId" : {
+"type" : ["boolean", "null"],
+"description" : "This will disable source port identity checking for Sync and Follow_Up messages. This is useful when the announce messages are disabled in the master and the slave does not have any way to know it's identity. The default is 0 (disabled).",
+"default" : null
+},
+"ignoreTransportSpecific" : {
+"type" : ["boolean", "null"],
+"description" : "By default, incoming messages are dropped if their transportSpecific field does not match the configured value. However, many of transports specified in the 1588 standard mandate ignoring this field. Moreover, some equipment is known to set the reserved bits. Configuring this option as 1 causes this field to be ignored completely on receive. The default is 0.",
+"default" : null
+},
+"ingressLatency" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Specifies the difference in nanoseconds between the reported receive time stamp and the actual reception time at reference plane. This value will be subtracted from ingress time stamps obtained from the hardware. The default is 0.",
+"default" : null
+},
+"inhibitAnnounce" : {
+"type" : ["boolean", "null"],
+"description" : "This will disable the timer for announce messages (i.e. FD_MANNO_TIMER) and also the announce message timeout timer (i.e. FD_ANNOUNCE_TIMER). This is used by the Automotive profile as part of switching over to a static BMCA. if this option is enabled, ignore_source_id has to be enabled in the slave because it has no way to identify master identity in Sync and Follow_Up messages. The default is 0 (disabled).",
+"default" : null
+},
+"inhibitDelayReq" : {
+"type" : ["boolean", "null"],
+"description" : "Don't send any delay requests. This will need the asCapable config option to be set to 'true'. This is useful when running as a designated master who does not need to calculate offset from slave. The default is 0 (disabled).",
+"default" : null
+},
+"inhibitMulticastService" : {
+"type" : ["boolean", "null"],
+"description" : "Some unicast mode profiles insist that no multicast message are ever transmitted. Setting this option inhibits multicast transmission. The default is 0 (mutlicast enabled).",
+"default" : null
+},
+"initialDelay" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The initial path delay of the clock in nanoseconds used for synchronization of the clock before the delay is measured using the E2E or P2P delay mechanism. If set to 0, the clock will not be updated until the delay is measured. The default is 0.",
+"default" : null
+},
+"kernelLeap" : {
+"type" : ["boolean", "null"],
+"description" : "When a leap second is announced, let the kernel apply it by stepping the clock instead of correcting the one-second offset with servo, which would correct the one-second offset slowly by changing the clock frequency (unless the step_threshold option is set to correct such offset by stepping). Relevant only with software time stamping. The default is 1 (enabled).",
+"default" : null
+},
+"logAnnounceInterval" : {
+"type" : ["integer", "null"], "minimum" : -128, "maximum" : 127,
+"description" : "The mean time interval between Announce messages. A shorter interval makes ptp4l react faster to the changes in the master-slave hierarchy. The interval should be the same in the whole domain. It's specified as a power of two in seconds. The default is 1 (2 seconds).",
+"default" : null
+},
+"logMinDelayReqInterval" : {
+"type" : ["integer", "null"], "minimum" : -128, "maximum" : 127,
+"description" : "The minimum permitted mean time interval between Delay_Req messages. A shorter interval makes ptp4l react faster to the changes in the path delay. It's specified as a power of two in seconds. The default is 0 (1 second).",
+"default" : null
+},
+"logMinPdelayReqInterval" : {
+"type" : ["integer", "null"], "minimum" : -128, "maximum" : 127,
+"description" : "The minimum permitted mean time interval between Pdelay_Req messages. It's specified as a power of two in seconds. The default is 0 (1 second).",
+"default" : null
+},
+"logSyncInterval" : {
+"type" : ["integer", "null"], "minimum" : -128, "maximum" : 127,
+"description" : "The mean time interval between Sync messages. A shorter interval may improve accuracy of the local clock. It's specified as a power of two in seconds. The default is 0 (1 second).",
+"default" : null
+},
+"loggingLevel" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The maximum logging level of messages which should be printed. The default is 6 (LOG_INFO).",
+"default" : null
+},
+"manufacturerIdentity" : {
+"type" : "string",
+"description" : "The manufacturer id which should be an OUI owned by the manufacturer. The default is 00:00:00."
+},
+"masterOnly" : {
+"type" : ["boolean", "null"],
+"description" : "Setting this option to one (1) prevents the port from entering the SLAVE state. In addition, the local clock will ignore Announce messages received on this port. This option's intended use is to support the Telecom Profiles according to ITU-T G.8265.1, G.8275.1, and G.8275.2. The default value is zero or false.",
+"default" : null
+},
+"maxStepsRemoved" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "When using this option, if the value of stepsRemoved of an Announce message is greater than or equal to the value of maxStepsRemoved the Announce message is not considered in the operation of the BMCA. The default value is 255.",
+"default" : null
+},
+"maxFrequency" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The maximum allowed frequency adjustment of the clock in parts per billion (ppb). This is an additional limit to the maximum allowed by the hardware. When set to 0, the hardware limit will be used. The default is 900000000 (90%). This option used to be called pi_max_frequency .",
+"default" : null
+},
+"messageTag" : {
+"type" : "string",
+"description" : "The tag which is added to all messages printed to the standard output or system log. The default is an empty string (which cannot be set in the configuration file as the option requires an argument)."
+},
+"minNeighborPropDelay" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Lower limit for peer delay in nanoseconds. If the estimated peer delay is smaller than this value the port is marked as not 802.1AS capable.",
+"default" : null
+},
+"msgIntervalRequest" : {
+"type" : ["boolean", "null"],
+"description" : "This option, when set, will trigger an adjustment to the Sync and peer delay request message intervals when the clock servo transitions into the SERVO_LOCKED_STABLE state. The Sync interval will be adjusted via the signaling mechanism while the pdelay request interval is simply adjusted locally. The values to use for the new Sync and peer delay request intervals are specified by the operLogSyncInterval and operLogPdelayReqInterval options, respectively. The default value of msg_interval_request is 0 (disabled).",
+"default" : null
+},
+"neighborPropDelayThresh" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "Upper limit for peer delay in nanoseconds. If the estimated peer delay is greater than this value the port is marked as not 802.1AS capable.",
+"default" : null
+},
+"netSyncMonitor" : {
+"type" : ["boolean", "null"],
+"description" : "Enables the NetSync Monitor (NSM) protocol. The NSM protocol allows a station to measure how well another node is synchronized. The monitor sends a unicast delay request to the node, which replies unconditionally with unicast delay response, sync, and follow up messages. If the monitor is synchronized to the GM, it can use the time stamps in the message to estimate the node's offset. This option requires that the 'hybrid_e2e' option be enabled as well. The default is 0 (disabled).",
+"default" : null
+},
+"networkTransport" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_NetworkTransport"}, {"type" : "null"}],
+"description" : "Select the network transport. Possible values are UDPv4, UDPv6 and L2. The default is UDPv4.",
+"default" : null
+},
+"ntpshmSegment" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The number of the SHM segment used by ntpshm servo. The default is 0.",
+"default" : null
+},
+"offsetScaledLogVariance" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 65535,
+"description" : "The offsetScaledLogVariance attribute of the local clock. It characterizes the stability of the clock. The default is 0xFFFF.",
+"default" : null
+},
+"operLogPdelayReqInterval" : {
+"type" : ["integer", "null"], "minimum" : -128, "maximum" : 127,
+"description" : "The Pdelay Request messages interval to be used once the clock enters the SERVO_LOCKED_STABLE state. If the 'msg_interval_request' option is set, then the local slave port will adopt this rate when the local clock enters the \"locked stable\" state. This option is specified as a power of two in seconds, and the default value is 0 (1 second).",
+"default" : null
+},
+"operLogSyncInterval" : {
+"type" : ["integer", "null"], "minimum" : -128, "maximum" : 127,
+"description" : "The Sync message interval to be requested once the clock enters the SERVO_LOCKED_STABLE state. If the 'msg_interval_request' option is set, then the local slave port will request the remote master to switch to the given message rate via a signaling message containing a Message interval request TLV. This option is specified as a power of two in seconds, and default value is 0 (1 second).",
+"default" : null
+},
+"p2pDstMac" : {
+"type" : "string",
+"description" : "The MAC address to which peer delay messages should be sent. Relevant only with L2 transport. The default is 01:80:C2:00:00:0E."
+},
+"pathTraceEnabled" : {
+"type" : ["boolean", "null"],
+"description" : "Enable the mechanism used to trace the route of the Announce messages. The default is 0 (disabled).",
+"default" : null
+},
+"piIntegralConst" : {
+"type" : ["number", "null"],
+"description" : "The integral constant of the PI controller. When set to 0.0, the integral constant will be set by the following formula from the current sync interval. The default is 0.0. ki = min(ki_scale * sync^ki_exponent, ki_norm_max / sync)",
+"default" : null
+},
+"piIntegralExponent" : {
+"type" : ["number", "null"],
+"description" : "The ki_exponent constant in the formula used to set the integral constant of the PI controller from the sync interval. The default is 0.4.",
+"default" : null
+},
+"piIntegralNormMax" : {
+"type" : ["number", "null"],
+"description" : "The ki_norm_max constant in the formula used to set the integral constant of the PI controller from the sync interval. The default is 0.3.",
+"default" : null
+},
+"piIntegralScale" : {
+"type" : ["number", "null"],
+"description" : "The ki_scale constant in the formula used to set the integral constant of the PI controller from the sync interval. When set to 0.0, the value will be selected from 0.3 and 0.001 for the hardware and software time stamping respectively. The default is 0.0.",
+"default" : null
+},
+"piProportionalConst" : {
+"type" : ["number", "null"],
+"description" : "The proportional constant of the PI controller. When set to 0.0, the proportional constant will be set by the following formula from the current sync interval. The default is 0.0. kp = min(kp_scale * sync^kp_exponent, kp_norm_max / sync)",
+"default" : null
+},
+"piProportionalExponent" : {
+"type" : ["number", "null"],
+"description" : "The kp_exponent constant in the formula used to set the proportional constant of the PI controller from the sync interval. The default is -0.3.",
+"default" : null
+},
+"piProportionalNormMax" : {
+"type" : ["number", "null"],
+"description" : "The kp_norm_max constant in the formula used to set the proportional constant of the PI controller from the sync interval. The default is 0.7",
+"default" : null
+},
+"piProportionalScale" : {
+"type" : ["number", "null"],
+"description" : "The kp_scale constant in the formula used to set the proportional constant of the PI controller from the sync interval. When set to 0.0, the value will be selected from 0.7 and 0.1 for the hardware and software time stamping respectively. The default is 0.0.",
+"default" : null
+},
+"priority1" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The priority1 attribute of the local clock. It is used in the best master selection algorithm, lower values take precedence. Must be in the range 0 to 255. The default is 128.",
+"default" : null
+},
+"priority2" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The priority2 attribute of the local clock. It is used in the best master selection algorithm, lower values take precedence. Must be in the range 0 to 255. The default is 128.",
+"default" : null
+},
+"productDescription" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_ProductDescription",
+"description" : "The product description string. Allowed values must be of the form manufacturerName;modelNumber;instanceIdentifier and contain at most 64 utf8 symbols. The default is \";;\"."
+},
+"ptpDstMac" : {
+"type" : "string",
+"description" : "The MAC address to which PTP messages should be sent. Relevant only with L2 transport. The default is 01:1B:19:00:00:00."
+},
+"revisionData" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_RevisionData",
+"description" : "The revision description string which contains the revisions for node hardware (HW), firmware (FW), and software (SW). Allowed values are of the form HW;FW;SW and contain at most 32 utf8 symbols. The default is an \";;\"."
+},
+"sanityFreqLimit" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The maximum allowed frequency offset between uncorrected clock and the system monotonic clock in parts per billion (ppb). This is used as a sanity check of the synchronized clock. When a larger offset is measured, a warning message will be printed and the servo will be reset. When set to 0, the sanity check is disabled. The default is 200000000 (20%).",
+"default" : null
+},
+"servoNumOffsetValues" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The number of offset values considered in order to transition from the SERVO_LOCKED to the SERVO_LOCKED_STABLE state. The transition occurs once the last 'servo_num_offset_values' offsets are all below the 'servo_offset_threshold' value. The default value is 10.",
+"default" : null
+},
+"servoOffsetThreshold" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The offset threshold used in order to transition from the SERVO_LOCKED to the SERVO_LOCKED_STABLE state. The transition occurs once the last The default value of offset_threshold is 0 (disabled).",
+"default" : null
+},
+"slaveOnly" : {
+"type" : ["boolean", "null"],
+"description" : "The local clock is a slave-only clock if enabled. The default is 0 (disabled).",
+"default" : null
+},
+"slaveEventMonitor" : {
+"type" : "string",
+"description" : "Specifies the address of a UNIX domain socket for slave event monitoring. A local client bound to this address will receive SLAVE_RX_SYNC_TIMING_DATA and SLAVE_DELAY_TIMING_DATA_NP TLVs. The default is the empty string (disabled)."
+},
+"socketPriority" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Configure the SO_PRIORITY of sockets. This is to support cases where a user wants to route ptp4l traffic using Linux qdiscs for the purpose of traffic shaping. This option is only available with the IEEE 802.3 transport (the -2 option) and is silently ignored when using the UDP IPv4/6 network transports. Must be in the range of 0 to 15, inclusive. The default is 0.",
+"default" : null
+},
+"stepThreshold" : {
+"type" : ["number", "null"],
+"description" : "The maximum offset the servo will correct by changing the clock frequency instead of stepping the clock. When set to 0.0, the servo will never step the clock except on start. It's specified in seconds. The default is 0.0. This option used to be called pi_offset_const .",
+"default" : null
+},
+"summaryInterval" : {
+"type" : ["integer", "null"], "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "The time interval in which are printed summary statistics of the clock. It is specified as a power of two in seconds. The statistics include offset root mean square (RMS), maximum absolute offset, frequency offset mean and standard deviation, and path delay mean and standard deviation. The units are nanoseconds and parts per billion (ppb). If there is only one clock update in the interval, the sample will be printed instead of the statistics. The messages are printed at the LOG_INFO level. The default is 0 (1 second).",
+"default" : null
+},
+"syncReceiptTimeout" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The number of sync/follow up messages that may go missing before triggering a Best Master Clock election. This option is used for running in gPTP mode according to the 802.1AS-2011 standard. Setting this option to zero will disable the sync message timeout. The default is 0 or disabled.",
+"default" : null
+},
+"tcSpanningTree" : {
+"type" : ["boolean", "null"],
+"description" : "When running as a Transparent Clock, increment the \"stepsRemoved\" field of Announce messages that pass through the switch. Enabling this option ensures that PTP message loops never form, provided the switches all implement this option together with the BMCA.",
+"default" : null
+},
+"timeSource" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The time source is a single byte code that gives an idea of the kind of local clock in use. The value is purely informational, having no effect on the outcome of the Best Master Clock algorithm, and is advertised when the clock becomes grand master.",
+"default" : null
+},
+"timeStamping" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_TimeStamping"}, {"type" : "null"}],
+"description" : "The time stamping method. The allowed values are hardware, software and legacy. The default is hardware.",
+"default" : null
+},
+"transportSpecific" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "The transport specific field. Must be in the range 0 to 255. The default is 0.",
+"default" : null
+},
+"tsprocMode" : {
+"anyOf" : [{"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_TsProcMode"}, {"type" : "null"}],
+"description" : "Select the time stamp processing mode used to calculate offset and delay. Possible values are filter, raw, filter_weight, raw_weight. Raw modes perform well when the rate of sync messages (logSyncInterval) is similar to the rate of delay messages (logMinDelayReqInterval or logMinPdelayReqInterval). Weighting is useful with larger network jitters (e.g. software time stamping). The default is filter.",
+"default" : null
+},
+"twoStepFlag" : {
+"type" : ["boolean", "null"],
+"description" : "Enable two-step mode for sync messages. One-step mode can be used only with hardware time stamping. The default is 1 (enabled).",
+"default" : null
+},
+"txTimestampTimeout" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The number of milliseconds to poll waiting for the tx time stamp from the kernel when a message has recently been sent. The default is 1.",
+"default" : null
+},
+"udp6Scope" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Specifies the desired scope for the IPv6 multicast messages. This will be used as the second byte of the primary address. This option is only relevant with IPv6 transport. See RFC 4291. The default is 0x0E for the global scope.",
+"default" : null
+},
+"udpTtl" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Specifies the Time to live (TTL) value for IPv4 multicast messages and the hop limit for IPv6 multicast messages. This option is only relevant with the IPv4 and IPv6 UDP transports. The default is 1 to restrict the messages sent by ptp4l to the same subnet.",
+"default" : null
+},
+"udsAddress" : {
+"type" : "string",
+"description" : "Specifies the address of the UNIX domain socket for receiving local management messages. The default is /var/run/ptp4l."
+},
+"unicastListen" : {
+"type" : ["boolean", "null"],
+"description" : "When enabled, this option allows the port to grant unicast message contracts. Incoming requests for will be granted limited only by the amount of memory available. The default is 0 (disabled).",
+"default" : null
+},
+"unicastMasterTable" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "When set to a positive integer, this option specifies the table id to be used for unicast discovery. Each table lives in its own section and has a unique, positive numerical ID. Entries in the table are a pair of transport type and protocol address. The default is 0 (unicast discovery disabled).",
+"default" : null
+},
+"unicastReqDuration" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The service time in seconds to be requested during unicast discovery. Note that the remote node is free to grant a different duration. The default is 3600 seconds or one hour.",
+"default" : null
+},
+"useSyslog" : {
+"type" : ["boolean", "null"],
+"description" : "Print messages to the system log if enabled. The default is 1 (enabled).",
+"default" : null
+},
+"userDescription" : {
+"$ref" : "#/definitions/common_synchronization_fbs_linuxptp_UserDescription",
+"description" : "The user description string. Allowed values are of the form name;location and contain at most 128 utf8 symbols. The default is an empty string."
+},
+"utcOffset" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 4294967295,
+"description" : "The current offset between TAI and UTC. The default is 37.",
+"default" : null
+},
+"verbose" : {
+"type" : ["boolean", "null"],
+"description" : "Print messages to the standard output if enabled. The default is 0 (disabled).",
+"default" : null
+},
+"writePhaseMode" : {
+"type" : ["boolean", "null"],
+"description" : "This option enables using the \"write phase\" feature of a PTP Hardware Clock. If supported by the device, this mode uses the hardware's built in phase offset control instead of frequency offset control. The default value is 0 (disabled).",
+"default" : null
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_Ptp4lOptions" : {
+"type" : "object",
+"properties" : {
+"num2" : {
+"type" : "boolean",
+"description" : "Select the IEEE 802.3 network transport.",
+"default" : false
+},
+"num4" : {
+"type" : "boolean",
+"description" : "Select the UDP IPv4 network transport. This is the default transport.",
+"default" : false
+},
+"num6" : {
+"type" : "boolean",
+"description" : "Select the UDP IPv6 network transport.",
+"default" : false
+},
+"upperA" : {
+"type" : "boolean",
+"description" : "Select the delay mechanism automatically. Start with E2E and switch to P2P when a peer delay request is received.",
+"default" : false
+},
+"upperE" : {
+"type" : "boolean",
+"description" : "Select the delay request-response (E2E) mechanism. This is the default mechanism. All clocks on single PTP communication path must use the same mechanism. A warning will be printed when a peer delay request is received on port using the E2E mechanism.",
+"default" : false
+},
+"upperH" : {
+"type" : "boolean",
+"description" : "Select the hardware time stamping. All ports specified by the -i option and in the configuration file must be attached to the same PTP hardware clock (PHC). This is the default time stamping.",
+"default" : false
+},
+"upperL" : {
+"type" : "boolean",
+"description" : "Select the legacy hardware time stamping.",
+"default" : false
+},
+"upperP" : {
+"type" : "boolean",
+"description" : "Select the peer delay (P2P) mechanism. A warning will be printed when a delay request is received on port using the P2P mechanism.",
+"default" : false
+},
+"upperS" : {
+"type" : "boolean",
+"description" : "Select the software time stamping.",
+"default" : false
+},
+"lowerF" : {
+"type" : "string",
+"description" : "Read configuration from the specified file. No configuration file is read by default."
+},
+"lowerH" : {
+"type" : "boolean",
+"description" : "Display a help message.",
+"default" : false
+},
+"lowerI" : {
+"type" : "string",
+"description" : "Specify a PTP port, it may be used multiple times. At least one port must be specified by this option or in the configuration file."
+},
+"lowerL" : {
+"type" : ["integer", "null"], "minimum" : 0, "maximum" : 255,
+"description" : "Set the maximum syslog level of messages which should be printed or sent to the system logger. The default is 6 (LOG_INFO).",
+"default" : null
+},
+"lowerM" : {
+"type" : "boolean",
+"description" : "Print messages to the standard output.",
+"default" : false
+},
+"lowerP" : {
+"type" : "string",
+"description" : "(This option is deprecated.) Before Linux kernel v3.5 there was no way to discover the PHC device associated with a network interface. This option specifies the PHC device (e.g. /dev/ptp0) to be used when running on legacy kernels."
+},
+"lowerQ" : {
+"type" : "boolean",
+"description" : "Don't send messages to the system logger.",
+"default" : false
+},
+"lowerS" : {
+"type" : "boolean",
+"description" : "Enable the slaveOnly mode.",
+"default" : false
+},
+"lowerV" : {
+"type" : "boolean",
+"description" : "Prints the software version and exits.",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_RevisionData" : {
+"type" : "object",
+"properties" : {
+"hardware" : {
+"type" : "string"
+},
+"firmware" : {
+"type" : "string"
+},
+"software" : {
+"type" : "string"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_linuxptp_UserDescription" : {
+"type" : "object",
+"properties" : {
+"name" : {
+"type" : "string"
+},
+"location" : {
+"type" : "string"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_real2mono_Real2monoConfig" : {
+"type" : "object",
+"properties" : {
+"options" : {
+"$ref" : "#/definitions/common_synchronization_fbs_real2mono_Real2monoOptions"
+}
+},
+"additionalProperties" : false
+},
+"common_synchronization_fbs_real2mono_Real2monoOptions" : {
+"type" : "object",
+"properties" : {
+"param1" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"default" : 0
+},
+"param2" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"default" : 0
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/common_synchronization_fbs_SyncInstances"
+}

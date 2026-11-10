@@ -1,0 +1,23 @@
+/* css/custom/dark-trend-legend.css */
+
+/* control base element */
+.iq-trend-legend.dark-trend-legend {
+    --icon-size: 20px;
+    --icon-margin: 8px;
+
+    --element-gap: 8px;
+    --element-padding: 4px;
+
+    --label-font-size: 14px;
+    --label-font-family: RobotoBold;
+    --label-font-weight: initial;
+    --label-color: #ffffff;
+    --label-margin: 8px;
+
+    --unit-font-size: 14px;
+    --unit-font-family: RobotoLight;
+    --unit-font-weight: initial;
+    --unit-color: #ffffff;
+
+    --inactive-opacity: 0.5;
+}

@@ -1,0 +1,35 @@
+{
+	"clientCache": {
+		"default": 60,
+		"overrides": {}
+	},
+	"compression": {
+		"enable": true,
+		"blacklist": [
+			"*-compressed",
+			"audio/*",
+			"video/*",
+			"application/x-bzip",
+			"application/x-bzip2",
+			"application/x-xz",
+			"application/zip",
+			"image/png",
+			"image/jpeg",
+			"image/webp"
+		],
+		"whitelist": [
+			"audio/basic",
+			"audio/midi",
+			"audio/x-mpegurl",
+			"audio/x-wav"
+		]
+	},
+	"charsets": {
+		"default": null,
+		"overrides": {
+			"text/*": "utf-8"
+		}
+	},
+	"fallbackMimeType": "application/octet-stream",
+	"mimeTypesFile": "mime.types"
+}

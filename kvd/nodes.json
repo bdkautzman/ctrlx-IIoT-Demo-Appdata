@@ -1,0 +1,39 @@
+{
+    "$schema": "./schemas/nodes.v1.0.schema.json",
+    "description": "This is a KVD sample configuration",
+    "types": [
+        {
+            "address": "types/inertial-value",
+            "type": "inertial-value.bfbs",
+            "metadata": {
+                "nodeClass": "Type"
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "address": "Email/Send",
+            "type": "bool8",
+            "metadata": {
+                "nodeClass": "Variable",
+                "description": "Sends an email via Node-RED"
+            }
+        },
+        {
+            "address": "Email/To",
+            "type": "string",
+            "metadata": {
+                "nodeClass": "Variable",
+                "description": "Recipient address for sending an email via Node-RED"
+            }
+        },
+        {
+            "address": "Email/Content",
+            "type": "int32",
+            "metadata": {
+                "nodeClass": "Variable",
+                "description": "Content enum for sending an email via Node-RED"
+            }
+        }
+    ]
+}

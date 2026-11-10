@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 27.737875 26.694485"
+   height="26.694485mm"
+   width="27.737875mm">
+  <defs
+     id="defs2">
+    <style
+       id="style10">
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf);
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_2);
+      }
+    </style>
+    <linearGradient
+       id="Unbenannter_Verlauf"
+       data-name="Unbenannter Verlauf"
+       x1="-2479.9893"
+       y1="261.11871"
+       x2="-2383.9863"
+       y2="261.11871"
+       gradientTransform="rotate(-29.000011,-1570.8523,-4672.7247)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#008acf"
+         id="stop12" />
+      <stop
+         offset="1"
+         stop-color="#56dbdb"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="Unbenannter_Verlauf_2"
+       data-name="Unbenannter Verlauf 2"
+       x1="-2479.9868"
+       y1="243.11891"
+       x2="-2419.9863"
+       y2="243.11891"
+       xlink:href="#Unbenannter_Verlauf" />
+    <linearGradient
+       y2="261.11871"
+       x2="-2383.9863"
+       y1="261.11871"
+       x1="-2479.9893"
+       gradientTransform="rotate(-29.000011,-1570.8523,-4672.7247)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient86"
+       xlink:href="#Unbenannter_Verlauf" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-54.817252,-76.521805)"
+     id="layer1">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,51.13373,73.99405)"
+       id="g84">
+      <g
+         id="g24">
+        <path
+           style="fill:url(#linearGradient86)"
+           class="cls-1"
+           d="M 48.1186,110.44626 A 12.00128,12.00128 0 0 1 42.29,87.94919 L 94.76752,58.85983 77.3144,27.374 A 12.000225,12.000225 0 1 1 98.30561,15.73825 l 17.45313,31.48633 a 24.02669,24.02669 0 0 1 -9.356,32.626 l -52.477,29.08886 a 11.94893,11.94893 0 0 1 -5.80714,1.50682 z"
+           id="path20" />
+        <path
+           style="fill:url(#Unbenannter_Verlauf_2)"
+           class="cls-2"
+           d="M 29.4936,80.03806 A 8.998,8.998 0 0 1 21.61372,75.39938 L 15.79633,64.90427 A 15.0182,15.0182 0 0 1 21.643,44.51267 L 53.12983,27.05905 a 9.0000035,9.0000035 0 0 1 8.72656,15.74317 L 32.9936,58.80124 37.35688,66.67282 A 9.00261,9.00261 0 0 1 29.4936,80.03806 Z"
+           id="path22" />
+      </g>
+      <g
+         id="g36" />
+      <g
+         id="g54" />
+    </g>
+  </g>
+</svg>

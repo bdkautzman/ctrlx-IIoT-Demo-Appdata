@@ -1,0 +1,37 @@
+{
+    "authenticationRealms": [
+        {
+            "canCreateInitialUser": false,
+            "configuration": {},
+            "description": "Authentication realm using an internal SQLite database.",
+            "displayName": "Internal User Database",
+            "enabled": true,
+            "libraryPath": "auth_sqlite",
+            "name": "internal",
+            "priority": 0
+        }
+    ],
+    "extensions": [
+        {
+            "configuration": {},
+            "description": null,
+            "enabled": true,
+            "libraryPath": "internal:simulation",
+            "name": "Internal",
+            "type": "io"
+        },
+        {
+            "configuration": {
+                "auth.password": "boschrexroth",
+                "auth.user": "boschrexroth",
+                "endpoint_url": "opc.tcp://localhost:4840"
+            },
+            "description": null,
+            "enabled": true,
+            "libraryPath": "ioHandlerOPC",
+            "name": "ctrlX Core",
+            "type": "io"
+        }
+    ],
+    "version": 0
+}

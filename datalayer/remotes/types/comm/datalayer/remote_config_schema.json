@@ -1,0 +1,30 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"comm_datalayer_remote_ConfigItem" : {
+"type" : "object",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the remote connection"
+},
+"address" : {
+"type" : "string",
+"description" : "remote data layer connection string\nexamples:\ntcp://<user>:<pw>@<ip>\ntcp://<user>:<pw>@<ip>:2069\ntcp://<user>:<pw>@<ip>:2069?sslport=443\nwss://<user>:<pw>@<ip>\nwss://<user>:<pw>@<ip>:443"
+}
+},
+"required" : ["name", "address"],
+"additionalProperties" : false
+},
+"comm_datalayer_remote_RemoteConfig" : {
+"type" : "object",
+"properties" : {
+"remotes" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/comm_datalayer_remote_ConfigItem"}
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/comm_datalayer_remote_RemoteConfig"
+}

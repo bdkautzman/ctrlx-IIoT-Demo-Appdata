@@ -1,0 +1,53 @@
+{
+    "type": 1,
+    "queries": [
+        {
+            "name": "mobile",
+            "threshold": null,
+            "layoutWidth": "318px",
+            "editorWidth": "320px",
+            "icon": "icon mq-mobile",
+            "enabled": true
+        },
+        {
+            "name": "wide-mobile",
+            "threshold": "478px",
+            "layoutWidth": "478px",
+            "editorWidth": "480px",
+            "icon": "icon mq-wide-mobile",
+            "enabled": true
+        },
+        {
+            "name": "tablet-portrait",
+            "threshold": "758px",
+            "layoutWidth": "758px",
+            "editorWidth": "768px",
+            "icon": "icon mq-tablet-portrait",
+            "enabled": true
+        },
+        {
+            "name": "tablet-landscape",
+            "threshold": "1018px",
+            "layoutWidth": "1018px",
+            "editorWidth": "1024px",
+            "icon": "icon mq-tablet-landscape",
+            "enabled": true
+        },
+        {
+            "name": "wide",
+            "threshold": "1278px",
+            "layoutWidth": "1278px",
+            "editorWidth": "1280px",
+            "icon": "icon mq-wide",
+            "enabled": true
+        },
+        {
+            "name": "extra-wide",
+            "threshold": "1918px",
+            "layoutWidth": "1918px",
+            "editorWidth": "1920px",
+            "icon": "icon mq-extra-wide",
+            "enabled": true
+        }
+    ]
+}

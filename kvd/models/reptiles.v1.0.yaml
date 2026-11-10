@@ -1,0 +1,10 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: reptiles
+version: 0.0.1
+elements:
+    snake:
+        description: The snake.
+        $ref: snake.v1.0.yaml
+    lizard:
+        description: The lizard.
+        $ref: lizard.v1.0.yaml

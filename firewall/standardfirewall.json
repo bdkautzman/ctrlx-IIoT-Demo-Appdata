@@ -1,0 +1,45 @@
+{
+  "filterRules": [],
+  "routingRules": [
+    {
+      "id": "hdE7KUKyCos5oW9sWo5BQF",
+      "enabled": false,
+      "description": "Forwarding XM22 web interface to local port",
+      "ipVersion": "ip",
+      "protocol": "tcp",
+      "sourceAddress": "*",
+      "sourcePort": "*",
+      "destinationAddress": "*",
+      "destinationPort": "8234",
+      "natType": "destination",
+      "translatedAddress": "192.168.100.2",
+      "translatedPort": "80"
+    },
+    {
+      "id": "ff9n2oNAfvHmBgJZtf5o74",
+      "enabled": true,
+      "description": "Routing 192\u0026*;168\u0026*;100\u0026*;x network",
+      "ipVersion": "ip",
+      "protocol": "any",
+      "sourceAddress": "*",
+      "sourcePort": "*",
+      "destinationAddress": "192.168.100.0/24",
+      "destinationPort": "*",
+      "natType": "masquerade"
+    }
+  ],
+  "interfaceRules": [
+    {
+      "id": "fTMDumnCgm8Ltw55tNgGdX",
+      "enabled": true,
+      "description": "Internet Connection",
+      "interfaceName": "XF50",
+      "allowHttpsTraffic": true,
+      "incomingTrafficPolicy": "rejectAllExceptEstRel",
+      "outgoingTrafficPolicy": "acceptAll"
+    }
+  ],
+  "filterDefaults": {
+    "defaultAction": "accept"
+  }
+}

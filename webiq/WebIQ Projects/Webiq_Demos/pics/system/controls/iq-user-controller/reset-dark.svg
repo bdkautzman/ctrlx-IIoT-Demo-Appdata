@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff0;
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <title>reset_black</title>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Reset_neu" data-name="Reset neu">
+      <g id="reset_black">
+        <rect class="cls-1" width="24" height="24"/>
+        <path d="M13.12939,2.14844A9.8025,9.8025,0,0,0,6.79974,4.3598l-2.33868-2.87L3.14966,8.43823l7.27093.36487L8.063,5.90991a7.85212,7.85212,0,1,1-2.89307,6.04126l-2-.02246a9.84138,9.84138,0,0,0,9.73828,9.9209c.0376.00049.07471.00049.11182.00049a9.85114,9.85114,0,0,0,.10937-19.70166Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

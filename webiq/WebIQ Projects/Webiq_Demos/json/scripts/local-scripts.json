@@ -1,0 +1,14 @@
+{
+    "QR_Code_Gen": {
+        "url": "js/custom-libs/local-scripts/QR_Code_Gen.js",
+        "description": null
+    },
+    "QR_Code_Gen_DriveErr": {
+        "url": "js/custom-libs/local-scripts/QR_Code_Gen_DriveErr.js",
+        "description": null
+    },
+    "error-counter": {
+        "url": "js/custom-libs/local-scripts/error-counter.js",
+        "description": null
+    }
+}

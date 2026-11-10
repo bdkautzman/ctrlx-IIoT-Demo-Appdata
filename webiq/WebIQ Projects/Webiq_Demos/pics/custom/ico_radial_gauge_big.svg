@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   id="svg6"
+   sodipodi:docname="ico_radial_gauge_big.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>ico_radial_gauge_small</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2126"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="31.5"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <title
+     id="title2">ico_radial_gauge_small</title>
+  <path
+     d="M 4.6380409,28.786583 C 1.9300169,25.748887 0.44649066,21.839912 0.44649066,17.766102 c 0,-2.825764 0.72998914,-5.627979 2.09577514,-8.1005237 l 5.1334717,2.8728597 c -0.8712773,1.577718 -1.3422379,3.390918 -1.3422379,5.227664 0,2.63738 0.9654693,5.157019 2.708024,7.111507 z M 17.047855,3.2134167 c -4.591866,0 -8.6892245,2.1428712 -11.3737005,5.5102402 L 7.2283248,9.5949342 C 9.5831284,6.7927181 13.091786,4.9795193 17.024307,4.9795193 c 7.040864,0 12.763036,5.7221727 12.763036,12.7865827 0,3.131889 -1.153854,6.146038 -3.226082,8.477293 l 1.318691,1.177401 c 2.354803,-2.660927 3.673494,-6.098941 3.673494,-9.654694 C 31.576993,9.7362225 25.054188,3.2134167 17.047855,3.2134167 Z M 12.338249,19.861877 h 9.419215 v 2.354805 h -9.419215 z"
+     id="path4"
+     style="stroke-width:1" />
+</svg>

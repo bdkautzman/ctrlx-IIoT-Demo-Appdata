@@ -1,0 +1,405 @@
+{
+    "$ref": "#/$def/model",
+    "$def": {
+        "model": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "$ref": "#/$def/modelElementName"
+                },
+                "version": {
+                    "type": "string",
+                    "pattern": "[0-9].[0-9].[0-9]"
+                },
+                "elements": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/modelElement"
+                    },
+                    "propertyNames": {
+                        "$ref": "#/$def/modelElementName"
+                    }
+                },
+                "$schema": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "$def": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/typeSchema"
+                    }
+                }
+            },
+            "required": [
+                "version", "name", "$schema", "elements"
+            ],
+            "additionalProperties": false
+        },
+        "modelElement": {
+            "type": "object",
+            "oneOf": [{
+                    "$ref": "#/$def/variable"
+                },
+                {
+                    "$ref": "#/$def/method"
+                },
+                {
+                    "$ref": "#/$def/program"
+                },
+                {
+                    "$ref": "#/$def/folder"
+                },
+                {
+                    "$ref": "#/$def/collection"
+                }, 
+                {
+                    "$ref": "#/$def/model_reference"
+                }
+            ]
+        },
+        "folder": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "nodeClass": {
+                    "const": "Folder"
+                },
+                "elements": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/modelElement"
+                    }
+                }
+            },
+            "required": [
+                "elements", "nodeClass"
+            ],
+            "additionalProperties": false
+        },
+        "variable": {
+            "type": "object",
+            "required": [
+                "nodeClass",
+                "mode",
+                "typeSchema"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "nodeClass": {
+                    "const": "Variable"
+                },
+                "default": {
+                    "$ref": "#/$def/default"
+                },
+                "value": {
+                    "$ref": "#/$def/value"
+                },
+                "mode": {
+                    "$ref": "#/$def/mode"
+                },
+                "typeSchema": {
+                    "$ref": "#/$def/typeSchema"
+                },
+                "unit": {
+                    "type": "string"
+                },
+                "elements": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/modelElement"
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "method": {
+            "type": "object",
+            "required": [
+                "nodeClass"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "nodeClass": {
+                    "const": "Method"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "inputs": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/typedParameter"
+                    }
+                },
+                "output": {
+                    "$ref": "#/$def/typedParameter"
+                }
+            },
+            "additionalProperties": false
+        },
+        "program": {
+            "type": "object",
+            "required": [
+                "nodeClass"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "nodeClass": {
+                    "const": "Program"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "inputs": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/typedParameter"
+                    }
+                },
+                "output": {
+                    "$ref": "#/$def/typedParameter"
+                }
+            },
+            "additionalProperties": false
+        },
+        "collection": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "nodeClass": {
+                    "const": "Collection"
+                },
+                "itemsModel": {
+                    "oneOf": [
+                        {
+                            "$ref": "#/$def/model_reference"
+                        }
+                    ]
+                },
+                "createParameters": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/typedParameter"
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "itemsModel", "nodeClass"
+            ]
+        },
+        "model_reference": {
+            "type": "object",
+            "properties": {
+                "$ref": {
+                    "type": "string"
+                }, 
+                "description": {
+                    "type": "string"
+                }
+            }, 
+            "required": ["$ref"], 
+            "additionalProperties": true
+        },
+        "mode": {
+            "type": "string",
+            "enum": [
+                "read-only",
+                "read-write"
+            ]
+        },
+        "default": {
+            "type": [
+                "string",
+                "number",
+                "integer",
+                "boolean",
+                "array",
+                "object"
+            ]
+        },
+        "value": {
+            "type": [
+                "string",
+                "number",
+                "integer",
+                "boolean",
+                "array",
+                "object"
+            ]
+        },
+        "primitiveType": {
+            "type": "object",
+            "required": [
+                "type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "string",
+                        "float32",
+                        "float64",
+                        "uint8",
+                        "uint16",
+                        "uint32",
+                        "uint64",
+                        "int8",
+                        "int16",
+                        "int32",
+                        "int64",
+                        "bool8",
+                        "arbool8",
+                        "arfloat32",
+                        "arfloat64",
+                        "arint8",
+                        "arint16",
+                        "arint32",
+                        "arint64",
+                        "aruint8",
+                        "aruint16",
+                        "aruint32",
+                        "aruint64",
+                        "arstring", 
+                        "array-of-bool8",
+                        "array-of-float32",
+                        "array-of-float64",
+                        "array-of-int8",
+                        "array-of-int16",
+                        "array-of-int32",
+                        "array-of-int64",
+                        "array-of-uint8",
+                        "array-of-uint16",
+                        "array-of-uint32",
+                        "array-of-uint64",
+                        "array-of-string"
+                    ]
+                },
+                "description": {
+                    "type": "string"
+                }
+            }
+        },
+        "objectType": {
+            "type": "object",
+            "required": [
+                "type",
+                "properties"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "object"
+                },
+                "properties": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$def/typeSchema"
+                    },
+                    "propertyNames": {
+                        "$ref": "#/$def/modelElementName"
+                    }
+                },
+                "description": {
+                    "type": "string"
+                }
+            }
+        },
+        "arrayType": {
+            "type": "object",
+            "required": [
+                "type", "items"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "const": "array"
+                },
+                "items": {
+                    "$ref": "#/$def/typeSchema"
+                },
+                "minItems": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "exclusiveMinimum": false
+                },
+                "maxItems": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "exclusiveMinimum": false
+                },
+                "description": {
+                    "type": "string"
+                }
+            }
+        },
+        "schemaRef": {
+            "type": "object",
+            "properties": {
+                "$ref": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "$ref"
+            ],
+            "not": {
+                "required": [
+                    "type"
+                ]
+            }
+        },
+        "typeSchema": {
+            "oneOf": [{
+                    "$ref": "#/$def/primitiveType"
+                },
+                {
+                    "$ref": "#/$def/objectType"
+                },
+                {
+                    "$ref": "#/$def/arrayType"
+                },
+                {
+                    "$ref": "#/$def/schemaRef"
+                }
+            ]
+        },
+        "typedParameter": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "typeSchema": {
+                    "$ref": "#/$def/typeSchema"
+                }
+            },
+            "required": [
+                "typeSchema"
+            ],
+            "additionalProperties": false
+        },
+        "modelElementName": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*[a-z0-9]$"
+        }
+    }
+}

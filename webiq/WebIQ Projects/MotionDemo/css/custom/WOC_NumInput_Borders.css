@@ -1,0 +1,23 @@
+/* css/custom/WOC_NumInput_Borders.css */
+
+.iq-input-field.WOC_NumInput_Borders {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    --indicator-height: 0px;
+    --indicator-height-active: 0px;
+}
+
+.iq-input-field.WOC_NumInput_Borders .iqel-input-value {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center!important;
+}
+
+.iq-input-field.WOC_NumInput_Borders .iqel-widget-container {
+    border-radius: 0;
+    --background-color: #FFFFFF;
+    border: 1px rgb(0, 0, 0);
+    border-style: solid;
+}

@@ -1,0 +1,1946 @@
+{
+    "templates": [
+        {
+            "label": "Text Button",
+            "category": "Widget Templates",
+            "icon": null,
+            "data": {
+                "node": {
+                    "attributes": {
+                        "data-ui": "iq-button",
+                        "class": "node-bpiwoi9jc1k",
+                        "data-config-name": "res://node-bpiwoi9jc1k/config"
+                    },
+                    "children": [],
+                    "controlConfig": {
+                        "class-name": "iq-button iq-variant-01 outlined",
+                        "template": "default/iq-button.iq-variant-01",
+                        "action": [
+                            {
+                                "name": "dialog",
+                                "params": [
+                                    "node-handle:node-i801l7wytje",
+                                    "show"
+                                ]
+                            }
+                        ],
+                        "show-text": true,
+                        "disable-item-lock": false,
+                        "monoflop": false,
+                        "monoflop-value": 1,
+                        "monoflop-interval": 100,
+                        "name": "iq-button_3",
+                        "ui": "iq-button",
+                        "label": "View Active Recipe",
+                        "item": null,
+                        "auto-label": true,
+                        "icon-src": null,
+                        "icon-title": null,
+                        "icon-class": null,
+                        "inline-svg-icon": true,
+                        "label-from-item": false,
+                        "write-bool": false,
+                        "action-release": null,
+                        "action-while-pressed": null,
+                        "interval-while-pressed": null,
+                        "action-press": null,
+                        "disable-alarms": false,
+                        "show-icon": true,
+                        "on-value": 1,
+                        "off-value": 0,
+                        "tooltip": null
+                    },
+                    "controlType": 1,
+                    "id": "node-bpiwoi9jc1k",
+                    "parent": "node-ffzsz2hct1e",
+                    "tagName": "DIV",
+                    "template": "node-3t11ch75i9r",
+                    "type": 1,
+                    "ui": "iq-button",
+                    "variant": null,
+                    "groupId": null,
+                    "parentGroupId": null,
+                    "style": {
+                        "ui": "iq-button",
+                        "general": {
+                            "height": {
+                                "value": 75,
+                                "unit": "px"
+                            }
+                        },
+                        "iq": {},
+                        "media": {
+                            "tablet-landscape": {
+                                "general": {
+                                    "position": "fixed",
+                                    "width": {
+                                        "value": 123,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 62,
+                                        "unit": "px"
+                                    },
+                                    "offset-top": {
+                                        "value": 372,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 557,
+                                        "unit": "px"
+                                    }
+                                },
+                                "iq": {
+                                    "--border-width": {
+                                        "value": 2,
+                                        "unit": "px"
+                                    },
+                                    "--border-radius": {
+                                        "value": 5,
+                                        "unit": "px"
+                                    },
+                                    "--bg-color": "#787373",
+                                    "--border-color": "#000000",
+                                    ".iqel-button-label": {
+                                        "isSelector": true,
+                                        "font-weight": "bold"
+                                    },
+                                    "--font-family": {
+                                        "variable": "--webiq-font-body-large-family"
+                                    },
+                                    "--font-style": {
+                                        "variable": "--webiq-font-body-large-style"
+                                    },
+                                    "--font-size": {
+                                        "variable": "--webiq-font-body-large-size"
+                                    },
+                                    "--font-weight": {
+                                        "variable": "--webiq-font-body-large-weight"
+                                    },
+                                    "--line-height": {
+                                        "variable": "--webiq-font-body-large-line-height"
+                                    },
+                                    "--letter-spacing": {
+                                        "variable": "--webiq-font-body-large-letter-spacing"
+                                    },
+                                    "--color-label": "#000000"
+                                }
+                            }
+                        },
+                        "devStyle": {},
+                        "align": "TOP_LEFT"
+                    },
+                    "groupConfig": null
+                },
+                "templates": {},
+                "map": null,
+                "handle": null
+            }
+        },
+        {
+            "label": "User",
+            "category": "Widget Templates",
+            "icon": null,
+            "data": {
+                "node": {
+                    "attributes": {
+                        "data-ui": "container",
+                        "class": "node-2bj77icsser",
+                        "data-config-name": "res://node-2bj77icsser/config"
+                    },
+                    "children": [
+                        {
+                            "attributes": {
+                                "data-ui": "iq-text",
+                                "class": "node-1bad36k7ndi",
+                                "data-config-name": "res://node-1bad36k7ndi/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-text iq-variant-01",
+                                "template": "default/iq-text.iq-variant-01",
+                                "name": "iq-text",
+                                "ui": "iq-text",
+                                "text": "User",
+                                "value-not-available": "${label.no-value}",
+                                "items": []
+                            },
+                            "controlType": 1,
+                            "id": "node-1bad36k7ndi",
+                            "parent": "node-2bj77icsser",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-text",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-text",
+                                "general": {},
+                                "iq": {},
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "position": "fixed",
+                                            "offset-top": {
+                                                "value": 682,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 788,
+                                                "unit": "px"
+                                            },
+                                            "width": {
+                                                "value": 45,
+                                                "unit": "px"
+                                            },
+                                            "height": {
+                                                "value": 32,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            ".iqel-text": {
+                                                "isSelector": true,
+                                                "font-weight": "bold",
+                                                "text-decoration": "underline"
+                                            },
+                                            "--font-family-text": {
+                                                "variable": "--webiq-font-title-medium-family"
+                                            },
+                                            "--font-style-text": {
+                                                "variable": "--webiq-font-title-medium-style"
+                                            },
+                                            "--font-size-text": {
+                                                "variable": "--webiq-font-title-medium-size"
+                                            },
+                                            "--font-weight-text": {
+                                                "variable": "--webiq-font-title-medium-weight"
+                                            },
+                                            "--line-height-text": {
+                                                "variable": "--webiq-font-title-medium-line-height"
+                                            },
+                                            "--letter-spacing-text": {
+                                                "variable": "--webiq-font-title-medium-letter-spacing"
+                                            },
+                                            "--color-text": "#133290"
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-tahxy4c02o",
+                                "data-config-name": "res://node-tahxy4c02o/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-01 outlined",
+                                "template": "default/iq-button.iq-variant-01",
+                                "action": null,
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/key-920.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-tahxy4c02o",
+                            "parent": "node-2bj77icsser",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "position": "fixed",
+                                    "offset-top": {
+                                        "value": 792,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 794,
+                                        "unit": "px"
+                                    },
+                                    "transform": "rotate(-45deg)",
+                                    "width": {
+                                        "value": 67,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 64,
+                                        "unit": "px"
+                                    }
+                                },
+                                "iq": {
+                                    "--bg-color": "#FFFFFF",
+                                    "--border-color": "#000000",
+                                    "--icon-size": {
+                                        "value": 100,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {},
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-xssrgmjzcja",
+                                "data-config-name": "res://node-xssrgmjzcja/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-01 outlined",
+                                "template": "default/iq-button.iq-variant-01",
+                                "action": null,
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_1",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/black-locked-svgrepo-com.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-xssrgmjzcja",
+                            "parent": "node-2bj77icsser",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "position": "fixed",
+                                    "offset-top": {
+                                        "value": 791,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 861,
+                                        "unit": "px"
+                                    },
+                                    "transform": "rotate(0deg)",
+                                    "width": {
+                                        "value": 67,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 64,
+                                        "unit": "px"
+                                    }
+                                },
+                                "iq": {
+                                    "--bg-color": "#FFFFFF",
+                                    "--border-color": "#000000",
+                                    "--icon-size": {
+                                        "value": 100,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {},
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-hsxpcjppoef",
+                                "data-config-name": "res://node-hsxpcjppoef/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-01 outlined",
+                                "template": "default/iq-button.iq-variant-01",
+                                "action": null,
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_2",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/settings-cog-svgrepo-com.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-hsxpcjppoef",
+                            "parent": "node-2bj77icsser",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "position": "fixed",
+                                    "offset-top": {
+                                        "value": 791,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 927,
+                                        "unit": "px"
+                                    },
+                                    "transform": "rotate(-45deg)",
+                                    "width": {
+                                        "value": 67,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 64,
+                                        "unit": "px"
+                                    }
+                                },
+                                "iq": {
+                                    "--bg-color": "#FFFFFF",
+                                    "--border-color": "#000000",
+                                    "--icon-size": {
+                                        "value": 100,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {},
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-text",
+                                "class": "node-92qlrj9hifd",
+                                "data-config-name": "res://node-92qlrj9hifd/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-text iq-variant-01",
+                                "template": "default/iq-text.iq-variant-01",
+                                "name": "iq-text_1",
+                                "ui": "iq-text",
+                                "text": "sssssssss",
+                                "value-not-available": "${label.no-value}",
+                                "items": []
+                            },
+                            "controlType": 1,
+                            "id": "node-92qlrj9hifd",
+                            "parent": "node-2bj77icsser",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-text",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-text",
+                                "general": {
+                                    "position": "fixed",
+                                    "width": {
+                                        "value": 189,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 46,
+                                        "unit": "px"
+                                    },
+                                    "offset-top": {
+                                        "value": 723,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 800,
+                                        "unit": "px"
+                                    }
+                                },
+                                "iq": {
+                                    "border-width": {
+                                        "value": 2,
+                                        "unit": "px"
+                                    },
+                                    "border-style": "solid",
+                                    "background-color": "#ABABAB",
+                                    "border-color": "#737373"
+                                },
+                                "media": {},
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        }
+                    ],
+                    "controlConfig": {
+                        "class-name": "iq-container",
+                        "type": "iqflex",
+                        "flex-orientation": "column",
+                        "flex-none": true,
+                        "flex-wrap": false,
+                        "flex-primary-align": "start",
+                        "flex-secondary-align": "stretch",
+                        "flex-line-align": "start",
+                        "name": "container_5",
+                        "template": null
+                    },
+                    "controlType": 4,
+                    "id": "node-2bj77icsser",
+                    "parent": "node-cgh7qded2bt",
+                    "tagName": "DIV",
+                    "template": "node-3t11ch75i9r",
+                    "type": 1,
+                    "ui": "container",
+                    "variant": "iq-flex-v-layout",
+                    "groupId": null,
+                    "parentGroupId": null,
+                    "style": {
+                        "ui": "container",
+                        "general": {
+                            "position": "fixed",
+                            "width": {
+                                "value": 222,
+                                "unit": "px"
+                            },
+                            "height": {
+                                "value": 142,
+                                "unit": "px"
+                            },
+                            "offset-top": {
+                                "value": 727,
+                                "unit": "px"
+                            },
+                            "offset-left": {
+                                "value": 780,
+                                "unit": "px"
+                            }
+                        },
+                        "iq": {
+                            "--container-background-color": "#C2C2C2"
+                        },
+                        "media": {
+                            "tablet-landscape": {
+                                "general": {
+                                    "offset-top": {
+                                        "value": 682,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 783,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 186,
+                                        "unit": "px"
+                                    }
+                                }
+                            }
+                        },
+                        "devStyle": {},
+                        "align": "TOP_LEFT"
+                    },
+                    "groupConfig": null
+                },
+                "templates": {},
+                "map": null,
+                "handle": null
+            }
+        },
+        {
+            "label": "Navigation Tab",
+            "category": "Widget Templates",
+            "icon": null,
+            "data": {
+                "node": {
+                    "attributes": {
+                        "data-ui": "container",
+                        "class": "node-pwppagky8nr",
+                        "data-config-name": "res://node-pwppagky8nr/config"
+                    },
+                    "children": [
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-wjmiryxgqyc",
+                                "data-config-name": "res://node-wjmiryxgqyc/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-00u3b4pvbbz3o"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/house-34.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-wjmiryxgqyc",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 18,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 10,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 13,
+                                                "unit": "px"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-kxylug6cqwh",
+                                "data-config-name": "res://node-kxylug6cqwh/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-17hs6wi7o09"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_1",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/finger-pointer-10507.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-kxylug6cqwh",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 18,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 125,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 124,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 92,
+                                                "unit": "%"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-28bv47uqp9l",
+                                "data-config-name": "res://node-28bv47uqp9l/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-5lcsypvmycb"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_2",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/clipboard-search-symbol-svgrepo-com.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-28bv47uqp9l",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 19,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 241,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 235,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 95,
+                                                "unit": "%"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-8i4y7xvvs6a",
+                                "data-config-name": "res://node-8i4y7xvvs6a/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-vsxuvk8k0y"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_3",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/chart-line-chart-2.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-8i4y7xvvs6a",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 353,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 347,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 240,
+                                                "unit": "%"
+                                            },
+                                            "--color-icon": "#100F0F"
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-iflfc0s9s9i",
+                                "data-config-name": "res://node-iflfc0s9s9i/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            null
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_4",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/bell-svgrepo-com.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-iflfc0s9s9i",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 463,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 458,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 100,
+                                                "unit": "%"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-3eksvqypwyv",
+                                "data-config-name": "res://node-3eksvqypwyv/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-evkn7hpfybf"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_5",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/exclamation-mark-9765.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-3eksvqypwyv",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 572,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 570,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 95,
+                                                "unit": "%"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-4njz9q8ypv",
+                                "data-config-name": "res://node-4njz9q8ypv/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-w36gmsvrmk7"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_6",
+                                "ui": "iq-button",
+                                "label": "IO",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": null,
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-4njz9q8ypv",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 21,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 681,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 682,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            ".iqel-button-label": {
+                                                "isSelector": true,
+                                                "font-weight": "initial"
+                                            },
+                                            "--font-family": {
+                                                "variable": "--webiq-font-headline-large-family"
+                                            },
+                                            "--font-style": {
+                                                "variable": "--webiq-font-headline-large-style"
+                                            },
+                                            "--font-size": {
+                                                "variable": "--webiq-font-headline-large-size"
+                                            },
+                                            "--font-weight": {
+                                                "variable": "--webiq-font-headline-large-weight"
+                                            },
+                                            "--line-height": {
+                                                "variable": "--webiq-font-headline-large-line-height"
+                                            },
+                                            "--letter-spacing": {
+                                                "variable": "--webiq-font-headline-large-letter-spacing"
+                                            },
+                                            "--color-label": "#000000"
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-u8dxpozotlr",
+                                "data-config-name": "res://node-u8dxpozotlr/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-2z0mcb0ycg7"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_7",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/wrench-tool-10220.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-u8dxpozotlr",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 20,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 790,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "50% 50%"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 795,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 100,
+                                                "unit": "%"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-button",
+                                "class": "node-f267ty4t7s",
+                                "data-config-name": "res://node-f267ty4t7s/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-button iq-variant-03 elevated",
+                                "template": "default/iq-button.iq-variant-03",
+                                "action": [
+                                    {
+                                        "name": "navigate",
+                                        "params": [
+                                            "node-165c1vztr9bi"
+                                        ]
+                                    }
+                                ],
+                                "show-text": true,
+                                "disable-item-lock": false,
+                                "monoflop": false,
+                                "monoflop-value": 1,
+                                "monoflop-interval": 100,
+                                "name": "iq-button_8",
+                                "ui": "iq-button",
+                                "label": "",
+                                "item": null,
+                                "auto-label": true,
+                                "icon-src": "pics/custom/Question-Mark--Streamline-Sharp-Material-Symbols.svg",
+                                "icon-title": null,
+                                "icon-class": null,
+                                "inline-svg-icon": true,
+                                "label-from-item": false,
+                                "write-bool": false,
+                                "action-release": null,
+                                "action-while-pressed": null,
+                                "interval-while-pressed": null,
+                                "action-press": null,
+                                "disable-alarms": false,
+                                "show-icon": true,
+                                "on-value": 1,
+                                "off-value": 0,
+                                "tooltip": null
+                            },
+                            "controlType": 1,
+                            "id": "node-f267ty4t7s",
+                            "parent": "node-pwppagky8nr",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-button",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-button",
+                                "general": {
+                                    "width": {
+                                        "value": 103,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 59,
+                                        "unit": "px"
+                                    },
+                                    "position": "absolute",
+                                    "offset-top": {
+                                        "value": 17,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 909,
+                                        "unit": "px"
+                                    },
+                                    "transform-origin": "bottom"
+                                },
+                                "iq": {
+                                    ".iqel-button-element": {
+                                        "isSelector": true,
+                                        "border-style": "none"
+                                    },
+                                    "--bg-color": "#C2C2C2",
+                                    "--icon-size": {
+                                        "value": 300,
+                                        "unit": "%"
+                                    }
+                                },
+                                "media": {
+                                    "tablet-landscape": {
+                                        "general": {
+                                            "position": "absolute",
+                                            "offset-top": {
+                                                "value": 18,
+                                                "unit": "px"
+                                            },
+                                            "offset-left": {
+                                                "value": 909,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "iq": {
+                                            "--icon-size": {
+                                                "value": 120,
+                                                "unit": "%"
+                                            }
+                                        }
+                                    }
+                                },
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        }
+                    ],
+                    "controlConfig": {
+                        "class-name": "iq-container",
+                        "type": "iqflex",
+                        "flex-orientation": "row",
+                        "flex-none": true,
+                        "flex-wrap": false,
+                        "flex-primary-align": "start",
+                        "flex-secondary-align": "stretch",
+                        "flex-line-align": "start",
+                        "name": "container",
+                        "template": null
+                    },
+                    "controlType": 4,
+                    "id": "node-pwppagky8nr",
+                    "parent": "node-qf04wfxofpa",
+                    "tagName": "DIV",
+                    "template": "node-3t11ch75i9r",
+                    "type": 1,
+                    "ui": "container",
+                    "variant": "iq-flex-h-layout",
+                    "groupId": null,
+                    "parentGroupId": null,
+                    "style": {
+                        "ui": "container",
+                        "general": {
+                            "height": {
+                                "value": 92,
+                                "unit": "px"
+                            },
+                            "width": {
+                                "value": 1023,
+                                "unit": "px"
+                            }
+                        },
+                        "iq": {},
+                        "media": {},
+                        "devStyle": {},
+                        "align": "TOP_LEFT"
+                    },
+                    "groupConfig": null
+                },
+                "templates": {},
+                "map": null,
+                "handle": null
+            }
+        },
+        {
+            "label": "Time and Alarm status Top",
+            "category": "Widget Templates",
+            "icon": null,
+            "data": {
+                "node": {
+                    "attributes": {
+                        "data-ui": "container",
+                        "class": "node-skexuvks2f",
+                        "data-config-name": "res://node-skexuvks2f/config"
+                    },
+                    "children": [
+                        {
+                            "attributes": {
+                                "data-ui": "iq-date-time",
+                                "class": "node-dqrelfzui5j",
+                                "data-config-name": "res://node-dqrelfzui5j/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-date-time iq-variant-01",
+                                "template": "default/iq-date-time.iq-variant-01",
+                                "name": "iq-date-time",
+                                "ui": "iq-date-time",
+                                "item": "Systemzeit",
+                                "display-utc": false,
+                                "display-format": "$YYYY-$MM-$DD $HH:$mm:$ss",
+                                "input-format": "$X",
+                                "invalid-text": "${date-time.invalid-time}",
+                                "tooltip": null,
+                                "value-as-tooltip": false
+                            },
+                            "controlType": 1,
+                            "id": "node-dqrelfzui5j",
+                            "parent": "node-skexuvks2f",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-date-time",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-date-time",
+                                "general": {
+                                    "position": "absolute",
+                                    "width": {
+                                        "value": 243,
+                                        "unit": "px"
+                                    },
+                                    "offset-top": {
+                                        "value": 4,
+                                        "unit": "px"
+                                    },
+                                    "offset-left": {
+                                        "value": 772,
+                                        "unit": "px"
+                                    }
+                                },
+                                "iq": {
+                                    ".iqel-date-time": {
+                                        "isSelector": true,
+                                        "font-weight": "bold"
+                                    },
+                                    "--font-family": {
+                                        "variable": "--webiq-font-headline-small-family"
+                                    },
+                                    "--font-style": {
+                                        "variable": "--webiq-font-headline-small-style"
+                                    },
+                                    "--font-size": {
+                                        "variable": "--webiq-font-headline-small-size"
+                                    },
+                                    "--font-weight": {
+                                        "variable": "--webiq-font-headline-small-weight"
+                                    },
+                                    "--line-height": {
+                                        "variable": "--webiq-font-headline-small-line-height"
+                                    },
+                                    "--letter-spacing": {
+                                        "variable": "--webiq-font-headline-small-letter-spacing"
+                                    },
+                                    "--color-label": "#000000"
+                                },
+                                "media": {},
+                                "devStyle": {},
+                                "align": "TOP_LEFT"
+                            },
+                            "groupConfig": null
+                        },
+                        {
+                            "attributes": {
+                                "data-ui": "iq-alarm-info",
+                                "class": "node-duwnfdtp7dp",
+                                "data-config-name": "res://node-duwnfdtp7dp/config"
+                            },
+                            "children": [],
+                            "controlConfig": {
+                                "class-name": "iq-alarm-info complete standard",
+                                "name": "iq-alarm-info",
+                                "template": "default/iq-alarm-info",
+                                "noAlarm": null,
+                                "action": null,
+                                "userGroups": null,
+                                "enableCycle": true,
+                                "cycleInterval": 1000,
+                                "showAlarm": true,
+                                "showWarn": true,
+                                "showInfo": true,
+                                "groupFilter": null,
+                                "icon-info": "pics/system/controls/iq-alarm-info/icon-info.svg",
+                                "icon-warning": "pics/system/controls/iq-alarm-info/icon-warning.svg",
+                                "icon-alarm": "pics/system/controls/iq-alarm-info/icon-alarm.svg",
+                                "icon-idle": null
+                            },
+                            "controlType": 1,
+                            "id": "node-duwnfdtp7dp",
+                            "parent": "node-skexuvks2f",
+                            "tagName": "DIV",
+                            "template": "node-3t11ch75i9r",
+                            "type": 1,
+                            "ui": "iq-alarm-info",
+                            "variant": null,
+                            "groupId": null,
+                            "parentGroupId": null,
+                            "style": {
+                                "ui": "iq-alarm-info",
+                                "general": {
+                                    "position": "fixed",
+                                    "z-index": null,
+                                    "transform": null,
+                                    "transform-origin": null,
+                                    "visibility": null,
+                                    "opacity": null,
+                                    "width": {
+                                        "value": 298,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 31,
+                                        "unit": "px"
+                                    },
+                                    "flex": null,
+                                    "overflow-x": null,
+                                    "overflow-y": null,
+                                    "min-width": null,
+                                    "max-width": null,
+                                    "min-height": null,
+                                    "max-height": null,
+                                    "offset-top": {
+                                        "value": 99,
+                                        "unit": "px"
+                                    },
+                                    "offset-right": null,
+                                    "offset-bottom": null,
+                                    "offset-left": {
+                                        "value": 0,
+                                        "unit": "px"
+                                    },
+                                    "margin-top": null,
+                                    "margin-right": null,
+                                    "margin-bottom": null,
+                                    "margin-left": null,
+                                    "padding-top": null,
+                                    "padding-right": null,
+                                    "padding-bottom": null,
+                                    "padding-left": null
+                                },
+                                "iq": {
+                                    "--icon-size": null,
+                                    ".iqel-state-icon": {
+                                        "isSelector": true,
+                                        "border-width": null,
+                                        "border-radius": null,
+                                        "border-style": null,
+                                        "border-top-style": null,
+                                        "border-right-style": null,
+                                        "border-bottom-style": null,
+                                        "border-left-style": null,
+                                        "box-shadow": null,
+                                        "background-color": null,
+                                        "border-color": null
+                                    },
+                                    "--color-icon": null
+                                },
+                                "media": {},
+                                "devStyle": {},
+                                "align": "TOP_LEFT",
+                                "id": "node-jqjr2yf67xg"
+                            },
+                            "groupConfig": null
+                        }
+                    ],
+                    "controlConfig": {
+                        "class-name": "iq-container",
+                        "type": "iqflex",
+                        "flex-orientation": "row",
+                        "flex-none": true,
+                        "flex-wrap": false,
+                        "flex-primary-align": "start",
+                        "flex-secondary-align": "stretch",
+                        "flex-line-align": "start",
+                        "name": "container",
+                        "template": null
+                    },
+                    "controlType": 4,
+                    "id": "node-skexuvks2f",
+                    "parent": "node-cgh7qded2bt",
+                    "tagName": "DIV",
+                    "template": "node-3t11ch75i9r",
+                    "type": 1,
+                    "ui": "container",
+                    "variant": "iq-flex-h-layout",
+                    "groupId": null,
+                    "parentGroupId": null,
+                    "style": {
+                        "ui": "container",
+                        "general": {
+                            "width": {
+                                "value": 1022,
+                                "unit": "px"
+                            },
+                            "height": {
+                                "value": 45,
+                                "unit": "px"
+                            }
+                        },
+                        "iq": {
+                            "--container-background-color": "#C2C2C2"
+                        },
+                        "media": {},
+                        "devStyle": {},
+                        "align": "TOP_LEFT"
+                    },
+                    "groupConfig": null
+                },
+                "templates": {},
+                "map": null,
+                "handle": null
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "core metrics",
+    "state": "running"
+  },
+  {
+    "name": "weather",
+    "state": "running"
+  }
+]

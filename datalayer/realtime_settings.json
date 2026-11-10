@@ -1,0 +1,8 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/types/datalayer/realtime-config.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/types/datalayer/realtime-config_schema.json",
+    "defaultInputAcessType": "NTelBuf"
+}

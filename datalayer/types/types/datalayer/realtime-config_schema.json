@@ -1,0 +1,71 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"comm_datalayer_AccessType" : {
+"type" : "string",
+"enum": ["Unknown", "Raw", "TripleBuffer", "NTelBuf"]
+},
+"comm_datalayer_MemoryType" : {
+"type" : "string",
+"enum": ["Unknown", "Input", "Output", "SharedRetain", "Shared", "TriggerInput", "TriggerOutput", "SharedLock", "RPC"]
+},
+"comm_datalayer_Memory" : {
+"type" : "object",
+"properties" : {
+"type" : {
+"$ref" : "#/definitions/comm_datalayer_MemoryType",
+"description" : "memory type",
+"default" : "Unknown"
+},
+"id" : {
+"type" : "string",
+"description" : "identification of the memory - contains how to access memory"
+},
+"sizeBytes" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "size of usable bytes of memory",
+"default" : 0
+},
+"accessType" : {
+"$ref" : "#/definitions/comm_datalayer_AccessType",
+"description" : "how to access memory",
+"default" : "Unknown"
+},
+"version" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "version of the memory structure, used for compatibility checks",
+"default" : 1
+}
+},
+"additionalProperties" : false
+},
+"comm_datalayer_NTelBufferConfig" : {
+"type" : "object",
+"properties" : {
+"defaultN" : {
+"type" : "integer", "minimum" : 0, "maximum" : 65535,
+"description" : "number of buffer used if ntel buffer is used",
+"default" : 6
+}
+},
+"additionalProperties" : false
+},
+"comm_datalayer_RealtimeConfig" : {
+"type" : "object",
+"description" : "configuration of realtime input buffer system",
+"properties" : {
+"defaultInputAcessType" : {
+"$ref" : "#/definitions/comm_datalayer_AccessType",
+"description" : "default buffer type used for Data Layer RT input",
+"default" : "NTelBuf"
+},
+"nTelBufConfig" : {
+"$ref" : "#/definitions/comm_datalayer_NTelBufferConfig",
+"description" : "Configuration if NTelBuf is configured in defaultInputAcessType"
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/comm_datalayer_RealtimeConfig"
+}

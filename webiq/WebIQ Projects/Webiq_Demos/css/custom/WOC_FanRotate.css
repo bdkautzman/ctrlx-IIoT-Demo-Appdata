@@ -1,0 +1,16 @@
+/* css/custom/WOC_FanRotate.css */
+
+.WOC_FanRotate {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: spin 2s linear infinite
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Starting rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Ending rotation (one full turn) */
+  }
+}

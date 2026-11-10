@@ -1,0 +1,26 @@
+<div class="alarm-detail-win <%= ALARM_SEVERITY_SELECTOR %>">
+    <div class="iqel-detail-header">
+        <div class="iqel-detail-icon">
+            <%= ALARM_SEVERITY_ICON %>
+        </div>
+        <div class="iqel-detail-properties">
+            <div class="iqel-headline">${alarmlist_detail_alarm} <%= ALARM_INDEX %>: <%= ALARM_TITLE %></div>
+            <div class="iqel-info">
+                <div class="iqel-come"><div class="label">${alarmlist_detail_come}</div><div><%= ALARM_COME %></div></div>
+                <div class="iqel-gone"><div class="label">${alarmlist_detail_gone}</div><div><%= ALARM_GONE %></div></div>
+                <div class="iqel-ack"><div class="label">${alarmlist_detail_ack}</div><div><%= ALARM_ACK %></div></div>
+                <div class="iqel-ackBy"><div class="label">${alarmlist_detail_ackby}</div><div><%= ALARM_ACKBY %></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="iqel-bottom-container">
+        <div class="iqel-link-container">
+            <div class="iqel-links"><%= ALARM_URLS %></div>
+        <hr>
+        </div>
+        <div class="iqel-text"><%= ALARM_TEXT %></div>
+        <div class="iqel-comments-container" data-ui="comments">
+            <div class="iqel-headline">${alarmlist_detail_comments}</div>
+        </div>
+    </div>
+</div>

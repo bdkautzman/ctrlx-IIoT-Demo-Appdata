@@ -1,0 +1,1492 @@
+{
+    "items": [
+        {
+            "accessGroup": null,
+            "alias": "DSaw",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 150
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSaw"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DSin",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": -100,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSin"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DRandBool",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandBool"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DRandInt",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandInt"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DRandFloat",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandFloat"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Systemzeit",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 250,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "Systemzeit"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SBool",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 1
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SBool"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SInt",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SInt"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SFloat",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SFloat"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SString",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SString"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.Error",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/Error"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.Position",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/Position"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "Degree",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.Torque",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/Torque"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.Velocity",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/Velocity"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "rpm",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Par.Acceleration",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Par/Acceleration"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Par.Position",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Par/Position"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Par.Velocity",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Par/Velocity"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.Error",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/Error"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.Position",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/Position"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "degree",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.Torque",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/Torque"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.Velocity",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/Velocity"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "rpm",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Par.Acceleration",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Par/Acceleration"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Par.GearRatio",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Par/GearRatio"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Par.Position",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Par/Position"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Par.Velocity",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Par/Velocity"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Cmd.Mode",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Cmd/Mode"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Cmd.Mode",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Cmd/Mode"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.PowerOn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/PowerOn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.Standstill",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/Standstill"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.PowerOn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/PowerOn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.Standstill",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/Standstill"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/InSynch"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/InSynch"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.InSynch",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/InSynch"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.InSynch",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": 2,
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/InSynch"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.InMotion",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/InMotion"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.InMotion",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/InMotion"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Cmd.Reset",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Cmd/Reset"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Cmd.Reset",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Cmd/Reset"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.ErrorMsg",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/ErrorMsg"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Master.Diag.ErrorNum",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Master/Diag/ErrorNum"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.ErrorMsg",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/ErrorMsg"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Slave.Diag.ErrorNum",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "plc/app/Application/sym/PLC_PRG/Slave/Diag/ErrorNum"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "iTest",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "iTest"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "RecordingOn",
+            "attributes": {},
+            "description": "",
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "RecordingOn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        }
+    ],
+    "methods": [],
+    "simulationVariables": [
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "triangle",
+            "initialValue": 1,
+            "interval": 100,
+            "limits": {
+                "lower": 0,
+                "upper": 150
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSaw"
+            }
+        },
+        {
+            "dataType": "float",
+            "description": null,
+            "function": "sine",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": -100.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                1
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSin"
+            }
+        },
+        {
+            "dataType": "boolean",
+            "description": null,
+            "function": "random",
+            "initialValue": false,
+            "interval": 100,
+            "limits": {
+                "lower": false,
+                "upper": true
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandBool"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "random",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandInt"
+            }
+        },
+        {
+            "dataType": "float",
+            "description": null,
+            "function": "random",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandFloat"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "time",
+            "initialValue": "",
+            "interval": 250,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "Systemzeit"
+            }
+        },
+        {
+            "dataType": "boolean",
+            "description": null,
+            "function": "storage",
+            "initialValue": false,
+            "interval": 100,
+            "limits": {
+                "lower": false,
+                "upper": true
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SBool"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SInt"
+            }
+        },
+        {
+            "dataType": "float",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SFloat"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SString"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "iTest"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "RecordingOn"
+            }
+        }
+    ],
+    "version": 0
+}

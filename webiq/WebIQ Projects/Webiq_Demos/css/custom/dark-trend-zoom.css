@@ -1,0 +1,19 @@
+/* css/custom/dark-trend-zoom.css */
+
+/* control base element */
+.iq-trend-zoom.dark-trend-zoom {
+    /* TODO: Change colors as desired */
+    --button-background-color: #1f1f1f;
+    --button-border-color: rgba(255, 255, 255, 0.7);
+    --button-border-width: 1px;
+    --button-border-radius: 4px;
+    --button-shadow-color: rgba(60, 60, 60, 0.2);
+    --button-icon-color: #f8f8f8;
+    --button-hover-background-color: #00ABF0;
+    --button-hover-icon-color: #ffffff;
+    --button-hover-border-color: #00ABF0;
+    --button-margin: 8px;
+    --button-initial-size: 40px;
+    --icon-size: 30px;
+    --locked-opacity: var(--iq-locked-opacity);
+}

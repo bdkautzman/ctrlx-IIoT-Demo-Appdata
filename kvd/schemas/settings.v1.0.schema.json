@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "https://boschrexroth/kvd/schema/settings.v1.0.schema.json",
+    "type": "object",
+    "properties": {
+        "db": {
+            "type": "string"
+        },
+        "readOnly": {
+            "type": "boolean"
+        },
+        "verbose": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "db",
+        "readOnly",
+        "verbose"
+    ]
+}

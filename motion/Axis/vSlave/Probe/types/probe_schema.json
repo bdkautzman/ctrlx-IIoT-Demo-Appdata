@@ -1,0 +1,182 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"motion_drivecmd_fbtypes_DiffType" : {
+"type" : "string",
+"enum": ["UNDEFINE", "DIFF_DISABLED", "DIFF_STANDARD_MODE", "DIFF_NEG_TO_NEG_EDGE", "DIFF_POS_TO_NEG_EDGE", "DIFF_NEG_TO_POS_EDGE", "DIFF_POS_TO_POS_EDGE"]
+},
+"motion_drivecmd_fbtypes_InterpType" : {
+"type" : "string",
+"enum": ["UNDEFINE", "LINEAR"]
+},
+"motion_drivecmd_fbtypes_ShotType" : {
+"type" : "string",
+"enum": ["UNDEFINE", "CONTINUOUS", "SINGLE_SHOT"]
+},
+"motion_drivecmd_fbtypes_SignalSelect" : {
+"type" : "string",
+"enum": ["UNDEFINE", "ENCODER_1", "ENCODER_2", "FINE_TIME", "IPO_POS", "ACT_POS", "MOTION_INTERNAL_DATA"]
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeData" : {
+"type" : "object",
+"description" : "parameters of single probe data",
+"properties" : {
+"signal" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeSignalData",
+"description" : "probe signal config"
+},
+"edge" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeEdgeData",
+"description" : "edge config"
+},
+"mkrFail" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeMarkerFailureData",
+"description" : "marker failure config"
+},
+"expWin" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeExpectWindowData",
+"description" : "expect window data"
+},
+"deadTime" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeDeadTimeData",
+"description" : "dead time compensation data to drive"
+},
+"interpType" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_InterpType",
+"description" : "interpolation type, linear, polynomial",
+"default" : "LINEAR"
+},
+"deadTimeEx" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeDeadTimeExData",
+"description" : "dead time compensation data extend to control"
+}
+},
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeDeadTimeData" : {
+"type" : "object",
+"description" : "parameters of dead time compensation (drive)",
+"properties" : {
+"posEdgeNS" : {
+"type" : "number",
+"description" : "positive edge dead time compensation to drive in Nano seconds",
+"default" : 0.0
+},
+"negEdgeNS" : {
+"type" : "number",
+"description" : "negative edge dead time compensation to drive in Nano seconds",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeDeadTimeExData" : {
+"type" : "object",
+"description" : "parameters of extended (control) dead time compensation",
+"properties" : {
+"posEdgeNS" : {
+"type" : "number",
+"description" : "positive edge dead time compensation to control in Nano seconds",
+"default" : 0.0
+},
+"negEdgeNS" : {
+"type" : "number",
+"description" : "negative edge dead time compensation to control in Nano seconds",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeEdgeData" : {
+"type" : "object",
+"description" : "parameters of single probe data",
+"properties" : {
+"posEdge" : {
+"type" : "boolean",
+"description" : "enable positive edge evaluate if TRUE",
+"default" : false
+},
+"negEdge" : {
+"type" : "boolean",
+"description" : "enable negative edge evaluate if TRUE",
+"default" : false
+},
+"diffType" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_DiffType",
+"description" : "differential type of edge, disable, standard, neg-to-neg, pos-to-neg, neg-to-pos, pos-to-pos",
+"default" : "DIFF_DISABLED"
+}
+},
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeExpectWindowData" : {
+"type" : "object",
+"description" : "parameters of single probe data",
+"properties" : {
+"enable" : {
+"type" : "boolean",
+"description" : "enable expect window if TRUE",
+"default" : false
+},
+"start" : {
+"type" : "number",
+"description" : "expect window start position",
+"default" : 0.0
+},
+"end" : {
+"type" : "number",
+"description" : "expect window end position",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeMarkerFailureData" : {
+"type" : "object",
+"description" : "parameters of single probe data",
+"properties" : {
+"enable" : {
+"type" : "boolean",
+"description" : "enable marker failure check",
+"default" : false
+},
+"maxNum" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "max marker failure number",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgProbeSignalData" : {
+"type" : "object",
+"description" : "parameters of single probe data",
+"properties" : {
+"select" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_SignalSelect",
+"description" : "encoder1, encoder2, fine time, ipo-pos, act-pos, motion-internal-data",
+"default" : "ENCODER_1"
+},
+"shotType" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_ShotType",
+"description" : "single shot or continuous running",
+"default" : "SINGLE_SHOT"
+},
+"source" : {
+"type" : "string",
+"description" : "null, axis_name, IO"
+},
+"sourceInfo" : {
+"type" : "string",
+"description" : "source probe index or url of IO"
+},
+"selectInfo" : {
+"type" : "string",
+"description" : "information for motion-internal-data signal, eg: url"
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgProbeData"
+}

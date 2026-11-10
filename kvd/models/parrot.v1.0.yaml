@@ -1,0 +1,18 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: parrot
+version: 0.0.1
+elements:
+    size:
+        description: The size of the parrot.
+        nodeClass: Variable
+        mode: read-write
+        value: 65
+        typeSchema:
+            type: int32
+    speaks:
+        description: The parrot speaks.
+        nodeClass: Variable
+        mode: read-write
+        value: true
+        typeSchema:
+            type: bool8

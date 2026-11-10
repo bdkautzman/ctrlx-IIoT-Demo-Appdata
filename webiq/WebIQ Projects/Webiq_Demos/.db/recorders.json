@@ -1,0 +1,301 @@
+{
+    "recorders": [
+        {
+            "commitInterval": 1000,
+            "databasePath": "Internal",
+            "description": null,
+            "hidden": false,
+            "integrityCheckBehavior": "quickChecks",
+            "items": [
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "DRandBool"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "DRandFloat"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "DRandInt"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "SFloat"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "SInt"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "DSaw"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "DSin"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "SBool"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "SString"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "feed-rate"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "lower-multiplicator-pressure-2"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "lower-temperature-offset"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "lower-tolerance-pressure-1"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "pressure-1"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "pressure-2"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "quality-index"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "reference-pressure-2"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "temperature-1"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "temperature-2"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "temperature-3"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "temperature-3-set"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "ultra-fast"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "upper-multiplicator-pressure-2"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "upper-temperature-offset"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "upper-tolerance-pressure-1"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "valve-1"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "valve-2"
+                }
+            ],
+            "manualMode": false,
+            "maxAge": 300000,
+            "optional": false,
+            "recorderName": "Trend Demo Recorder",
+            "recordingInterval": 100,
+            "startPaused": true,
+            "toggleCondition": {
+                "condition": [
+                    1,
+                    "="
+                ],
+                "item": "RecordingOn",
+                "numericType": "dec"
+            },
+            "triggerCondition": null
+        },
+        {
+            "commitInterval": 1000,
+            "databasePath": "internal",
+            "description": null,
+            "hidden": false,
+            "integrityCheckBehavior": "quickChecks",
+            "items": [
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "quality-index"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "production.efficiency"
+                }
+            ],
+            "manualMode": false,
+            "maxAge": 300000,
+            "optional": false,
+            "recorderName": "trend-demo",
+            "recordingInterval": 100,
+            "startPaused": true,
+            "toggleCondition": {
+                "condition": [
+                    1,
+                    "="
+                ],
+                "item": "RecordingOn",
+                "numericType": "dec"
+            },
+            "triggerCondition": null
+        }
+    ],
+    "trends": [
+        {
+            "description": null,
+            "items": [
+                {
+                    "itemAlias": "DRandBool",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "SFloat",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "DSin",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "DRandInt",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "DSaw",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "DRandFloat",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "SInt",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "lower-temperature-offset",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "lower-tolerance-pressure-1",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "reference-pressure-2",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "temperature-1",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "quality-index",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "pressure-1",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "pressure-2",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "SString",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "feed-rate",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "lower-multiplicator-pressure-2",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "SBool",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "valve-1",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "ultra-fast",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "temperature-3-set",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "upper-tolerance-pressure-1",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "temperature-2",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "upper-multiplicator-pressure-2",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "temperature-3",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "valve-2",
+                    "recorderName": "Trend Demo Recorder"
+                },
+                {
+                    "itemAlias": "upper-temperature-offset",
+                    "recorderName": "Trend Demo Recorder"
+                }
+            ],
+            "objectReferenceId": 3,
+            "trendName": "Demo-Trend"
+        },
+        {
+            "description": null,
+            "items": [
+                {
+                    "itemAlias": "quality-index",
+                    "recorderName": "trend-demo"
+                },
+                {
+                    "itemAlias": "production.efficiency",
+                    "recorderName": "trend-demo"
+                }
+            ],
+            "objectReferenceId": 4,
+            "trendName": "Trend"
+        }
+    ],
+    "version": 0
+}

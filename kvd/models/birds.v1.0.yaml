@@ -1,0 +1,10 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: birds
+version: 0.0.1
+elements:
+    parrot:
+        description: The parrot.
+        $ref: parrot.v1.0.yaml
+    penguin:
+        description: The penguin.
+        $ref: penguin.v1.0.yaml

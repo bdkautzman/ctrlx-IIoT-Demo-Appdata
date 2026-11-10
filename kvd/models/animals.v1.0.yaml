@@ -1,0 +1,20 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: animals
+version: 0.0.1
+elements:
+    count:
+        description: The number of animals.
+        nodeClass: Variable
+        mode: read-only
+        value: 6
+        typeSchema:
+            type: int32
+    reptiles:
+        description: The reptiles.
+        $ref: reptiles.v1.0.yaml
+    birds:
+        description: The birds.
+        $ref: birds.v1.0.yaml
+    mammals:
+        description: The mammals.
+        $ref: mammals.v1.0.yaml

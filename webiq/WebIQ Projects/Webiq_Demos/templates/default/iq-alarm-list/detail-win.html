@@ -1,0 +1,24 @@
+<div class="alarm-detail-win">
+    <div class="headline">${alarmlist_detail_alarm} <%= ALARM_INDEX %>: <%= ALARM_TITLE %></div>
+    <div class="info">
+    	<div class="line">
+	    	<div class="come"><div class="label">${alarmlist_detail_come}</div><div><%= ALARM_COME %></div></div>
+	    	<div class="gone"><div class="label">${alarmlist_detail_gone}</div><div><%= ALARM_GONE %></div></div>
+    	</div>
+    	<div class="line">
+	    	<div class="ack"><div class="label">${alarmlist_detail_ack}</div><div><%= ALARM_ACK %></div></div>
+	    	<div class="ackBy"><div class="label">${alarmlist_detail_ackby}</div><div><%= ALARM_ACKBY %></div></div>
+    	</div>
+    </div>
+    <hr>
+    <div class="bottom-container">
+        <div class="link-container">
+            <div class="links"><%= ALARM_URLS %></div>
+        <hr>
+        </div>
+        <div class="text"><%= ALARM_TEXT %></div>
+        <div class="comments-container" data-ui="comments">
+            <div class="headline">${alarmlist_detail_comments}</div>
+        </div>
+    </div>
+</div>

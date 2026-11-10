@@ -1,0 +1,23 @@
+
+# Customize your InfluxDB configuration by defining configuration options in a configuration file.
+# see https://docs.influxdata.com/influxdb/v2.7/reference/config-options/
+# Note: 
+# Changes in the configuration will only take effect after restarting the app in Settings | App.
+
+# Path to the BoltDB database. BoltDB is a key value store written in Go. 
+# InfluxDB uses BoltDB to store data including organization and user information,
+# UI data, REST resources, and other key value data.
+# Notes: 
+# - If using a removable media change the path to the corresponding mount point: 
+#   e.g. /media/sda1/influxdb/bolt-path
+# - If using a storage extension change the path to: 
+#   /var/snap/ctrlx-influxdb/common/storage-extension/ctrlx-influxdb/bolt-path
+bolt-path: /media/mmcblk1p1/influxdb/bolt-path
+
+# Path to persistent storage engine files where InfluxDB stores all Time-Structure Merge Tree (TSM) data on disk.
+# Notes: 
+# - If using a removable media change the path to the corresponding mount point: 
+#   e.g. /media/sda1/influxdb/engine
+# - If using a storage extension change the path to: 
+#   /var/snap/ctrlx-influxdb/common/storage-extension/ctrlx-influxdb/engine
+engine-path: /media/mmcblk1p1/influxdb/engine

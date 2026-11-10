@@ -1,0 +1,284 @@
+{
+  "Name": "ctrlX_CORE_IIoT_Demo",
+  "IconName": null,
+  "EcadId": "",
+  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+  "Type": 4096,
+  "Id": "1001 0090",
+  "ModuleId": null,
+  "Version": "3.6.0.0",
+  "ObjectGuid": "24263c69-200f-4ec6-9065-802682c76a38",
+  "SlotIndex": 0,
+  "Inputs": null,
+  "Outputs": null,
+  "StructuralItems": [
+    {
+      "Name": "ethercatmaster",
+      "IconName": null,
+      "EcadId": null,
+      "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+      "Type": 64,
+      "Id": "1001 0101",
+      "ModuleId": null,
+      "Version": "3.6.0.0",
+      "ObjectGuid": "61c6a1d1-f1b5-47e4-ab85-253c83926ab5",
+      "SlotIndex": 0,
+      "Inputs": null,
+      "Outputs": null,
+      "StructuralItems": [
+        {
+          "Name": "XB_EC_12",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_00242A0F00010100",
+          "ModuleId": null,
+          "Version": "Revision=16#00010100",
+          "ObjectGuid": "d0f66704-c71a-4cb1-b761-f054a19d5589",
+          "SlotIndex": 0,
+          "Inputs": [
+            {
+              "Id": 33554434,
+              "Name": "",
+              "IecAddress": "%IW0",
+              "Description": "UP Voltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554435,
+              "Name": "",
+              "IecAddress": "%IW2",
+              "Description": "UP Current",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554436,
+              "Name": "",
+              "IecAddress": "%IW4",
+              "Description": "UL Voltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554437,
+              "Name": "",
+              "IecAddress": "%IW6",
+              "Description": "UL Current",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554438,
+              "Name": "",
+              "IecAddress": "%IX8.0",
+              "Description": "UP Undervoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554439,
+              "Name": "",
+              "IecAddress": "%IX8.1",
+              "Description": "UP Overvoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554440,
+              "Name": "",
+              "IecAddress": "%IX8.2",
+              "Description": "UP Overcurrent",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554441,
+              "Name": "",
+              "IecAddress": "%IX8.3",
+              "Description": "UL Undervoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554442,
+              "Name": "",
+              "IecAddress": "%IX8.4",
+              "Description": "UL Overvoltage",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554443,
+              "Name": "",
+              "IecAddress": "%IX8.5",
+              "Description": "UL Overcurrent",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554444,
+              "Name": "",
+              "IecAddress": "%IX8.6",
+              "Description": "Periphery voltage ok",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554445,
+              "Name": "",
+              "IecAddress": "%IX8.7",
+              "Description": "Error",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554446,
+              "Name": "",
+              "IecAddress": "%IB9",
+              "Description": "---",
+              "Descriptions": []
+            }
+          ],
+          "Outputs": null,
+          "StructuralItems": [
+            {
+              "Name": "XF71",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.ExplicitConnector",
+              "Type": 0,
+              "Id": null,
+              "ModuleId": null,
+              "Version": null,
+              "ObjectGuid": "cbb249d2-97c7-46ad-afa4-593074c3c92f",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": [
+                {
+                  "Name": "XI211116",
+                  "IconName": null,
+                  "EcadId": null,
+                  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+                  "Type": 65,
+                  "Id": "24_00242A0200000100",
+                  "ModuleId": null,
+                  "Version": "Revision=16#00000100",
+                  "ObjectGuid": "902405d6-3b75-44d2-b3d2-9e219c596688",
+                  "SlotIndex": 0,
+                  "Inputs": null,
+                  "Outputs": [
+                    {
+                      "Id": 16777218,
+                      "Name": "",
+                      "IecAddress": "%QX0.0",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777219,
+                      "Name": "",
+                      "IecAddress": "%QX0.1",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777220,
+                      "Name": "",
+                      "IecAddress": "%QX0.2",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777221,
+                      "Name": "",
+                      "IecAddress": "%QX0.3",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777222,
+                      "Name": "",
+                      "IecAddress": "%QX0.4",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777223,
+                      "Name": "",
+                      "IecAddress": "%QX0.5",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777224,
+                      "Name": "",
+                      "IecAddress": "%QX0.6",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777225,
+                      "Name": "",
+                      "IecAddress": "%QX0.7",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777226,
+                      "Name": "",
+                      "IecAddress": "%QX1.0",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777227,
+                      "Name": "",
+                      "IecAddress": "%QX1.1",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777228,
+                      "Name": "",
+                      "IecAddress": "%QX1.2",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777229,
+                      "Name": "",
+                      "IecAddress": "%QX1.3",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777230,
+                      "Name": "",
+                      "IecAddress": "%QX1.4",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777231,
+                      "Name": "",
+                      "IecAddress": "%QX1.5",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777232,
+                      "Name": "",
+                      "IecAddress": "%QX1.6",
+                      "Description": "Value",
+                      "Descriptions": null
+                    },
+                    {
+                      "Id": 16777233,
+                      "Name": "",
+                      "IecAddress": "%QX1.7",
+                      "Description": "Value",
+                      "Descriptions": null
+                    }
+                  ],
+                  "StructuralItems": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

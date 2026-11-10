@@ -1,0 +1,166 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/enablingstates.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/enablingstates_schema.json",
+    "enablingStates": [
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "common.log.diagnosis",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.opcua.genericfb",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.opcua.certificate",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.opcua.licensing",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.opcua.sdk",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.opcua.server",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.rt-copy",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.client-request",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.remote.subscription",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.retain",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.core",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.datalayer.util.flatbuffers",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.security",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.sm",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.scope",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.user",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "common.log.trace",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.broker",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.provider",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.provider-holder",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.bootup",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.owner",
+            "warnings": false
+        },
+        {
+            "errors": false,
+            "messages": false,
+            "unitName": "comm.opcua.hpcsdk",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.client",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.serverdir",
+            "warnings": false
+        },
+        {
+            "errors": true,
+            "messages": false,
+            "unitName": "comm.datalayer.persistence",
+            "warnings": false
+        }
+    ],
+    "machineIdentification": "7260431689986"
+}

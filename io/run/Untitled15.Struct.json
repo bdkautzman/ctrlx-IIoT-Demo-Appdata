@@ -1,0 +1,1144 @@
+{
+  "Name": "Device",
+  "IconName": null,
+  "EcadId": "",
+  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+  "Type": 4096,
+  "Id": "1001 0090",
+  "ModuleId": null,
+  "Version": "2.6.0.0",
+  "ObjectGuid": "f101e95d-5b3a-4e7c-83a5-e9ab38f527f6",
+  "SlotIndex": 0,
+  "Inputs": null,
+  "Outputs": null,
+  "StructuralItems": [
+    {
+      "Name": "ethercatmaster",
+      "IconName": null,
+      "EcadId": null,
+      "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+      "Type": 64,
+      "Id": "1001 0101",
+      "ModuleId": null,
+      "Version": "2.6.0.0",
+      "ObjectGuid": "fedd00b4-48d9-4559-9e11-483cb5d0036b",
+      "SlotIndex": 0,
+      "Inputs": null,
+      "Outputs": null,
+      "StructuralItems": [
+        {
+          "Name": "SAFEX_C12",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_0024360100000010",
+          "ModuleId": null,
+          "Version": "Revision=16#00000010",
+          "ObjectGuid": "3588edb7-168b-4dbf-bc75-da7a218a328a",
+          "SlotIndex": 0,
+          "Inputs": null,
+          "Outputs": null,
+          "StructuralItems": [
+            {
+              "Name": "FSoE_Connection_1",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "209aa3c3-c549-4e9f-a286-63813210ff5e",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_2",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "7c15b6e1-9900-45b0-88a6-2e00fb2faf6c",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_3",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "779d0dff-3104-433d-88b2-d800f2bd717e",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_4",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "96c0c724-b706-4bef-ada4-acec769307fb",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_5",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "63a4654f-3138-4a60-acbf-54a2d0682f4e",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_6",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "040de36f-81aa-4884-8dcf-5f2363e130ed",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_7",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "3e5141fa-f2f9-4e9b-ac1b-51675def821b",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_8",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "0682dcbf-d324-4f9c-9099-48991411c6f9",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_9",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "20ccb628-34cd-4929-a8bb-7f054e8d4053",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_10",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "61736256-3319-4f3f-9d7a-11808654a415",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_11",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "a0a673de-5902-4be3-8bff-2de02b5d99ef",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_12",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "e32b56e4-f453-4cbf-95cb-eebb7320d9f4",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_13",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "53526b17-20d9-4286-a28a-82da854bafa5",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_14",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "08583c9a-c2b1-4242-8f41-93da19e251a9",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_15",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "f8eda173-7d36-4408-a4c7-1656d9da00cb",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_16",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "02e0e18a-debb-426d-964f-81e56be08049",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_17",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "912dd6fc-4d0c-4221-8dab-fceaa6e53870",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_18",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "d5078118-38cf-48e1-b21f-fe45ce75525b",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_19",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "daa404a8-9bb9-4a47-a202-829631558b0b",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_20",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "e1fee240-ea59-41b7-9430-416403fbdccc",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_21",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "0989ad53-89b8-458a-86e1-36466b834413",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_22",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "1ed50913-49d5-4922-bd42-d6e38b08e630",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_23",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "7307898b-bd3e-4766-ab75-4c0e82c44879",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_24",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "39d8e701-7092-4802-9a6d-8382337f09ce",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_25",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "96244d78-1b9d-4f87-86eb-5fdc10bfb9b4",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_26",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "59c6e195-2152-4fd9-b150-0ba5acbcef85",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_27",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "a223b291-c0b0-4ed0-b8f3-897547c1c737",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_28",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "c1a9ff3d-cfe7-4847-8eda-21c58547c1e4",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_29",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "ea6385a6-3368-43cf-a708-9158f100a2eb",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_30",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "0d39e2ad-176b-48cb-ae51-c4500e3e07dd",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_31",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "8b561d6e-20a9-48f2-9214-9edcf89008b5",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "FSoE_Connection_32",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "e388d92f-80b0-43a6-83b0-bf274685e8be",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "SAFEX_C15_C12_as_FSoE_Slave_Connection",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.SlotDeviceObject",
+              "Type": 0,
+              "Id": "0000 0000",
+              "ModuleId": null,
+              "Version": "3.0.0.0",
+              "ObjectGuid": "1c7805ab-7075-4e74-8425-862791e6c870",
+              "SlotIndex": 0,
+              "Inputs": null,
+              "Outputs": null,
+              "StructuralItems": []
+            },
+            {
+              "Name": "Slave_Process_Data_Modules",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+              "Type": 68,
+              "Id": "24_00006194_0_243600",
+              "ModuleId": null,
+              "Version": "0",
+              "ObjectGuid": "25879e3f-0392-4e50-942b-3a40ed42454c",
+              "SlotIndex": 0,
+              "Inputs": [
+                {
+                  "Id": 33554434,
+                  "Name": "",
+                  "IecAddress": "%IW0",
+                  "Description": "SMMC__Output 1 Word 0",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554435,
+                  "Name": "",
+                  "IecAddress": "%IW2",
+                  "Description": "SMMC__Output 1 Word 1",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554436,
+                  "Name": "",
+                  "IecAddress": "%IW4",
+                  "Description": "SMMC__Output 1 Word 2",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554437,
+                  "Name": "",
+                  "IecAddress": "%IW6",
+                  "Description": "SMMC__Output 1 Word 3",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554438,
+                  "Name": "",
+                  "IecAddress": "%IW8",
+                  "Description": "SMMC__Output 1 Word 4",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554439,
+                  "Name": "",
+                  "IecAddress": "%IW10",
+                  "Description": "SMMC__Output 1 Word 5",
+                  "Descriptions": []
+                }
+              ],
+              "Outputs": [
+                {
+                  "Id": 16777218,
+                  "Name": "",
+                  "IecAddress": "%QW0",
+                  "Description": "SMMC__Input 1 Word 0",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777219,
+                  "Name": "",
+                  "IecAddress": "%QW2",
+                  "Description": "SMMC__Input 1 Word 1",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777220,
+                  "Name": "",
+                  "IecAddress": "%QW4",
+                  "Description": "SMMC__Input 1 Word 2",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777221,
+                  "Name": "",
+                  "IecAddress": "%QW6",
+                  "Description": "SMMC__Input 1 Word 3",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777222,
+                  "Name": "",
+                  "IecAddress": "%QW8",
+                  "Description": "SMMC__Input 1 Word 4",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777223,
+                  "Name": "",
+                  "IecAddress": "%QW10",
+                  "Description": "SMMC__Input 1 Word 5",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777224,
+                  "Name": "",
+                  "IecAddress": "%QW12",
+                  "Description": "SMMC__Input 2 Word 0",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777225,
+                  "Name": "",
+                  "IecAddress": "%QW14",
+                  "Description": "SMMC__Input 2 Word 1",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777226,
+                  "Name": "",
+                  "IecAddress": "%QW16",
+                  "Description": "SMMC__Input 2 Word 2",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777227,
+                  "Name": "",
+                  "IecAddress": "%QW18",
+                  "Description": "SMMC__Input 2 Word 3",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777228,
+                  "Name": "",
+                  "IecAddress": "%QW20",
+                  "Description": "SMMC__Input 2 Word 4",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777229,
+                  "Name": "",
+                  "IecAddress": "%QW22",
+                  "Description": "SMMC__Input 2 Word 5",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777230,
+                  "Name": "",
+                  "IecAddress": "%QW24",
+                  "Description": "SMMC__Input 3 Word 0",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777231,
+                  "Name": "",
+                  "IecAddress": "%QW26",
+                  "Description": "SMMC__Input 3 Word 1",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777232,
+                  "Name": "",
+                  "IecAddress": "%QW28",
+                  "Description": "SMMC__Input 3 Word 2",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777233,
+                  "Name": "",
+                  "IecAddress": "%QW30",
+                  "Description": "SMMC__Input 3 Word 3",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777234,
+                  "Name": "",
+                  "IecAddress": "%QW32",
+                  "Description": "SMMC__Input 3 Word 4",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777235,
+                  "Name": "",
+                  "IecAddress": "%QW34",
+                  "Description": "SMMC__Input 3 Word 5",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777236,
+                  "Name": "",
+                  "IecAddress": "%QW36",
+                  "Description": "SMMC__Input 4 Word 0",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777237,
+                  "Name": "",
+                  "IecAddress": "%QW38",
+                  "Description": "SMMC__Input 4 Word 1",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777238,
+                  "Name": "",
+                  "IecAddress": "%QW40",
+                  "Description": "SMMC__Input 4 Word 2",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777239,
+                  "Name": "",
+                  "IecAddress": "%QW42",
+                  "Description": "SMMC__Input 4 Word 3",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777240,
+                  "Name": "",
+                  "IecAddress": "%QW44",
+                  "Description": "SMMC__Input 4 Word 4",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777241,
+                  "Name": "",
+                  "IecAddress": "%QW46",
+                  "Description": "SMMC__Input 4 Word 5",
+                  "Descriptions": null
+                }
+              ],
+              "StructuralItems": []
+            },
+            {
+              "Name": "Slave_Process_Data_Modules_1",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+              "Type": 68,
+              "Id": "24_00006195_0_243600",
+              "ModuleId": null,
+              "Version": "0",
+              "ObjectGuid": "6228aa2b-6525-4da4-9767-5794d4422bf5",
+              "SlotIndex": 0,
+              "Inputs": [
+                {
+                  "Id": 33554434,
+                  "Name": "",
+                  "IecAddress": "%IW12",
+                  "Description": "Status Word",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554435,
+                  "Name": "",
+                  "IecAddress": "%IB14",
+                  "Description": "ByteOut 0",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554436,
+                  "Name": "",
+                  "IecAddress": "%IB15",
+                  "Description": "ByteOut 1",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554437,
+                  "Name": "",
+                  "IecAddress": "%IB16",
+                  "Description": "ByteOut 2",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554438,
+                  "Name": "",
+                  "IecAddress": "%IB17",
+                  "Description": "ByteOut 3",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554439,
+                  "Name": "",
+                  "IecAddress": "%IB18",
+                  "Description": "ByteOut 4",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554440,
+                  "Name": "",
+                  "IecAddress": "%IB19",
+                  "Description": "ByteOut 5",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554441,
+                  "Name": "",
+                  "IecAddress": "%IB20",
+                  "Description": "ByteOut 6",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554442,
+                  "Name": "",
+                  "IecAddress": "%IB21",
+                  "Description": "ByteOut 7",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554443,
+                  "Name": "",
+                  "IecAddress": "%IB22",
+                  "Description": "ByteOut 8",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554444,
+                  "Name": "",
+                  "IecAddress": "%IB23",
+                  "Description": "ByteOut 9",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554445,
+                  "Name": "",
+                  "IecAddress": "%IB24",
+                  "Description": "ByteOut 10",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554446,
+                  "Name": "",
+                  "IecAddress": "%IB25",
+                  "Description": "ByteOut 11",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554447,
+                  "Name": "",
+                  "IecAddress": "%IB26",
+                  "Description": "ByteOut 12",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554448,
+                  "Name": "",
+                  "IecAddress": "%IB27",
+                  "Description": "ByteOut 13",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554449,
+                  "Name": "",
+                  "IecAddress": "%IB28",
+                  "Description": "ByteOut 14",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554450,
+                  "Name": "",
+                  "IecAddress": "%IB29",
+                  "Description": "ByteOut 15",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554451,
+                  "Name": "",
+                  "IecAddress": "%IB30",
+                  "Description": "ByteOut 16",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554452,
+                  "Name": "",
+                  "IecAddress": "%IB31",
+                  "Description": "ByteOut 17",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554453,
+                  "Name": "",
+                  "IecAddress": "%IB32",
+                  "Description": "ByteOut 18",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554454,
+                  "Name": "",
+                  "IecAddress": "%IB33",
+                  "Description": "ByteOut 19",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554455,
+                  "Name": "",
+                  "IecAddress": "%IB34",
+                  "Description": "ByteOut 20",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554456,
+                  "Name": "",
+                  "IecAddress": "%IB35",
+                  "Description": "ByteOut 21",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554457,
+                  "Name": "",
+                  "IecAddress": "%IB36",
+                  "Description": "ByteOut 22",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554458,
+                  "Name": "",
+                  "IecAddress": "%IB37",
+                  "Description": "ByteOut 23",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554459,
+                  "Name": "",
+                  "IecAddress": "%IB38",
+                  "Description": "ByteOut 24",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554460,
+                  "Name": "",
+                  "IecAddress": "%IB39",
+                  "Description": "ByteOut 25",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554461,
+                  "Name": "",
+                  "IecAddress": "%IB40",
+                  "Description": "ByteOut 26",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554462,
+                  "Name": "",
+                  "IecAddress": "%IB41",
+                  "Description": "ByteOut 27",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554463,
+                  "Name": "",
+                  "IecAddress": "%IB42",
+                  "Description": "ByteOut 28",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554464,
+                  "Name": "",
+                  "IecAddress": "%IB43",
+                  "Description": "ByteOut 29",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554465,
+                  "Name": "",
+                  "IecAddress": "%IB44",
+                  "Description": "ByteOut 30",
+                  "Descriptions": []
+                },
+                {
+                  "Id": 33554466,
+                  "Name": "",
+                  "IecAddress": "%IB45",
+                  "Description": "ByteOut 31",
+                  "Descriptions": []
+                }
+              ],
+              "Outputs": [
+                {
+                  "Id": 16777218,
+                  "Name": "",
+                  "IecAddress": "%QB48",
+                  "Description": "ByteIn 0",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777219,
+                  "Name": "",
+                  "IecAddress": "%QB49",
+                  "Description": "ByteIn 1",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777220,
+                  "Name": "",
+                  "IecAddress": "%QB50",
+                  "Description": "ByteIn 2",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777221,
+                  "Name": "",
+                  "IecAddress": "%QB51",
+                  "Description": "ByteIn 3",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777222,
+                  "Name": "",
+                  "IecAddress": "%QB52",
+                  "Description": "ByteIn 4",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777223,
+                  "Name": "",
+                  "IecAddress": "%QB53",
+                  "Description": "ByteIn 5",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777224,
+                  "Name": "",
+                  "IecAddress": "%QB54",
+                  "Description": "ByteIn 6",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777225,
+                  "Name": "",
+                  "IecAddress": "%QB55",
+                  "Description": "ByteIn 7",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777226,
+                  "Name": "",
+                  "IecAddress": "%QB56",
+                  "Description": "ByteIn 8",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777227,
+                  "Name": "",
+                  "IecAddress": "%QB57",
+                  "Description": "ByteIn 9",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777228,
+                  "Name": "",
+                  "IecAddress": "%QB58",
+                  "Description": "ByteIn 10",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777229,
+                  "Name": "",
+                  "IecAddress": "%QB59",
+                  "Description": "ByteIn 11",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777230,
+                  "Name": "",
+                  "IecAddress": "%QB60",
+                  "Description": "ByteIn 12",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777231,
+                  "Name": "",
+                  "IecAddress": "%QB61",
+                  "Description": "ByteIn 13",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777232,
+                  "Name": "",
+                  "IecAddress": "%QB62",
+                  "Description": "ByteIn 14",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777233,
+                  "Name": "",
+                  "IecAddress": "%QB63",
+                  "Description": "ByteIn 15",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777234,
+                  "Name": "",
+                  "IecAddress": "%QB64",
+                  "Description": "ByteIn 16",
+                  "Descriptions": null
+                },
+                {
+                  "Id": 16777235,
+                  "Name": "",
+                  "IecAddress": "%QB65",
+                  "Description": "ByteIn 17",
+                  "Descriptions": null
+                }
+              ],
+              "StructuralItems": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "LOG LEVEL": "ERROR",
+    "LOG PERSIST": false,
+    "database path" : "/media/mmcblk1p1/database.db",
+    "terminals" : ["RestInterface", "PLC"]
+}

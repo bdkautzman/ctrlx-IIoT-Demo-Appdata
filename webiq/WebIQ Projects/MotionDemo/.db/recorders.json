@@ -1,0 +1,110 @@
+{
+    "recorders": [
+        {
+            "commitInterval": 2000,
+            "databasePath": "internal",
+            "description": null,
+            "hidden": false,
+            "integrityCheckBehavior": "quickChecks",
+            "items": [
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "Master.Diag.Position"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "Master.Diag.Torque"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "Master.Diag.Velocity"
+                }
+            ],
+            "manualMode": false,
+            "maxAge": 300000,
+            "optional": false,
+            "recorderName": "Axis_Info",
+            "recordingInterval": 200,
+            "startPaused": true,
+            "toggleCondition": {
+                "condition": [
+                    0,
+                    ">"
+                ],
+                "item": "Master.Cmd.Mode",
+                "numericType": "dec"
+            },
+            "triggerCondition": null
+        },
+        {
+            "commitInterval": 2000,
+            "databasePath": "internal",
+            "description": null,
+            "hidden": false,
+            "integrityCheckBehavior": "quickChecks",
+            "items": [
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "Slave.Diag.Position"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "Slave.Diag.Velocity"
+                },
+                {
+                    "aggregate": "avg",
+                    "itemAlias": "Slave.Diag.Torque"
+                }
+            ],
+            "manualMode": false,
+            "maxAge": 300000,
+            "optional": false,
+            "recorderName": "Axis_Info_Slave",
+            "recordingInterval": 200,
+            "startPaused": true,
+            "toggleCondition": {
+                "condition": [
+                    0,
+                    ">"
+                ],
+                "item": "Slave.Cmd.Mode",
+                "numericType": "dec"
+            },
+            "triggerCondition": null
+        }
+    ],
+    "trends": [
+        {
+            "description": "This is the default trend. You may remove this and/or create your own.",
+            "items": [
+                {
+                    "itemAlias": "Master.Diag.Position",
+                    "recorderName": "Axis_Info"
+                },
+                {
+                    "itemAlias": "Master.Diag.Torque",
+                    "recorderName": "Axis_Info"
+                },
+                {
+                    "itemAlias": "Master.Diag.Velocity",
+                    "recorderName": "Axis_Info"
+                },
+                {
+                    "itemAlias": "Slave.Diag.Velocity",
+                    "recorderName": "Axis_Info_Slave"
+                },
+                {
+                    "itemAlias": "Slave.Diag.Position",
+                    "recorderName": "Axis_Info_Slave"
+                },
+                {
+                    "itemAlias": "Slave.Diag.Torque",
+                    "recorderName": "Axis_Info_Slave"
+                }
+            ],
+            "objectReferenceId": 1,
+            "trendName": "Trend"
+        }
+    ],
+    "version": 0
+}

@@ -1,0 +1,8 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/types/system/time/synchronization/instances.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/types/system/time/synchronization/instances_schema.json",
+    "instances": []
+}

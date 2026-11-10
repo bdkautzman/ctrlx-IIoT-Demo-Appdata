@@ -1,0 +1,165 @@
+{
+  "Name": "Device",
+  "IconName": null,
+  "EcadId": "",
+  "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+  "Type": 4096,
+  "Id": "1001 0090",
+  "ModuleId": null,
+  "Version": "3.6.0.0",
+  "ObjectGuid": "6e924466-f938-4427-b8a6-7f51b20b4872",
+  "SlotIndex": 0,
+  "Inputs": null,
+  "Outputs": null,
+  "StructuralItems": [
+    {
+      "Name": "ethercatmaster",
+      "IconName": null,
+      "EcadId": null,
+      "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+      "Type": 64,
+      "Id": "1001 0101",
+      "ModuleId": null,
+      "Version": "3.6.0.0",
+      "ObjectGuid": "55167d97-ad80-458f-9825-e37242ac92c0",
+      "SlotIndex": 0,
+      "Inputs": null,
+      "Outputs": null,
+      "StructuralItems": [
+        {
+          "Name": "ctrlX_DRIVE_EX_EoE_",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_2000440000000001",
+          "ModuleId": null,
+          "Version": "Revision=16#00000001",
+          "ObjectGuid": "bd2918df-8c80-41cb-b766-f0399c1e74ab",
+          "SlotIndex": 0,
+          "Inputs": null,
+          "Outputs": null,
+          "StructuralItems": []
+        },
+        {
+          "Name": "ctrlX_DRIVE_XCS_SoE_FSoE",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_200043110000000A",
+          "ModuleId": null,
+          "Version": "Revision=16#0000000A",
+          "ObjectGuid": "d19320a3-ac97-411d-aa1f-914d9f7e7d1f",
+          "SlotIndex": 0,
+          "Inputs": [
+            {
+              "Id": 33554434,
+              "Name": "",
+              "IecAddress": "%IW0",
+              "Description": "Drive status word",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554435,
+              "Name": "",
+              "IecAddress": "%IW2",
+              "Description": "Power supply status word",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554436,
+              "Name": "",
+              "IecAddress": "%ID4",
+              "Description": "Position feedback value 1",
+              "Descriptions": []
+            }
+          ],
+          "Outputs": [
+            {
+              "Id": 16777218,
+              "Name": "",
+              "IecAddress": "%QW0",
+              "Description": "Master control word",
+              "Descriptions": null
+            },
+            {
+              "Id": 16777219,
+              "Name": "",
+              "IecAddress": "%QW2",
+              "Description": "Power supply control word",
+              "Descriptions": null
+            },
+            {
+              "Id": 16777220,
+              "Name": "",
+              "IecAddress": "%QD4",
+              "Description": "Position command value",
+              "Descriptions": null
+            }
+          ],
+          "StructuralItems": []
+        },
+        {
+          "Name": "ctrlX_DRIVE_XCS_SoE_",
+          "IconName": null,
+          "EcadId": null,
+          "TypeName": "_3S.CoDeSys.DeviceObject.DeviceObject",
+          "Type": 65,
+          "Id": "24_2000431100000003",
+          "ModuleId": null,
+          "Version": "Revision=16#00000003",
+          "ObjectGuid": "bff6f74f-6710-4485-9644-9da8bd64c3b2",
+          "SlotIndex": 0,
+          "Inputs": [
+            {
+              "Id": 33554434,
+              "Name": "",
+              "IecAddress": "%IW8",
+              "Description": "Drive status word",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554435,
+              "Name": "",
+              "IecAddress": "%IW10",
+              "Description": "Power supply status word",
+              "Descriptions": []
+            },
+            {
+              "Id": 33554436,
+              "Name": "",
+              "IecAddress": "%ID12",
+              "Description": "Position feedback value 1",
+              "Descriptions": []
+            }
+          ],
+          "Outputs": [
+            {
+              "Id": 16777218,
+              "Name": "",
+              "IecAddress": "%QW8",
+              "Description": "Master control word",
+              "Descriptions": null
+            },
+            {
+              "Id": 16777219,
+              "Name": "",
+              "IecAddress": "%QW10",
+              "Description": "Power supply control word",
+              "Descriptions": null
+            },
+            {
+              "Id": 16777220,
+              "Name": "",
+              "IecAddress": "%QD12",
+              "Description": "Position command value",
+              "Descriptions": null
+            }
+          ],
+          "StructuralItems": []
+        }
+      ]
+    }
+  ]
+}

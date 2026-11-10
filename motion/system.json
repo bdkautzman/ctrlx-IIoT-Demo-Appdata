@@ -1,0 +1,35 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/cfg.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/cfg_schema.json",
+    "beltCS": {
+        "sets": []
+    },
+    "ccs": {
+        "sets": []
+    },
+    "devErrReaction": {
+        "errorGroups": []
+    },
+    "function": {
+        "ignoreAxisProfiles": false
+    },
+    "pcs": {
+        "groups": [],
+        "sets": []
+    },
+    "rtInputs": {
+        "doubleArraySize": 10,
+        "int64ArraySize": 0
+    },
+    "safeAreas": {
+        "safeAreas": []
+    },
+    "toolData": {
+        "groups": [],
+        "sets": []
+    },
+    "uiData": ""
+}

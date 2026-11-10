@@ -1,0 +1,40 @@
+{
+    "name": "webiq_demos",
+    "description": "",
+    "title": "WebIQ_Demos",
+    "type": "app",
+    "version": "1.0",
+    "published": true,
+    "requires": {
+        "visuals": "^2.16.4+69931",
+        "lib-qrcodejs": "^0.0.1",
+        "lib-chartjs3": "^3.6.0",
+        "chartjs-demo": "^1.3.7",
+        "iq-widgets": "^2.16.4+70074"
+    },
+    "grid": {
+        "x": 8,
+        "y": 8,
+        "visible": true,
+        "snap": false
+    },
+    "lastLayout": 3,
+    "numTags": 102,
+    "numIoHandlers": 1,
+    "lastEdit": 1794267956,
+    "lastEditor": "boschrexroth",
+    "lastEditorData": {
+        "user": "KAB2HES",
+        "hostname": "AT2-C-001CN",
+        "platform": {
+            "architecture": "x64",
+            "platform": "win32",
+            "type": "Windows_NT"
+        },
+        "webiq": {
+            "connect": "2.16.4 (release/2.16.4/268e3a0e)",
+            "designer": "2.16.4 v2.16.4 bdb48388aeb887cb990f430ed5991e663eeddcaa",
+            "visuals": "2.16.4 Build 69931"
+        }
+    }
+}

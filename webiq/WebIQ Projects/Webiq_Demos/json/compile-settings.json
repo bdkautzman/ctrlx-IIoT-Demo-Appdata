@@ -1,0 +1,1246 @@
+{
+    "settings": {
+        "default-theme": "xenon-moonstone"
+    },
+    "themes": {
+        "xenon-moonstone": true,
+        "xenon-acapulco": false,
+        "xenon-emerald": false,
+        "xenon-lapis-lazuli": false,
+        "xenon-obsidian": true,
+        "xenon-sumatra": false
+    },
+    "controls": {
+        "project-window": {
+            "compile": false,
+            "sizes": {}
+        },
+        "alarm-history": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "alarm-info": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "alarm-info.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "alpha-num-keyboard": {
+            "compile": true,
+            "sizes": {}
+        },
+        "button": {
+            "compile": true,
+            "sizes": {
+                "extra-large": true,
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "button.icon-and-text": {
+            "compile": true,
+            "sizes": {
+                "extra-large": true,
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "button.icon-only": {
+            "compile": true,
+            "sizes": {
+                "extra-large": true,
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "button.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "checkbox": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "checkbox.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "complex-table2": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "complex-table2.alarm-list": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "dialog-box": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "dialog-box-autostart-edit": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "dialog-box.add-or-edit-user": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.change-user-password": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.date-time-selection": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.iq-alarm-list-filter-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.iq-trend-select-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.password-expired": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.progress-info": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.recipe-message-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.recipe-name": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.threads-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.trend-data-export": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.trend-sets-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "flip-switch": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "flip-switch.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "gp-scroll-bar": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "group": {
+            "compile": true,
+            "sizes": {}
+        },
+        "html": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iframe": {
+            "compile": true,
+            "sizes": {}
+        },
+        "image": {
+            "compile": true,
+            "sizes": {}
+        },
+        "image-changer": {
+            "compile": true,
+            "sizes": {}
+        },
+        "input-field": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "input-field.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "input-field.label-beside": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "input-field.no-label": {
+            "compile": true,
+            "sizes": {}
+        },
+        "input-field.numeric": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "input-field.password": {
+            "compile": true,
+            "sizes": {}
+        },
+        "input-field.textarea": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "iq-alarm-info": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-info.counter": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-info.icon": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-info.message": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-info.message-and-details": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-list": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-list.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-list.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-alarm-list.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-icon-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-icon-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-rocker.iq-variant-09": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-toggle": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-toggle.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-toggle.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-toggle.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button-toggle.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-button.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-checkbox": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-checkbox.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-checkbox.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-checkbox.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-date-time": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-date-time.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-duration-display": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-duration-display.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-flip-switch": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-flip-switch.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-flip-switch.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-flip-switch.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-heartbeat": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-heartbeat.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-heartbeat.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-heartbeat.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-image": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-image-changer": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-image-changer.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-image.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-input-field": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-input-field.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-input-field.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-input-field.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-input-field.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-input-field.iq-variant-05": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-label": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-label.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge.iq-variant-05": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-linear-gauge.iq-variant-06": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-progress-info": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-progress-info.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-progress-info.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-progress-info.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display.iq-variant-05": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-quality-display.iq-variant-06": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-radial-gauge": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-radial-gauge.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-radial-gauge.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-radial-gauge.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-recipe-list": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-responsive-menu": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-responsive-menu.accordion": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-responsive-menu.accordion.mobile": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-responsive-menu.mobile": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-searchbar": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-searchbar.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-searchbar.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-box": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-box.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-box.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-date": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-date.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-date.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-05": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-06": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-radio.iq-variant-07": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-time": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-time.iq-icon-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-time.iq-icon-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-time.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-select-time.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-shape": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-slider": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-slider.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-slider.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-slider.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-slider.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-text": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-text-display": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-text-display.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-text-display.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-text-display.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-text.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend-legend": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend-live": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend-select": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend-set-select": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend-time": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-trend-zoom": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-controller": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-controller.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-controller.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-controller.iq-variant-03": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-controller.iq-variant-04": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-info": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-info.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-list": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-list.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-select": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-select.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-user-select.iq-variant-02": {
+            "compile": true,
+            "sizes": {}
+        },
+        "linear-gauge": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "linear-gauge.vertical": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "linear-gauge2": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "linear-gauge2.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "linear-gauge2.no-value-display": {
+            "compile": true,
+            "sizes": {}
+        },
+        "linear-gauge2.vertical": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "list-box": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "loader": {
+            "compile": true,
+            "sizes": {}
+        },
+        "loading-box-overlay": {
+            "compile": true,
+            "sizes": {}
+        },
+        "login": {
+            "compile": true,
+            "sizes": {}
+        },
+        "numpad": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "small": true
+            }
+        },
+        "panel": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "popup-menu": {
+            "compile": true,
+            "sizes": {
+                "medium": true,
+                "small": true
+            }
+        },
+        "popup-menu.iq-flex": {
+            "compile": true,
+            "sizes": {}
+        },
+        "progress-info": {
+            "compile": true,
+            "sizes": {}
+        },
+        "quality-display": {
+            "compile": true,
+            "sizes": {}
+        },
+        "quality-display.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "radial-gauge": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "radial-gauge2": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "radial-gauge2.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "recipe-controller": {
+            "compile": true,
+            "sizes": {}
+        },
+        "recipe-edit": {
+            "compile": true,
+            "sizes": {}
+        },
+        "recipe-select": {
+            "compile": true,
+            "sizes": {}
+        },
+        "responsive-menu": {
+            "compile": true,
+            "sizes": {}
+        },
+        "responsive-menu.slide": {
+            "compile": true,
+            "sizes": {}
+        },
+        "rocker-button": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "rocker-button.flexible-width": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "rocker-button.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "rocker-button.no-label": {
+            "compile": true,
+            "sizes": {}
+        },
+        "rocker-button.slim": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "screen": {
+            "compile": true,
+            "sizes": {}
+        },
+        "searchbar": {
+            "compile": true,
+            "sizes": {}
+        },
+        "select-box": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "select-box.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "select-box.list-on-top": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "select-date": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "select-date.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "select-radio": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "select-radio.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "select-time": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "select-time.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "simple-table": {
+            "compile": true,
+            "sizes": {}
+        },
+        "slide-in": {
+            "compile": true,
+            "sizes": {}
+        },
+        "slide-in.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "slider.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "tab-panel": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "text": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "text-display": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "text-display.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "text.inverted": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "text2": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "text2.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "text2.multiline": {
+            "compile": true,
+            "sizes": {}
+        },
+        "thread-list": {
+            "compile": true,
+            "sizes": {}
+        },
+        "toggle-button": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "toggle-button.icon-and-text": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "toggle-button.icon-only": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "toggle-button.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "toggle-display": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "toggle-display.icon-only": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "toggle-display.inverted": {
+            "compile": true,
+            "sizes": {}
+        },
+        "trend-display": {
+            "compile": true,
+            "sizes": {}
+        },
+        "trend-legend": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "trend-legend.scrollable": {
+            "compile": true,
+            "sizes": {}
+        },
+        "trend-select": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "trend-zoom": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "user-info": {
+            "compile": true,
+            "sizes": {}
+        },
+        "view": {
+            "compile": true,
+            "sizes": {}
+        },
+        "webiq-loading-overlay": {
+            "compile": true,
+            "sizes": {}
+        },
+        "chartjs-demo": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        },
+        "audit-log-viewer": {
+            "compile": true,
+            "sizes": {}
+        },
+        "audit-log-viewer.iq-variant-01": {
+            "compile": true,
+            "sizes": {}
+        },
+        "container": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.alarm-history-export-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.audit-export-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.audit-log-viewer-filter-dialog": {
+            "compile": true,
+            "sizes": {}
+        },
+        "dialog-box.option.audit-storage-notification": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-container": {
+            "compile": true,
+            "sizes": {}
+        },
+        "iq-dynamic-svg-image": {
+            "compile": true,
+            "sizes": {}
+        },
+        "responsive-menu.accordion": {
+            "compile": true,
+            "sizes": {}
+        },
+        "slider": {
+            "compile": true,
+            "sizes": {
+                "large": true,
+                "medium": true,
+                "small": true
+            }
+        }
+    },
+    "supportedBrowsers": [
+        "chrome 78",
+        "firefox 72",
+        "not dead",
+        "not ie 11"
+    ]
+}

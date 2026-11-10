@@ -1,0 +1,32 @@
+{
+    "defaults": {
+        "itemAccessRights": {
+            "admin": [
+                "read",
+                "write",
+                "lock"
+            ],
+            "all": [
+                "read",
+                "write",
+                "lock"
+            ]
+        }
+    },
+    "historicAlarmsRetentionTime": 30,
+    "http": {
+        "additionalHeaders": {},
+        "contentSecurityPolicy": {},
+        "cors": {
+            "allowHeaders": [],
+            "allowPrivateNetworkAccess": false,
+            "origins": []
+        },
+        "hideServerTokens": true,
+        "preventMimeSniffing": true,
+        "spoofServerTokens": null,
+        "xFrameOptions": null
+    },
+    "localAddresses": [],
+    "version": 0
+}

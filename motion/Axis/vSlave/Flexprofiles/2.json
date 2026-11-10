@@ -1,0 +1,21 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/singleprof.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/singleprof_schema.json",
+    "camBuilderProfileData": "",
+    "events": [],
+    "masterAxsRefVel": 1.0,
+    "name": "2",
+    "segments": [],
+    "units": {
+        "accUnitSlave": "deg/s^2",
+        "activateUnits": false,
+        "jrkUnitSlave": "deg/s^3",
+        "posUnitMaster": "deg",
+        "posUnitSlave": "deg",
+        "velUnitMaster": "deg/s",
+        "velUnitSlave": "deg/s"
+    }
+}

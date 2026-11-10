@@ -1,0 +1,13 @@
+/* css/custom/Test.css */
+
+.iq-alarm-info.Test {
+    visibility: hidden;
+}
+
+.iq-alarm-info.Test .severity-warning {
+    visibility: visible;
+}
+
+.iq-alarm-info.Test .severity-alarm {
+    visibility: visible;
+}

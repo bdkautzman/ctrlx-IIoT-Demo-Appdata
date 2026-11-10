@@ -1,0 +1,13 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/comm/datalayer/remote_config.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/comm/datalayer/remote_config_schema.json",
+    "remotes": [
+        {
+            "address": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa://",
+            "name": ""
+        }
+    ]
+}

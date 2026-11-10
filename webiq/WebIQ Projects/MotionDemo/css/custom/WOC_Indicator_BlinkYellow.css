@@ -1,0 +1,18 @@
+/* css/custom/WOC_Indicator_BlinkYellow.css */
+
+/* Button */
+.WOC_Indicator_BlinkYellow {
+  animation: blink 1s step-end infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    border-color: gray;
+  }
+  50% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: gray;
+  }
+}

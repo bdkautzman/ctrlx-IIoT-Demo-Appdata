@@ -1,0 +1,4 @@
+{
+    "comment" : "the grids property contains an array of filenames (without suffix .json) located in the json/grids folder",
+    "grids" : [ ]
+}

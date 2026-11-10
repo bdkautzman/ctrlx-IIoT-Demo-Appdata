@@ -1,0 +1,17 @@
+/* css/custom/package.css */
+
+.ctrl.iq-shape.package {
+    width: 20px !important;
+    height: 20px !important;
+    position: absolute;
+}
+
+.package.animated {
+    transition: all 0.5s linear;
+}
+
+.package .shape-svg {
+    fill: #FF0000;
+    stroke: #000000;
+    stroke-width: 4px;
+}

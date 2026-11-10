@@ -1,0 +1,106 @@
+{
+    "class-name": "responsive-menu",
+    "name": "responsiveMenu",
+    "template": "default/responsive-menu",
+    "menu": [
+        {
+            "label": "${page} 1",
+            "action": [
+                {
+                    "name": "setview",
+                    "params": [
+                        "node-handle:node-3t11ch75i9r",
+                        0
+                    ]
+                }
+            ],
+            "icon-src": "pics/system/icons/bullet.svg",
+            "access": null
+        },
+        {
+            "label": "${page} 2",
+            "action": [
+                {
+                    "name": "setview",
+                    "params": [
+                        "node-handle:node-3t11ch75i9r",
+                        1
+                    ]
+                }
+            ],
+            "icon-src": "pics/system/icons/bullet.svg",
+            "access": null
+        },
+        {
+            "label": "${page} 3",
+            "action": [
+                {
+                    "name": "setview",
+                    "params": [
+                        "node-handle:node-3t11ch75i9r",
+                        2
+                    ]
+                }
+            ],
+            "icon-src": "pics/system/icons/bullet.svg",
+            "access": null
+        }
+    ],
+    "mobile-layouts": [
+        "mobile",
+        "wide-mobile",
+        "tablet-portrait",
+        "tablet-landscape"
+    ],
+    "overlay-style": {
+        "background": "transparent",
+        "zIndex": 1
+    },
+    "mode": "accordion",
+    "_designer_": {
+        "variant": null,
+        "style": {
+            "ui": "responsive-menu",
+            "general": {
+                "offset-top": null,
+                "offset-right": null,
+                "offset-bottom": null,
+                "offset-left": null,
+                "position": null,
+                "z-index": null,
+                "transform": null,
+                "transform-origin": null,
+                "visibility": null,
+                "opacity": null,
+                "width": null,
+                "height": null,
+                "flex": null,
+                "margin-top": null,
+                "margin-right": null,
+                "margin-bottom": null,
+                "margin-left": null,
+                "padding-top": null,
+                "padding-right": null,
+                "padding-bottom": null,
+                "padding-left": null,
+                "overflow-x": null,
+                "overflow-y": null,
+                "min-width": null,
+                "max-width": null,
+                "min-height": null,
+                "max-height": null
+            },
+            "media": {
+                "mobile": {},
+                "wide-mobile": {},
+                "tablet-portrait": {},
+                "tablet-landscape": {},
+                "wide": {},
+                "extra-wide": {}
+            },
+            "devStyle": {},
+            "align": "TOP_LEFT"
+        }
+    },
+    "ui": "responsive-menu"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>lock</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style>.cls-1{opacity:0.5;}.cls-2{fill:none;}</style>
+ </defs>
+ <title>lock</title>
+ <path d="m20.739 12.036h-0.40155v-1.8691a6.3592 6.3592 0 0 0-6.1474-6.3884h-0.37235a6.3519 6.3519 0 0 0-6.162 6.3884v1.8618h-0.39425a1.2923 1.2923 0 0 0-1.1171 1.4164v9.3526a1.2996 1.2996 0 0 0 1.1171 1.4237h13.478a1.2996 1.2996 0 0 0 1.1171-1.4237v-9.3453a1.2923 1.2923 0 0 0-1.1171-1.4164zm-5.4757 6.0817v2.8255a0.60598 0.60598 0 0 1-0.59138 0.59868h-1.3434a0.60598 0.60598 0 0 1-0.59138-0.59868v-2.8255a1.7084 1.7084 0 0 1 1.0732-2.9204h0.37235a1.7084 1.7084 0 0 1 1.0732 2.9204zm2.4531-6.0817h-7.4324v-1.8691a3.7162 3.7162 0 1 1 7.4324 0v1.8618z" fill="#7f7f7f" stroke-width=".7301"/>
+</svg>

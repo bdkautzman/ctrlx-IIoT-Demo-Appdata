@@ -1,0 +1,16 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/types/systemhandler/affinity-setting.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/types/systemhandler/affinity-setting_schema.json",
+    "affinity": [
+        0,
+        1
+    ],
+    "available": [
+        0,
+        1
+    ],
+    "configuration": "AUTOMATIC"
+}

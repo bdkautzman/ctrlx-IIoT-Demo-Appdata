@@ -1,0 +1,24 @@
+# Version Control Directories
+.git/
+.svn/
+
+# Config directories for common IDEs
+.atom/
+.eclipse/
+.idea/
+.vs/
+.vscode/
+
+# Node Modules
+node_modules/
+
+# Development files
+.lint
+.eslintignore
+.eslintrc.yml
+.browserslistrc
+.gitignore
+
+##                                  ##
+# You may add additional files here: #
+##                                  ##

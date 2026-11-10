@@ -1,0 +1,51 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"comm_datalayer_Scope" : {
+"type" : "object",
+"properties" : {
+"identifier" : {
+"type" : "string",
+"description" : "Identifier of the Scope"
+},
+"name" : {
+"type" : "string",
+"description" : "Human readable name of the Scope"
+},
+"description" : {
+"type" : "string",
+"description" : "Description of the Scope"
+},
+"permissionsR" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "List of permission string for read operations"
+},
+"permissionsRW" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "List of permission string for read/write operations"
+},
+"permissionsX" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "List of permission string for execute operations"
+},
+"permissionsRWX" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "List of permission string for all operations"
+}
+},
+"required" : ["identifier"],
+"additionalProperties" : false
+},
+"comm_datalayer_Scopes" : {
+"type" : "object",
+"properties" : {
+"scopes" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/comm_datalayer_Scope"},
+"description" : "List of scopes"
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/comm_datalayer_Scopes"
+}

@@ -1,0 +1,1365 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"motion_core_fbtypes_AxsErrorReaction" : {
+"type" : "string",
+"enum": ["NOT_SET", "NONE", "LIGHT_BRAKE_CMD_LIMITS", "SEVERE_BRAKE_AXS_LIMITS", "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF", "SEVERE_BRAKE_CFG_LIMITS", "SEVERE_BRAKE_CFG_LIMITS_PWR_OFF", "SEVERE_DRV_HALT", "SEVERE_TRQ_RELEASE", "SEVERE_DRV_BEST_POSBLE_DEC"]
+},
+"motion_core_fbtypes_AxsErrorReactionFlags" : {
+"type" : "string",
+"enum": ["IGNORE_START_ACCELERATION"]
+},
+"motion_core_fbtypes_AxsErrorType" : {
+"type" : "string",
+"enum": ["COMMUNICATION_ERROR_DRIVE", "DRIVE_ERROR_F2_F3", "DRIVE_ERROR_F4", "DRIVE_ERROR_F6_F7", "DRIVE_ERROR_F8", "CMD_ERROR_PARAMETER", "CMD_ERROR_STATE", "CMD_ERROR_PREPARATION", "CMD_ERROR_EXECUTION", "MONITOR_ERROR_AXIS_LIMITS", "MONITOR_ERROR_DRIVE_FOLLOWS_SETPOINTS", "USER_ERROR_LIGHT", "USER_ERROR_SEVERE", "KINEMATICS_ERROR_SEVERE", "KINEMATICS_ERROR_AXIS_DYNAMICS", "GANTRY_ERROR_F2_F3", "GANTRY_ERROR_F4", "GANTRY_ERROR_F6_F7", "GANTRY_ERROR_F8", "GANTRY_OTHER_ERROR", "GANTRY_BREAK_CMD_LIMITS", "PLC_ERROR", "SCRIPT_ERROR", "SYSTEM_ERROR_SINGLE_MOTION_OBJECT", "SYSTEM_ERROR_ALL_MOTION_OBJECTS", "PEER_NONE", "PEER_LIGHT_BRAKE_CMD_LIMITS", "PEER_SEVERE_BRAKE_AXS_LIMITS", "PEER_SEVERE_BRAKE_AXS_LIMITS_PWR_OFF", "PEER_SEVERE_BRAKE_CFG_LIMITS", "PEER_SEVERE_BRAKE_CFG_LIMITS_PWR_OFF", "PEER_SEVERE_DRV_HALT", "PEER_SEVERE_TRQ_RELEASE", "PEER_SEVERE_DRV_BEST_POSBLE_DEC"]
+},
+"motion_core_fbtypes_CategoryOfAxis" : {
+"type" : "string",
+"enum": ["DRIVEAXS", "ENCODERAXS", "C2C", "MOVERAXS"]
+},
+"motion_core_fbtypes_ErrReactionType" : {
+"type" : "string",
+"enum": ["NONE", "MESSAGE", "WARNING", "SEVERE_ERROR"]
+},
+"motion_core_fbtypes_EstopType" : {
+"type" : "string",
+"enum": ["ESTOP_PRESERVE", "ESTOP_AXIS_LIMIT", "ESTOP_USER_LIMIT", "ESTOP_TORQUE_FREE", "ESTOP_BEST_POSBLE_DEC"]
+},
+"motion_core_fbtypes_ExtrapolationDynSrc" : {
+"type" : "string",
+"enum": ["Actual", "External"]
+},
+"motion_core_fbtypes_ExtrapolationExDynSel" : {
+"type" : "string",
+"enum": ["Velocity", "VelocityAndAcceleration"]
+},
+"motion_core_fbtypes_FilterType" : {
+"type" : "string",
+"enum": ["NONE", "LOW_PASS_ORDER_1", "LOW_PASS_ORDER_2", "LOW_PASS_ORDER_2_BUTTERWORTH", "LOW_PASS_ORDER_2_VEL_FEEDFORWARD", "LOW_PASS_ORDER_3", "LOW_PASS_ORDER_3_BUTTERWORTH", "LOW_PASS_ORDER_3_VEL_ACC_FEEDFORWARD"]
+},
+"motion_core_fbtypes_KVPCfgSingleItemValue" : {
+"type" : "string",
+"enum": ["NONE", "KVPCfgInt64", "KVPCfgDouble", "KVPCfgBool", "KVPCfgString", "KVPCfgDoubleUnit", "KVPCfgInt64Vector", "KVPCfgDoubleVector", "KVPCfgBoolVector", "KVPCfgStringVector", "KVPCfgDoubleUnitVector", "KVPCfgDoubleUserUnit", "KVPCfgDoubleUserUnitVector", "KVPCfgConversionFactor"]
+},
+"motion_core_fbtypes_UnitAddInfo" : {
+"type" : "string",
+"enum": ["STANDARD", "ORIENTATION", "KIN_POS"]
+},
+"motion_core_fbtypes_UnitValueType" : {
+"type" : "string",
+"enum": ["POSITION", "VELOCITY", "ACCELERATION", "JERK", "FORCE", "TORQUE", "TIME", "FREQUENCY", "TORQUE_RAMP"]
+},
+"motion_drivecmd_fbtypes_EncoderId" : {
+"type" : "string",
+"enum": ["ENCODER_1", "ENCODER_2"]
+},
+"motion_sync_fbtypes_DynSynchronisationMethod" : {
+"type" : "string",
+"enum": ["TWO_STEP", "ONE_STEP"]
+},
+"motion_sync_fbtypes_ParameterType" : {
+"type" : "string",
+"enum": ["INTEGER", "DOUBLE", "STRING"]
+},
+"motion_sync_fbtypes_SlaveCantFollowErrorReaction" : {
+"type" : "string",
+"enum": ["CREATE_ERROR", "TRY_TO_RESYNC", "KEEP_SYNCHRONIZED"]
+},
+"motion_sync_fbtypes_SlaveCantFollowMessageType" : {
+"type" : "string",
+"enum": ["NONE", "MESSAGE", "WARNING"]
+},
+"motion_core_fbtypes_AxsCategory" : {
+"type" : "object",
+"properties" : {
+"axsCategory" : {
+"$ref" : "#/definitions/motion_core_fbtypes_CategoryOfAxis",
+"description" : "the axis",
+"default" : "DRIVEAXS"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfg" : {
+"type" : "object",
+"description" : "complete configuration of a single axis",
+"properties" : {
+"objectType" : {
+"type" : "string",
+"description" : "object type (must be \"Axis\"), required for save/load"
+},
+"axisProfileName" : {
+"type" : "string",
+"description" : "name of the assigned axis profile or empty for virtual drives"
+},
+"limits" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgLimits",
+"description" : "all configured limits of this axis"
+},
+"functions" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgFunctions",
+"description" : "configuration for specific functions of this axis"
+},
+"properties" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgProperties",
+"description" : "common axis properties of this axis"
+},
+"units" : {
+"$ref" : "#/definitions/motion_core_fbtypes_UnitCfgObj",
+"description" : "general unit configuration of this axis"
+},
+"kinProperties" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgKinProperties",
+"description" : "kinematic properties for axes"
+},
+"devErrReaction" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgDeviceErrorReaction",
+"description" : "device error reaction settings"
+},
+"rtInputs" : {
+"$ref" : "#/definitions/motion_core_fbtypes_RTInputsCfg",
+"description" : "configuration of the real-time inputs of the axis"
+},
+"commonProperties" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgSingleItem"},
+"description" : "Common properties (as key-value-pair) of this axis"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgBelt" : {
+"type" : "object",
+"description" : "configuration of motion function 'belt axis'",
+"properties" : {
+"isBeltAxis" : {
+"type" : "boolean",
+"description" : "flag to configure if the axis is a belt axis",
+"default" : false
+},
+"beltValConversionFactor" : {
+"type" : "number",
+"description" : "conversion factor between beltValue and axis value",
+"default" : 0.0
+},
+"beltCoordSysNameDefault" : {
+"type" : "string",
+"description" : "name of the default coordinate system of the belt"
+},
+"nominatorUnitOfBeltConversionFactor" : {
+"type" : "string",
+"description" : "nominator unit part of the belt conversion factor (\"Must be set for writing. If not set when reading, the unit from the belt configuration is used.\")"
+},
+"denominatorUnitOfBeltConversionFactor" : {
+"type" : "string",
+"description" : "denominator unit part of the belt conversion factor (\"If not set, the standard unit of the axis is used.\")"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgCoupling" : {
+"type" : "object",
+"description" : "configuration for coupling functions for a single axis",
+"properties" : {
+"gantry" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgGantry",
+"description" : "configuration for gantry coupling function of a single axis"
+},
+"syncmotion" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgSyncMotion",
+"description" : "configuration for sync motion functionality for a single axis"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgCyclicStatusData" : {
+"type" : "object",
+"description" : "Configuration of motion kernel axis function cyclic status data",
+"properties" : {
+"windows" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgWindowsForStateData",
+"description" : "windows for cyclic status data"
+},
+"remanent" : {
+"type" : "boolean",
+"description" : "flag in the motion kernel to enable axis function cyclic status data.",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgDevNotFollowing" : {
+"type" : "object",
+"description" : "configuration of reaction if axis device no longer follows the control's command values",
+"properties" : {
+"errReaction" : {
+"$ref" : "#/definitions/motion_core_fbtypes_ErrReactionType",
+"description" : "error reaction"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgDeviceErrorReaction" : {
+"type" : "object",
+"description" : "configuration for reaction to device error",
+"properties" : {
+"userEstopLim" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgEstopDynamicLimits",
+"description" : "user E-Stop dynamic limitations used for SEVERE_BRAKE_CFG_LIMIT and SEVERE_BRAKE_CFG_LIMIT_PWR_OFF"
+},
+"estopSettings" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgEstopSettings",
+"description" : "E-Stop setting to different device errors"
+},
+"devNotFollowing" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgDevNotFollowing",
+"description" : "reaction if axis device does not follow command values"
+},
+"reactions" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgErrorReaction",
+"description" : "reactions to errors"
+},
+"useCfgReactions" : {
+"type" : "boolean",
+"description" : "use configured error reactions - when false, old error reaction will take effect",
+"default" : false
+},
+"customLimits" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgEstopDynamicLimits",
+"description" : "custom limits for error reactions"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgDriveSLS" : {
+"type" : "object",
+"description" : "Configuration of motion kernel monitoring and reaction of drive function 'safe limited speed'",
+"properties" : {
+"vel" : {
+"type" : "number",
+"description" : "velocity limit for the axis in the motion kernel, when drive function 'safe limited speed' is active",
+"default" : 0.0
+},
+"velUnit" : {
+"type" : "string",
+"description" : "unit of vel"
+},
+"enableFlag" : {
+"type" : "boolean",
+"description" : "is safe operation mode monitoring in the motion kernel active or not",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgEncoder" : {
+"type" : "object",
+"description" : "configuration of encoder axis",
+"properties" : {
+"outputRevLoadGear" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "output revolution of load gear",
+"default" : 0
+},
+"inputRevLoadGear" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "output revolution of load gear",
+"default" : 0
+},
+"resolution" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "encoder resolution",
+"default" : 0
+},
+"feedConst" : {
+"type" : "number",
+"description" : "feed constant which only been used as linear axis",
+"default" : 0.0
+},
+"filterType" : {
+"$ref" : "#/definitions/motion_core_fbtypes_FilterType",
+"description" : "filter type",
+"default" : "NONE"
+},
+"cutoffFrq" : {
+"type" : "number",
+"description" : "cutoff frequency of the filter",
+"default" : 0.0
+},
+"feedConstUnit" : {
+"type" : "string",
+"description" : "unit of feed constant"
+},
+"cutoffFrqUnit" : {
+"type" : "string",
+"description" : "unit of cutoff frequency"
+},
+"fineAdjustActive" : {
+"type" : "boolean",
+"description" : "if the encoder axis active fine adjust",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgErrorReaction" : {
+"type" : "object",
+"description" : "configuration for the error reactions of a single axis (\"motion/axs/[name]/cfg/dev-err-reaction/reactions\")",
+"properties" : {
+"errorReactions" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgSingleErrorReaction"},
+"description" : "all configured error reactions"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgEstopDynamicLimits" : {
+"type" : "object",
+"description" : "configuration for E-Stop dynamic limitation",
+"properties" : {
+"dec" : {
+"type" : "number",
+"description" : "deceleration limit (must be greater than zero)",
+"default" : 0.0
+},
+"jrkDec" : {
+"type" : "number",
+"description" : "deceleration jerk limit (must be greater than zero OR zero for not jerk limited motion)",
+"default" : 0.0
+},
+"decUnit" : {
+"type" : "string",
+"description" : "unit of dec"
+},
+"jrkDecUnit" : {
+"type" : "string",
+"description" : "unit of jrkDec"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgEstopSettings" : {
+"type" : "object",
+"description" : "configuration for axis estop to device error",
+"properties" : {
+"estopToNoDevErr" : {
+"$ref" : "#/definitions/motion_core_fbtypes_EstopType",
+"description" : "estop when device has no error",
+"default" : "ESTOP_PRESERVE"
+},
+"estopToNoDeviceInfo" : {
+"$ref" : "#/definitions/motion_core_fbtypes_EstopType",
+"description" : "estop when no device error information, e.g. virtual axis",
+"default" : "ESTOP_PRESERVE"
+},
+"estopToDevLightErr" : {
+"$ref" : "#/definitions/motion_core_fbtypes_EstopType",
+"description" : "estop when get device light error",
+"default" : "ESTOP_PRESERVE"
+},
+"estopToFieldbusErr" : {
+"$ref" : "#/definitions/motion_core_fbtypes_EstopType",
+"description" : "estop when get device light error",
+"default" : "ESTOP_PRESERVE"
+},
+"estopToDevCriticalErr" : {
+"$ref" : "#/definitions/motion_core_fbtypes_EstopType",
+"description" : "estop when get device critical error",
+"default" : "ESTOP_PRESERVE"
+},
+"estopToDevFatalErr" : {
+"$ref" : "#/definitions/motion_core_fbtypes_EstopType",
+"description" : "estop when get device fatal error",
+"default" : "ESTOP_PRESERVE"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgExtrapolation" : {
+"type" : "object",
+"description" : "extrapolation parameters for a single axis",
+"properties" : {
+"extrapolateActual" : {
+"type" : "boolean",
+"description" : "is extrapolation of actual values activated for this axis?",
+"default" : false
+},
+"extrapolationTime" : {
+"type" : "number",
+"description" : "the additive extrapolation time (can also be negative)",
+"default" : 0.0
+},
+"extrapolationTimeUnit" : {
+"type" : "string",
+"description" : "unit of extrapolationTime"
+},
+"extrapolationDynamicSource" : {
+"$ref" : "#/definitions/motion_core_fbtypes_ExtrapolationDynSrc",
+"description" : "extrapolation dynamic data source, use internal dynamic data or dynamic data set from celix interface or PLC interface",
+"default" : "Actual"
+},
+"extrapolationExternalDynamicSel" : {
+"$ref" : "#/definitions/motion_core_fbtypes_ExtrapolationExDynSel",
+"description" : "extrapolation external dynamic data selection, extrapolates with external velocity only or external velocity and acceleration",
+"default" : "Velocity"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgFilter" : {
+"type" : "object",
+"description" : "necessary parameters of filter",
+"properties" : {
+"filterType" : {
+"$ref" : "#/definitions/motion_core_fbtypes_FilterType",
+"description" : "filter type",
+"default" : "NONE"
+},
+"cutoffFrq" : {
+"type" : "number",
+"description" : "parameters",
+"default" : 0.0
+},
+"cutoffFrqUnit" : {
+"type" : "string",
+"description" : "unit of cutoff frequency"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgFunctions" : {
+"type" : "object",
+"description" : "configuration for specific functions of this axis",
+"properties" : {
+"coupling" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgCoupling",
+"description" : "configuration for coupling functions for a single axis"
+},
+"calculationPipelines" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_CalcPipelineCfg"},
+"description" : "configuration for calculation pipelines for a single axis"
+},
+"posMode" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgPosMode",
+"description" : "configuration for position mode function parameters for a single axis"
+},
+"extrapolation" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgExtrapolation",
+"description" : "extrapolation parameters for a single axis"
+},
+"axsEncoder" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgEncoder",
+"description" : "configuration for encoder axis"
+},
+"axsCfgDriveSLS" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgDriveSLS",
+"description" : "configuration of monitoring of the safe limited speed in the drive by the motion kernel"
+},
+"axsCfgCyclicStatusData" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgCyclicStatusData",
+"description" : "configuration of cyclic status data for an axis"
+},
+"operationModeSwitch" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgOperationModeSwitch",
+"description" : "options during an operation mode switch for a single axis"
+},
+"maximumValueMonitoring" : {
+"type" : "boolean",
+"description" : "flag to enable/disable maximum value monitoring",
+"default" : false
+},
+"ignoreAxisProfile" : {
+"type" : "boolean",
+"description" : "flag to enable/disable using the configured axisprofile (no axisprofile results in a virtual axis); checked in booting",
+"default" : false
+},
+"openLoop" : {
+"type" : "boolean",
+"description" : "flag to enable/disable open-loop for this axis",
+"default" : false
+},
+"axsCfgBelt" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgBelt",
+"description" : "configuration for belt axis"
+},
+"filter" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfgFilter",
+"description" : "configuration of filter for a single axis"
+},
+"homing" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_AxsCfgHoming",
+"description" : "configuration of homing for a single axis"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgGantry" : {
+"type" : "object",
+"description" : "configuration for gantry coupling function of a single axis",
+"properties" : {
+"isMember" : {
+"type" : "boolean",
+"description" : "is this axis a gantry member?",
+"default" : false
+},
+"moveAllowed" : {
+"type" : "boolean",
+"description" : "is moving of this axis allowed, even when it's a gantry member and the gantry connection is not closed?\nThis value can be read/written when accessing the whole structure, but (file-)loading will always set to FALSE.",
+"default" : false
+},
+"multiBrakeDyn" : {
+"type" : "boolean",
+"description" : "is enable the multipe brake dynamic",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgKinProperties" : {
+"type" : "object",
+"description" : "kinematic properties for axes",
+"properties" : {
+"accReserve" : {
+"type" : "number",
+"description" : "acceleration reserve as factor of acceleration",
+"default" : 0.0
+},
+"jrkReserve" : {
+"type" : "number",
+"description" : "jerk reserve as factor of jerk",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgLimits" : {
+"type" : "object",
+"description" : "configured limits of a single axis",
+"properties" : {
+"posMin" : {
+"type" : "number",
+"description" : "minimum position limit (should be less than maximum position limit)",
+"default" : 0.0
+},
+"posMax" : {
+"type" : "number",
+"description" : "maximum position limit (should be greater than minimum position limit)",
+"default" : 0.0
+},
+"velPos" : {
+"type" : "number",
+"description" : "absolute velocity limit, when moving into positive direction (should be greater than zero)",
+"default" : 0.0
+},
+"velNeg" : {
+"type" : "number",
+"description" : "absolute velocity limit, when moving into negative direction (should be greater than zero)",
+"default" : 0.0
+},
+"acc" : {
+"type" : "number",
+"description" : "absolute acceleration limit (should be greater than zero)",
+"default" : 0.0
+},
+"dec" : {
+"type" : "number",
+"description" : "absolute deceleration limit (should be greater than zero)",
+"default" : 0.0
+},
+"jrkAcc" : {
+"type" : "number",
+"description" : "absolute acceleration jerk limit (should be greater than zero OR zero for not jerk limited motion)",
+"default" : 0.0
+},
+"jrkDec" : {
+"type" : "number",
+"description" : "absolute deceleration jerk limit (should be greater than zero OR zero for not jerk limited motion)",
+"default" : 0.0
+},
+"posMinUnit" : {
+"type" : "string",
+"description" : "unit of posMin"
+},
+"posMaxUnit" : {
+"type" : "string",
+"description" : "unit of posMax"
+},
+"velPosUnit" : {
+"type" : "string",
+"description" : "unit of velPos"
+},
+"velNegUnit" : {
+"type" : "string",
+"description" : "unit of velNeg"
+},
+"accUnit" : {
+"type" : "string",
+"description" : "unit of acc"
+},
+"decUnit" : {
+"type" : "string",
+"description" : "unit of dec"
+},
+"jrkAccUnit" : {
+"type" : "string",
+"description" : "unit of jrkAcc"
+},
+"jrkDecUnit" : {
+"type" : "string",
+"description" : "unit of jrkDec"
+},
+"trqPosUnit" : {
+"type" : "string",
+"description" : "unit of trqPos"
+},
+"trqNegUnit" : {
+"type" : "string",
+"description" : "unit of trqNeg"
+},
+"trqPos" : {
+"type" : "number",
+"description" : "absolute torque limit in positive direction (should be greater than zero)",
+"default" : 0.0
+},
+"trqNeg" : {
+"type" : "number",
+"description" : "absolute torque limit in negative direction (should be greater than zero)",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgOperationModeSwitch" : {
+"type" : "object",
+"description" : "operation mode switch parameters for a single axis",
+"properties" : {
+"extrapolationTime" : {
+"type" : "number",
+"description" : "the additive extrapolation time (can also be negative) active only during an operation mode switch",
+"default" : 0.0
+},
+"extrapolationTimeUnit" : {
+"type" : "string",
+"description" : "unit of extrapolationTime"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgPosMode" : {
+"type" : "object",
+"description" : "configuration for position mode function parameters for a single axis",
+"properties" : {
+"targetPosWindowModulo" : {
+"type" : "number",
+"description" : "the target position window for modulo axes (modulo axes always use shortest way, when inside this window)",
+"default" : 0.0
+},
+"targetPosWindowModuloUnit" : {
+"type" : "string",
+"description" : "unit of the target position window for modulo axes"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgProperties" : {
+"type" : "object",
+"description" : "common axis properties for a single axis",
+"properties" : {
+"axsType" : {
+"type" : "string",
+"description" : "name of the axis type (e.g. \"LINEAR\")"
+},
+"modulo" : {
+"type" : "boolean",
+"description" : "is this a modulo axis?",
+"default" : false
+},
+"moduloValue" : {
+"type" : "number",
+"description" : "the modulo value, if the axis is a modulo axis",
+"default" : 0.0
+},
+"moduloValueUnit" : {
+"type" : "string",
+"description" : "unit of moduloValue"
+},
+"axsCategory" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCategory",
+"description" : "axis category (e.g. \"ENCODERAXS\")"
+},
+"activated" : {
+"type" : "boolean",
+"description" : "is this axis activated or deactivated?",
+"default" : true
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgSingleErrorReaction" : {
+"type" : "object",
+"description" : "configuration for a single error reaction",
+"properties" : {
+"errorType" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsErrorType",
+"description" : "error type for this entry",
+"default" : "COMMUNICATION_ERROR_DRIVE"
+},
+"errorReaction" : {
+"$ref" : "#/definitions/motion_core_fbtypes_AxsErrorReaction",
+"description" : "related error reaction",
+"default" : "NOT_SET"
+},
+"errorReactionFlags" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_AxsErrorReactionFlags"},
+"description" : "optional error reaction flags"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_AxsCfgWindowsForStateData" : {
+"type" : "object",
+"description" : "all configured cyclic status data windows for an axis",
+"properties" : {
+"standstill" : {
+"type" : "number",
+"description" : "window for standstill",
+"default" : 0.0
+},
+"inVel" : {
+"type" : "number",
+"description" : "window for inVel",
+"default" : 0.0
+},
+"inPos" : {
+"type" : "number",
+"description" : "window for inPos",
+"default" : 0.0
+},
+"inTrq" : {
+"type" : "number",
+"description" : "window for inTrq",
+"default" : 0.0
+},
+"standstillUnit" : {
+"type" : "string",
+"description" : "unit of standstill"
+},
+"inVelUnit" : {
+"type" : "string",
+"description" : "unit of inVel"
+},
+"inPosUnit" : {
+"type" : "string",
+"description" : "unit of inPos"
+},
+"inTrqUnit" : {
+"type" : "string",
+"description" : "unit of inTrq"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfg" : {
+"type" : "object",
+"description" : "structure for key-value-pair configuration items",
+"properties" : {
+"items" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgSingleItem"},
+"description" : "all items in the key-value-pair-map"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgBool" : {
+"type" : "object",
+"description" : "Table for just one single boolean value",
+"properties" : {
+"boolVal" : {
+"type" : "boolean",
+"description" : "the value",
+"default" : false
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgBoolVector" : {
+"type" : "object",
+"description" : "Table for a vector of boolean values",
+"properties" : {
+"boolVector" : {
+"type" : "array", "items" : {"type" : "boolean"},
+"description" : "vector of boolean numbers"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgConversionFactor" : {
+"type" : "object",
+"description" : "Table for just one single double value, which has two user-set unit (can be used for any floating point numbers, that are not unit-less)",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+},
+"unitNumerator" : {
+"type" : "string",
+"description" : "the unit of the numerator as string"
+},
+"unitDenominator" : {
+"type" : "string",
+"description" : "the unit of the denominator as string"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDouble" : {
+"type" : "object",
+"description" : "Table for just one single double value (can be used for any floating point numbers)",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUnit" : {
+"type" : "object",
+"description" : "Table for just one single double value, which has a unit (can be used for any floating point numbers, that are not unit-less)\nWhen you read the data: the unit is defined by the unit configuration of the related axis or kinematics.\nWhen you write the data: the given unit is used for scaling; when not given, then the unit for scaling is defined by the unit configuration of the related axis or kinematics.\nLeave unitType and unitAddInfo out, when you just modify the data. Use them only, when you change the type of the struct or create a new entry.",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+},
+"unit" : {
+"type" : "string",
+"description" : "the unit of the value as string"
+},
+"unitType" : {
+"$ref" : "#/definitions/motion_core_fbtypes_UnitValueType",
+"description" : "the type of the unit",
+"default" : "POSITION"
+},
+"unitAddInfo" : {
+"$ref" : "#/definitions/motion_core_fbtypes_UnitAddInfo",
+"description" : "additional information on the unit type",
+"default" : "STANDARD"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUnitVector" : {
+"type" : "object",
+"description" : "Table for a vector of double+unit values",
+"properties" : {
+"doubleVector" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUnit"},
+"description" : "vector of double numbers with units"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUserUnit" : {
+"type" : "object",
+"description" : "Table for just one single double value, which has a user-set unit (can be used for any floating point numbers, that are not unit-less)",
+"properties" : {
+"doubleVal" : {
+"type" : "number",
+"description" : "the value",
+"default" : 0.0
+},
+"unit" : {
+"type" : "string",
+"description" : "the unit of the value as string"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleUserUnitVector" : {
+"type" : "object",
+"description" : "Table for a vector of double+user-unit values",
+"properties" : {
+"doubleVector" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUserUnit"},
+"description" : "vector of double numbers with units"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgDoubleVector" : {
+"type" : "object",
+"description" : "Table for a vector of double values",
+"properties" : {
+"doubleVector" : {
+"type" : "array", "items" : {"type" : "number"},
+"description" : "vector of double numbers"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgInt64" : {
+"type" : "object",
+"description" : "Table for just one single int64 value (can be used for enums, bitfields, integer numbers)",
+"properties" : {
+"intVal" : {
+"type" : "integer", "minimum" : -9223372036854775808, "maximum" : 9223372036854775807,
+"description" : "the value",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgInt64Vector" : {
+"type" : "object",
+"description" : "Table for a vector of int64 values",
+"properties" : {
+"intVector" : {
+"type" : "array", "items" : {"type" : "integer", "minimum" : -9223372036854775808, "maximum" : 9223372036854775807},
+"description" : "vector of int64 numbers"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgSingleItem" : {
+"type" : "object",
+"description" : "Data of a single value/set of a key-value-pair",
+"properties" : {
+"key" : {
+"type" : "string",
+"description" : "key of the item"
+},
+"value_type" : {
+"$ref" : "#/definitions/motion_core_fbtypes_KVPCfgSingleItemValue",
+"default" : "NONE"
+},
+"value" : {
+"anyOf": [{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgInt64" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDouble" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgBool" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgString" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUnit" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgInt64Vector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgBoolVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgStringVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUnitVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUserUnit" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgDoubleUserUnitVector" },{ "$ref" : "#/definitions/motion_core_fbtypes_KVPCfgConversionFactor" }],
+"description" : "entry contains a single value"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgString" : {
+"type" : "object",
+"description" : "Table for just one single string (can be used for strings and enums)",
+"properties" : {
+"stringVal" : {
+"type" : "string",
+"description" : "the value"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_KVPCfgStringVector" : {
+"type" : "object",
+"description" : "Table for a vector of string values",
+"properties" : {
+"stringVector" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "vector of strings"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_RTInputsCfg" : {
+"type" : "object",
+"description" : "common configuration of real-time inputs",
+"properties" : {
+"doubleArraySize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "size of the double array",
+"default" : 0
+},
+"int64ArraySize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "size of the int64 array",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_UnitCfgObj" : {
+"type" : "object",
+"description" : "General unit configuration for a motion object",
+"properties" : {
+"default" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_core_fbtypes_UnitCfgObjSingle"},
+"description" : "default units"
+}
+},
+"additionalProperties" : false
+},
+"motion_core_fbtypes_UnitCfgObjSingle" : {
+"type" : "object",
+"description" : "Single entry of the general unit configuration for a motion object",
+"properties" : {
+"valueType" : {
+"type" : "string",
+"description" : "the unit value type of the entry (position, velocity, jerk, ...)"
+},
+"abbreviation" : {
+"type" : "string",
+"description" : "abbreviation of the unit (as it will being used in flatbuffers and files)"
+}
+},
+"required" : ["valueType"],
+"additionalProperties" : false
+},
+"motion_drivecmd_fbtypes_AxsCfgHoming" : {
+"type" : "object",
+"description" : "configuration for homing function of a single axis",
+"properties" : {
+"encoderId" : {
+"$ref" : "#/definitions/motion_drivecmd_fbtypes_EncoderId",
+"description" : "id of encoder interface that to be homed",
+"default" : "ENCODER_2"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgCalcPipeline" : {
+"type" : "object",
+"description" : "configuration of a single calculation pipelines",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the calculation pipeline"
+},
+"steps" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgCalcStepAll",
+"description" : "configuration of all steps of calculation pipeline"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgCalcStep" : {
+"type" : "object",
+"description" : "configuration of a single calculation step",
+"properties" : {
+"stepID" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "ID of the calculation step",
+"default" : 0
+},
+"type" : {
+"type" : "string",
+"description" : "Type string of the calculation step"
+},
+"inputs" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "configuration of inputs of the calcStep; define from which step/master the inputs are taken"
+},
+"parameter" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgCalcStepParamAll",
+"description" : "all parameter values of the calculation step"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgCalcStepAll" : {
+"type" : "object",
+"description" : "configuration of all calculation steps of a single calculation pipeline",
+"properties" : {
+"steps" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgCalcStep"},
+"description" : "vector of all steps"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgCalcStepParam" : {
+"type" : "object",
+"description" : "a single parameter of a calculation step, when writing it, only name value and unit should be set.",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the parameter"
+},
+"value" : {
+"type" : "string",
+"description" : "value of the parameter"
+},
+"unit" : {
+"type" : "string",
+"description" : "unit of the parameter"
+},
+"description" : {
+"type" : "string",
+"description" : "what the parameter of the calculation step does, only for reading"
+},
+"mandatory" : {
+"type" : "boolean",
+"description" : "is this parameter mandatory, only for reading",
+"default" : false
+},
+"type" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_ParameterType",
+"description" : "type of the parameter, only for reading",
+"default" : "INTEGER"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgCalcStepParamAll" : {
+"type" : "object",
+"description" : "configuration of all parameters of a single calculation step",
+"properties" : {
+"params" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgCalcStepParam"},
+"description" : "vector of all params"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgDynSynchronisation" : {
+"type" : "object",
+"description" : "Configuration of the dynamic synchronisation behavior of a single axis",
+"properties" : {
+"limits" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgDynSynchronisationLim",
+"description" : "Reference to configuration of the dynamic synchronisation limits of the axis"
+},
+"syncWindowModulo" : {
+"type" : "number",
+"description" : "Deprecated! It doesn't use anymore. The configuration should be set with the syncWindowModuloExtended only.",
+"default" : 0.0
+},
+"syncWindowModuloExtended" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgDynSynchronisationSyncWinMod",
+"description" : "Dynamic synchronisation window modulo value"
+},
+"method" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_DynSynchronisationMethod",
+"description" : "Selected dynamic synchronisation method for sync. commands",
+"default" : "TWO_STEP"
+},
+"syncWindows" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgDynSynchronisationSyncWindows",
+"description" : "Dynamic synchronisation window values"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgDynSynchronisationLim" : {
+"type" : "object",
+"description" : "Configuration of the dynamic synchronisation limits of a single axis",
+"properties" : {
+"acc" : {
+"type" : "number",
+"description" : "Acceleration limit",
+"default" : 0.0
+},
+"dec" : {
+"type" : "number",
+"description" : "Deceleration limit",
+"default" : 0.0
+},
+"jrkAcc" : {
+"type" : "number",
+"description" : "Jerk limit, when accelerating",
+"default" : 0.0
+},
+"jrkDec" : {
+"type" : "number",
+"description" : "Jerk limit, when decelerating",
+"default" : 0.0
+},
+"velNeg" : {
+"type" : "number",
+"description" : "Velocity limit, when moving the slave axis in negative direction",
+"default" : 0.0
+},
+"velPos" : {
+"type" : "number",
+"description" : "Velocity limit, when moving the slave axis in positive direction",
+"default" : 0.0
+},
+"accUnit" : {
+"type" : "string",
+"description" : "unit of acc"
+},
+"decUnit" : {
+"type" : "string",
+"description" : "unit of dec"
+},
+"jrkAccUnit" : {
+"type" : "string",
+"description" : "unit of jrkAcc"
+},
+"jrkDecUnit" : {
+"type" : "string",
+"description" : "unit of jrkDec"
+},
+"velNegUnit" : {
+"type" : "string",
+"description" : "unit of velNeg"
+},
+"velPosUnit" : {
+"type" : "string",
+"description" : "unit of velPos"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgDynSynchronisationSyncWinMod" : {
+"type" : "object",
+"description" : "Configuration of the dynamic synchronisation window modulo of a single axis",
+"properties" : {
+"syncWindowModulo" : {
+"type" : "number",
+"description" : "Dynamic synchronisation window modulo value",
+"default" : 0.0
+},
+"syncWindowModuloUnit" : {
+"type" : "string",
+"description" : "Unit of syncWindowModulo"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgDynSynchronisationSyncWindows" : {
+"type" : "object",
+"description" : "Configuration of the dynamic synchronisation windows of a single axis",
+"properties" : {
+"syncWindowPosition" : {
+"type" : "number",
+"description" : "Dynamic synchronisation position window value",
+"default" : 0.0
+},
+"syncWindowVelocity" : {
+"type" : "number",
+"description" : "Dynamic synchronisation velocity window value",
+"default" : 0.0
+},
+"syncWindowPositionUnit" : {
+"type" : "string",
+"description" : "Unit of syncWindowPosition"
+},
+"syncWindowVelocityUnit" : {
+"type" : "string",
+"description" : "Unit of syncWindowPosition"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgErrReaction" : {
+"type" : "object",
+"description" : "Configuration of the error reaction behavior of a single axis",
+"properties" : {
+"slaveLimitsExceeded" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgErrReactionSlaveLimExceeded",
+"description" : "Reference to configuration of the slave limits exceeded behavior of the axis"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgErrReactionSlaveLimExceeded" : {
+"type" : "object",
+"description" : "Define the error reaction, when the coupled slave axis exceeds its configured dynamic limits (velocity, acceleration or jerk)",
+"properties" : {
+"type" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_SlaveCantFollowErrorReaction",
+"description" : "Default error reaction: keep synchronized even when the limits have been exceeded",
+"default" : "KEEP_SYNCHRONIZED"
+},
+"diagnosis" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_SlaveCantFollowMessageType",
+"description" : "Default message type: warning",
+"default" : "WARNING"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_AxsCfgSyncMotion" : {
+"type" : "object",
+"description" : "Configuration of the synchronized motion behavior of a single axis",
+"properties" : {
+"errorReaction" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgErrReaction",
+"description" : "Reference to configuration of the error reaction behavior of the axis"
+},
+"dynSynchronisation" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgDynSynchronisation",
+"description" : "Reference to configuration of the dynamic synchronisation behavior of the axis"
+},
+"calculationPipelines" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgCalcPipeline"},
+"description" : "configuration for calculation pipelines for a single axis"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_CalcPipelineCfg" : {
+"type" : "object",
+"description" : "configuration of a single calculation pipeline",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the calculation pipeline"
+},
+"generic" : {
+"type" : "boolean",
+"description" : "is this a generic pipeline (when not, its provided by a command and is read-only)",
+"default" : true
+},
+"steps" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_CalcStepCfg"},
+"description" : "vector of all calculation steps"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_CalcStepCfg" : {
+"type" : "object",
+"description" : "configuration of a single calculation step",
+"properties" : {
+"stepID" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "ID of the calculation step",
+"default" : 0
+},
+"type" : {
+"type" : "string",
+"description" : "type of the calculation step"
+},
+"inputs" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "inputs of the calculation step"
+},
+"parameter" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_CalcStepCfgSingleParam"},
+"description" : "data of all parameters of a single calculation step"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_CalcStepCfgSingleParam" : {
+"type" : "object",
+"description" : "configuration of a single parameter of a calculation step",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the parameter"
+},
+"valueDouble" : {
+"type" : "number",
+"description" : "value of the parameter (when it's a double value)",
+"default" : 0.0
+},
+"valueInt" : {
+"type" : "integer", "minimum" : -9223372036854775808, "maximum" : 9223372036854775807,
+"description" : "value of the parameter (when it's a integer value)",
+"default" : 0
+},
+"valueString" : {
+"type" : "string",
+"description" : "value of the parameter (when it's a string value)"
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/motion_core_fbtypes_AxsCfg"
+}

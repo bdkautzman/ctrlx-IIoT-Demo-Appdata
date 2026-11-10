@@ -1,0 +1,180 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "https://boschrexroth/kvd/schema/node.v1.0.schema.json",
+    "description": "Schema for KVD node configuration.",
+    "type": "object",
+    "properties": {
+        "address": {
+            "type": "string"
+        },
+        "value": {
+            "type": [
+                "string",
+                "number",
+                "integer",
+                "boolean",
+                "array",
+                "object"
+            ]
+        },
+        "mode": {
+            "type": "string",
+            "enum": [
+                "read-only"
+            ]
+        },
+        "volatile": {
+            "type": "boolean"
+        },
+        "model": {
+            "type": "string",
+            "pattern": ".yaml$"
+        },
+        "type": {
+            "oneOf": [
+                {
+                    "type": "string",
+                    "enum": [
+                        "bool8",
+                        "int8",
+                        "uint8",
+                        "int16",
+                        "uint16",
+                        "int32",
+                        "uint32",
+                        "int64",
+                        "uint64",
+                        "float",
+                        "float32",
+                        "double",
+                        "float64",
+                        "string",
+                        "timestamp",
+                        "arbool8",
+                        "arint8",
+                        "aruint8",
+                        "arint16",
+                        "aruint16",
+                        "arint32",
+                        "aruint32",
+                        "arint64",
+                        "aruint64",
+                        "arfloat",
+                        "arfloat32",
+                        "ardouble",
+                        "arfloat64",
+                        "arstring",
+                        "artimestamp"
+                    ]
+                },
+                {
+                    "type": "string",
+                    "pattern": "^models/"
+                },
+                {
+                    "type": "string",
+                    "pattern": "^types/"
+                }
+            ]
+        },
+        "nodeClass": {
+            "type": "string",
+            "enum": [
+                "Variable",
+                "Resource",
+                "Collection",
+                "Folder"
+            ]
+        },
+        "unit": {
+            "type": "string"
+        },
+        "displayName": {
+            "type": "string"
+        },
+        "displayFormat": {
+            "type": "string",
+            "enum": [
+                "Auto",
+                "Bin",
+                "Oct",
+                "Dec",
+                "Hex"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "descriptionUrl": {
+            "type": "string"
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "nodeClass": {
+                    "type": "string",
+                    "enum": [
+                        "Variable",
+                        "Resource",
+                        "Collection",
+                        "Folder"
+                    ]
+                },
+                "operations": {
+                    "type": "object",
+                    "properties": {
+                        "write": {
+                            "type": "boolean"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "unit": {
+                    "type": "string"
+                },
+                "displayName": {
+                    "type": "string"
+                },
+                "displayFormat": {
+                    "type": "string",
+                    "enum": [
+                        "Auto",
+                        "Bin",
+                        "Oct",
+                        "Dec",
+                        "Hex"
+                    ]
+                },
+                "description": {
+                    "type": "string"
+                },
+                "descriptionUrl": {
+                    "type": "string"
+                },
+                "extensions": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "key": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "key",
+                        "value"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "address"
+    ]
+}

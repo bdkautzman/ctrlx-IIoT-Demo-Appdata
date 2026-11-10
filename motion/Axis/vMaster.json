@@ -1,0 +1,396 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/cfg.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/cfg_schema.json",
+    "axisProfileName": "",
+    "devErrReaction": {
+        "customLimits": {
+            "dec": 0.03490658504,
+            "decUnit": "rad/s^2",
+            "jrkDec": 0.0,
+            "jrkDecUnit": "rad/s^3"
+        },
+        "devNotFollowing": {
+            "errReaction": "SEVERE_ERROR"
+        },
+        "estopSettings": {
+            "estopToDevCriticalErr": "ESTOP_AXIS_LIMIT",
+            "estopToDevFatalErr": "ESTOP_AXIS_LIMIT",
+            "estopToDevLightErr": "ESTOP_AXIS_LIMIT",
+            "estopToFieldbusErr": "ESTOP_AXIS_LIMIT",
+            "estopToNoDevErr": "ESTOP_AXIS_LIMIT",
+            "estopToNoDeviceInfo": "ESTOP_AXIS_LIMIT"
+        },
+        "reactions": {
+            "errorReactions": [
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "COMMUNICATION_ERROR_DRIVE"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "DRIVE_ERROR_F2_F3"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "DRIVE_ERROR_F4"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "DRIVE_ERROR_F6_F7"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "DRIVE_ERROR_F8"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "CMD_ERROR_PARAMETER"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "CMD_ERROR_STATE"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "CMD_ERROR_PREPARATION"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "CMD_ERROR_EXECUTION"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "MONITOR_ERROR_AXIS_LIMITS"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "MONITOR_ERROR_DRIVE_FOLLOWS_SETPOINTS"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "USER_ERROR_LIGHT"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "USER_ERROR_SEVERE"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "KINEMATICS_ERROR_SEVERE"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "KINEMATICS_ERROR_AXIS_DYNAMICS"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "GANTRY_ERROR_F2_F3"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "GANTRY_ERROR_F4"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "GANTRY_ERROR_F6_F7"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "GANTRY_ERROR_F8"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "GANTRY_OTHER_ERROR"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "GANTRY_BREAK_CMD_LIMITS"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "PLC_ERROR"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "SCRIPT_ERROR"
+                },
+                {
+                    "errorReaction": "LIGHT_BRAKE_CMD_LIMITS",
+                    "errorReactionFlags": [],
+                    "errorType": "SYSTEM_ERROR_SINGLE_MOTION_OBJECT"
+                },
+                {
+                    "errorReaction": "SEVERE_BRAKE_AXS_LIMITS_PWR_OFF",
+                    "errorReactionFlags": [],
+                    "errorType": "SYSTEM_ERROR_ALL_MOTION_OBJECTS"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_NONE"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_LIGHT_BRAKE_CMD_LIMITS"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_BRAKE_AXS_LIMITS"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_BRAKE_AXS_LIMITS_PWR_OFF"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_BRAKE_CFG_LIMITS"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_BRAKE_CFG_LIMITS_PWR_OFF"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_DRV_HALT"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_TRQ_RELEASE"
+                },
+                {
+                    "errorReaction": "NOT_SET",
+                    "errorReactionFlags": [],
+                    "errorType": "PEER_SEVERE_DRV_BEST_POSBLE_DEC"
+                }
+            ]
+        },
+        "useCfgReactions": false,
+        "userEstopLim": {
+            "dec": 0.03490658504,
+            "decUnit": "rad/s^2",
+            "jrkDec": 0.0,
+            "jrkDecUnit": "rad/s^3"
+        }
+    },
+    "functions": {
+        "axsCfgBelt": {
+            "beltCoordSysNameDefault": "",
+            "beltValConversionFactor": 0.001,
+            "denominatorUnitOfBeltConversionFactor": "deg",
+            "isBeltAxis": false,
+            "nominatorUnitOfBeltConversionFactor": "mm"
+        },
+        "axsCfgCyclicStatusData": {
+            "remanent": true,
+            "windows": {
+                "inPos": 1e-05,
+                "inPosUnit": "deg",
+                "inTrq": 10.0,
+                "inTrqUnit": "Nm",
+                "inVel": 2.7777778e-05,
+                "inVelUnit": "rpm",
+                "standstill": 2.7777778e-05,
+                "standstillUnit": "rpm"
+            }
+        },
+        "axsCfgDriveSLS": {
+            "enableFlag": false,
+            "vel": 0.000166666667,
+            "velUnit": "rpm"
+        },
+        "axsEncoder": {
+            "cutoffFrq": 250.0,
+            "cutoffFrqUnit": "Hz",
+            "feedConst": 0.01,
+            "feedConstUnit": "deg",
+            "filterType": "NONE",
+            "fineAdjustActive": false,
+            "inputRevLoadGear": 1,
+            "outputRevLoadGear": 1,
+            "resolution": 1048576
+        },
+        "coupling": {
+            "gantry": {
+                "isMember": false,
+                "moveAllowed": false,
+                "multiBrakeDyn": false
+            },
+            "syncmotion": {
+                "dynSynchronisation": {
+                    "limits": {
+                        "acc": 0.0,
+                        "accUnit": "rad/s^2",
+                        "dec": 0.0,
+                        "decUnit": "rad/s^2",
+                        "jrkAcc": 0.0,
+                        "jrkAccUnit": "rad/s^3",
+                        "jrkDec": 0.0,
+                        "jrkDecUnit": "rad/s^3",
+                        "velNeg": 0.0,
+                        "velNegUnit": "rpm",
+                        "velPos": 0.0,
+                        "velPosUnit": "rpm"
+                    },
+                    "method": "TWO_STEP",
+                    "syncWindowModulo": 0.0,
+                    "syncWindowModuloExtended": {
+                        "syncWindowModulo": 0.0,
+                        "syncWindowModuloUnit": "deg"
+                    },
+                    "syncWindows": {
+                        "syncWindowPosition": 0.0,
+                        "syncWindowPositionUnit": "deg",
+                        "syncWindowVelocity": 0.0,
+                        "syncWindowVelocityUnit": "rpm"
+                    }
+                },
+                "errorReaction": {
+                    "slaveLimitsExceeded": {
+                        "diagnosis": "WARNING",
+                        "type": "TRY_TO_RESYNC"
+                    }
+                }
+            }
+        },
+        "extrapolation": {
+            "extrapolateActual": false,
+            "extrapolationDynamicSource": "Actual",
+            "extrapolationExternalDynamicSel": "Velocity",
+            "extrapolationTime": 0.0,
+            "extrapolationTimeUnit": "s"
+        },
+        "filter": {
+            "cutoffFrq": 250.0,
+            "cutoffFrqUnit": "Hz",
+            "filterType": "NONE"
+        },
+        "homing": {
+            "encoderId": "ENCODER_1"
+        },
+        "ignoreAxisProfile": false,
+        "maximumValueMonitoring": false,
+        "openLoop": false,
+        "operationModeSwitch": {
+            "extrapolationTime": 0.0,
+            "extrapolationTimeUnit": "s"
+        },
+        "posMode": {
+            "targetPosWindowModulo": 0.0,
+            "targetPosWindowModuloUnit": "deg"
+        }
+    },
+    "kinProperties": {
+        "accReserve": 0.2,
+        "jrkReserve": 1.0
+    },
+    "limits": {
+        "acc": 200.0,
+        "accUnit": "rad/s^2",
+        "dec": 200.0,
+        "decUnit": "rad/s^2",
+        "jrkAcc": 0.0,
+        "jrkAccUnit": "rad/s^3",
+        "jrkDec": 0.0,
+        "jrkDecUnit": "rad/s^3",
+        "posMax": 1000.0,
+        "posMaxUnit": "deg",
+        "posMin": -1000.0,
+        "posMinUnit": "deg",
+        "trqNeg": 0.0,
+        "trqNegUnit": "Nm",
+        "trqPos": 0.0,
+        "trqPosUnit": "Nm",
+        "velNeg": 6000.0,
+        "velNegUnit": "rpm",
+        "velPos": 6000.0,
+        "velPosUnit": "rpm"
+    },
+    "objectType": "Axis",
+    "properties": {
+        "activated": true,
+        "axsCategory": {
+            "axsCategory": "DRIVEAXS"
+        },
+        "axsType": "ROTATIONAL",
+        "modulo": true,
+        "moduloValue": 360.0,
+        "moduloValueUnit": "deg"
+    },
+    "rtInputs": {
+        "doubleArraySize": 20,
+        "int64ArraySize": 0
+    },
+    "units": {
+        "default": [
+            {
+                "abbreviation": "deg",
+                "valueType": "position+length"
+            },
+            {
+                "abbreviation": "rpm",
+                "valueType": "velocity"
+            },
+            {
+                "abbreviation": "rad/s^2",
+                "valueType": "acceleration"
+            },
+            {
+                "abbreviation": "rad/s^3",
+                "valueType": "jerk"
+            },
+            {
+                "abbreviation": "N",
+                "valueType": "force"
+            },
+            {
+                "abbreviation": "Nm",
+                "valueType": "torque"
+            },
+            {
+                "abbreviation": "s",
+                "valueType": "time"
+            },
+            {
+                "abbreviation": "Hz",
+                "valueType": "frequency"
+            },
+            {
+                "abbreviation": "Nm/s",
+                "valueType": "torque_ramp"
+            }
+        ]
+    }
+}

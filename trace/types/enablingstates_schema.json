@@ -1,0 +1,49 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"common_log_trace_fbs_EnablingState" : {
+"type" : "object",
+"description" : "This table holds the enabling state of messages, warnings and errors of one trace unit.",
+"properties" : {
+"unitName" : {
+"type" : "string",
+"description" : "Unit name of the registered trace unit."
+},
+"messages" : {
+"type" : "boolean",
+"description" : "Enabling state of messages.",
+"default" : false
+},
+"warnings" : {
+"type" : "boolean",
+"description" : "Enabling state of warnings.",
+"default" : false
+},
+"errors" : {
+"type" : "boolean",
+"description" : "Enabling state of errors.",
+"default" : false
+}
+},
+"required" : ["unitName"],
+"additionalProperties" : false
+},
+"common_log_trace_fbs_EnablingStates" : {
+"type" : "object",
+"description" : "This table defines the enabling states of all trace units for a specific device.",
+"properties" : {
+"enablingStates" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/common_log_trace_fbs_EnablingState"},
+"description" : "All enabling states."
+},
+"machineIdentification" : {
+"type" : "string",
+"description" : "Machine identification to identify a specific device."
+}
+},
+"required" : ["machineIdentification"],
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/common_log_trace_fbs_EnablingStates"
+}

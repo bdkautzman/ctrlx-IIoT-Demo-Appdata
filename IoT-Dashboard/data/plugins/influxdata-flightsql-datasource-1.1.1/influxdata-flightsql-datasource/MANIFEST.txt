@@ -1,0 +1,42 @@
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "community",
+  "signedByOrg": "influxdata",
+  "signedByOrgName": "InfluxData, Inc.",
+  "plugin": "influxdata-flightsql-datasource",
+  "version": "1.1.1",
+  "time": 1714160504310,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "LICENSE": "c5accbbd8546e94c34aed24afe689a617627d18eed5a6c48277e48db57c23851",
+    "README.md": "2f54516eb3fbb8ec7482b15858b229d6d31346628feeb1d3048702ac57c0c59d",
+    "gpx_flightsql_datasource_linux_arm64": "1d2a2b2b9e3c193c46f75516ab4e02944c5d0866d2c4de2ded3f126cb0357e0a",
+    "module.js": "eff42682bceb5dbb70d076c8e5a3d09009b7b8639641a336654cc926a0cb0c6f",
+    "gpx_flightsql_datasource_darwin_arm64": "2f73761da6d6192b820b915dbbf7baae217e33e60e455e2e5e8329b488cc78a4",
+    "gpx_flightsql_datasource_darwin_amd64": "2c734ffa11bf007228c366684e1076a932a7434d59568ac41da691336817cc96",
+    "gpx_flightsql_datasource_windows_amd64.exe": "c878c89986e6e77b6e093d1756a85b3b7ffa04ef6eae7adf6c97b5a345336105",
+    "img/raw-editor-query.png": "56e63b6a979247330477d78e96ba25c8424b9aa2e3fe3b2ded678637c0d343cb",
+    "img/builder-view-query.png": "dcc6405e86f1ce0c0379d25258204ff431faf5dec192c1cd3f93f6292d96c2d8",
+    "img/arrow-logo.png": "75344bbc50f0f5cfe13e125685feaaf092457e3311759a1a8a185d8dd87190d1",
+    "img/datasource-configuration.png": "c7c0b106826aa6e1d704f4b28f1797231f2946e5a8f7aaf64425fdc8f8b7f4b5",
+    "plugin.json": "4b4f1d413466c4c38cb41b6a1fd9fc1eaf7ead99e0294527f15ceca1deb5f166",
+    "CHANGELOG.md": "ba613d6f914b27dce9ace4d8c0cb074273c9eb6c536d8e7ac24c5ce6ae941fd0",
+    "gpx_flightsql_datasource_linux_amd64": "dcde15e18b5fba7a3865b7871859a195875d5adc08218661c5776ad1285bdb6d",
+    "module.js.map": "c12ed2844acd66247245776fc4e831f70563286e32b888d972d55c6f5c9e40d4"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v4.10.11
+Comment: https://openpgpjs.org
+
+wrkEARMKAAYFAmYsA3gAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm5+OgAgkBpzkNf6RoiBTh2jJTwj175Qey0KS5gt1x/1FXnwD+8oDMAkh8
+lTgc/b0zfTkxzRr9XhwFLeY7o1MJftz1Rg1tD/kCCQFwlOfXpSRPTEmgjrK+
+8+nBR18xDA3eOciNKSu1l6O7OwATRfr4RYm1HYJYbcwlre1JHQL7hBQy7oMJ
+SJsBV3fDVw==
+=Ma8+
+-----END PGP SIGNATURE-----

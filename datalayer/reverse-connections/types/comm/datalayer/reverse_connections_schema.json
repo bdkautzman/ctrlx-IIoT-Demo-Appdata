@@ -1,0 +1,34 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"comm_datalayer_remote_ReverseConnection" : {
+"type" : "object",
+"properties" : {
+"connectionId" : {
+"type" : "string",
+"description" : "local id of reverse connection"
+},
+"connectionAddress" : {
+"type" : "string",
+"description" : "address to remote control to connect to (connect string)\nexamples:\ntcp://<user>:<pw>@<ip>\ntcp://<user>:<pw>@<ip>:2070\ntcp://<user>:<pw>@<ip>:2070?sslport=443\nwss://<user>:<pw>@<ip>\nwss://<user>:<pw>@<ip>:443"
+},
+"name" : {
+"type" : "string",
+"description" : "name the datalayer appears on remote server"
+}
+},
+"required" : ["connectionId", "connectionAddress", "name"],
+"additionalProperties" : false
+},
+"comm_datalayer_remote_ReverseConnections" : {
+"type" : "object",
+"properties" : {
+"reverse_connections" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/comm_datalayer_remote_ReverseConnection"}
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/comm_datalayer_remote_ReverseConnections"
+}

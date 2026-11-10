@@ -1,0 +1,83 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/admin2.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/admin2_schema.json",
+    "callableTimeouts": {
+        "begin": 1000,
+        "end": 1000,
+        "execute": 60000
+    },
+    "controlDebug_type": "NONE",
+    "cpuInfo": {
+        "cpuCoreAutomation": 3,
+        "cpuCoreHwWdg": 2,
+        "cpuCoreNonRealtimeDefault": 0,
+        "cpuCoreNonRealtimeMax": 1,
+        "cpuCoreNonRealtimeMin": 0,
+        "cpuCorePtpTimer": 2,
+        "cpuCoreRealtimeDefault": 2,
+        "cpuCoreRealtimeMax": 3,
+        "cpuCoreRealtimeMin": 2,
+        "cpuCoreScheduler": 2,
+        "cpuCoresActive": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "cpuCoresNonRealtime": [
+            0,
+            1
+        ],
+        "cpuCoresRealtime": [
+            2,
+            3
+        ],
+        "cpuCoresTotal": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "variationId": "2"
+    },
+    "cpuLoadSettings": [
+        {
+            "core": 0,
+            "errorFactor": 5,
+            "timeout": 5000,
+            "warningFactor": 3
+        },
+        {
+            "core": 1,
+            "errorFactor": 5,
+            "timeout": 5000,
+            "warningFactor": 3
+        },
+        {
+            "core": 2,
+            "errorFactor": 5,
+            "timeout": 5000,
+            "warningFactor": 3
+        },
+        {
+            "core": 3,
+            "errorFactor": 5,
+            "timeout": 5000,
+            "warningFactor": 3
+        }
+    ],
+    "hardwareWatchdogRequired": true,
+    "programConfigurationMode": "AUTOMATIC",
+    "startupErrorReaction": "CONTINUE",
+    "startupState": "OPERATING",
+    "startupTimeout": 0,
+    "triggerSource": "INTERRUPT",
+    "utilization": {
+        "error": 75,
+        "warning": 50
+    },
+    "watchdogDefaultValue": "WDG_DEFAULT"
+}

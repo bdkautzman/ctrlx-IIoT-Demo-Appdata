@@ -1,0 +1,18 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: rat
+version: 0.0.1
+elements:
+    iq:
+        description: The IQ of the rat.
+        nodeClass: Variable
+        mode: read-write
+        value: 145
+        typeSchema:
+            type: int32
+    hungry:
+        description: The rat is hungry.
+        nodeClass: Variable
+        mode: read-write
+        value: true
+        typeSchema:
+            type: bool8

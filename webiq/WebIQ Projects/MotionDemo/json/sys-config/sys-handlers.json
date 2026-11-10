@@ -1,0 +1,13 @@
+{
+    "handlers": [
+        "visuals.handler.default.optionDialog",
+        "visuals.handler.default.confirmation",
+        "visuals.handler.default.notification",
+        "visuals.handler.default.passwordExpired",
+        "visuals.handler.default.connectionFailed",
+        "visuals.handler.default.keyboard",
+        "visuals.handler.default.logout",
+        "visuals.handler.default.numpad"
+    ],
+    "disabled": []
+}

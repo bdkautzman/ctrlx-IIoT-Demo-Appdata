@@ -1,0 +1,6 @@
+{
+    "$schema": "./schemas/settings.v1.0.schema.json",
+    "db": "",
+    "readOnly": false,
+    "verbose": false
+}

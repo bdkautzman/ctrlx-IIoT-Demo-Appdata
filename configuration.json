@@ -1,0 +1,338 @@
+{
+  "$schema": "https://json-schema.boschrexroth.com/ctrlx-automation/ctrlx-core/solutions/configuration.v1.schema.json",
+  "device": "ctrlX-CORE-IIoT-Demo",
+  "user": "boschrexroth",
+  "apps": [
+    {
+      "name": "bare",
+      "version": "1.0"
+    },
+    {
+      "name": "cam-builder",
+      "title": "Cam Builder",
+      "version": "2.2.1"
+    },
+    {
+      "name": "core22",
+      "version": "20260225"
+    },
+    {
+      "name": "core24",
+      "version": "20260824"
+    },
+    {
+      "name": "ctrlx-grafana",
+      "title": "IoT Dashboard",
+      "version": "4.6.4+12.3.1",
+      "appDirectories": [
+        {
+          "name": "IoT-Dashboard",
+          "description": "IoT Dashboard configuration",
+          "icon": "bosch-ic-desktop-graph",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "ctrlx-influxdb",
+      "title": "InfluxDB",
+      "version": "4.6.3+2.8.0",
+      "appDirectories": [
+        {
+          "name": "influxdb",
+          "description": "InfluxDB configuration",
+          "icon": "bosch-ic-core-data",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "ctrlx-ixon-ixagent",
+      "title": "IXON Cloud Connector for the ctrlX CORE",
+      "version": "0.1.21",
+      "appDirectories": [
+        {
+          "name": "IXON Cloud Connector",
+          "description": "IXON Cloud Connector",
+          "copyOnLoad": true
+        }
+      ]
+    },
+    {
+      "name": "ctrlx-node-red",
+      "title": "Node-RED",
+      "version": "4.6.11+4.1.11-ctrlx",
+      "appDirectories": [
+        {
+          "name": "node-RED",
+          "description": "Node-RED configuration (userDir)",
+          "icon": "bosch-ic-directory",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "ctrlx-smarthmi-webiq-runtime",
+      "title": "WebIQ Server App (Runtime App)",
+      "version": "2.16.4",
+      "appDirectories": [
+        {
+          "name": "webiq",
+          "description": "WebIQ Runtime Data"
+        }
+      ]
+    },
+    {
+      "name": "ctrlx-telegraf",
+      "title": "Telegraf",
+      "version": "4.6.3+1.37.1",
+      "appDirectories": [
+        {
+          "name": "telegraf",
+          "description": "Telegraf configuration",
+          "icon": "bosch-ic-chart-line-checkmark",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-arch01-hw",
+      "title": "Hardware Support",
+      "version": "4.6.4"
+    },
+    {
+      "name": "rexroth-arch01-kernel",
+      "title": "Realtime Kernel",
+      "version": "6.12.40-ctrlx-59.2"
+    },
+    {
+      "name": "rexroth-automationcore",
+      "title": "Automation Core",
+      "version": "4.6.5",
+      "appDirectories": [
+        {
+          "name": "datalayer",
+          "description": "Data Layer",
+          "icon": "ctrlx-ic-data-layer",
+          "copyOnLoad": true
+        },
+        {
+          "name": "framework",
+          "description": "Framework",
+          "icon": "bosch-ic-cubes",
+          "copyOnLoad": true
+        },
+        {
+          "name": "scheduler",
+          "description": "Scheduler: Tasks, callables and timing settings",
+          "icon": "bosch-ic-cycletime-eighth",
+          "copyOnLoad": true
+        },
+        {
+          "name": "script",
+          "description": "Scripts configurations",
+          "icon": "bosch-ic-document-code-stack",
+          "copyOnLoad": true
+        },
+        {
+          "name": "scripts",
+          "description": "Scripts will be executed by script runner",
+          "icon": "bosch-ic-document-code-stack",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "synchronization",
+          "description": "Synchronization: Instances",
+          "icon": "bosch-ic-clock",
+          "copyOnLoad": true
+        },
+        {
+          "name": "trace",
+          "description": "Trace: Enabling states - messages, warnings, errors",
+          "icon": "bosch-ic-stethoscope",
+          "copyOnLoad": true
+        }
+      ]
+    },
+    {
+      "name": "rexroth-deviceadmin",
+      "title": "Device Admin",
+      "version": "4.6.6",
+      "appDirectories": [
+        {
+          "name": "diagnosis",
+          "description": "Diagnosis settings",
+          "icon": "bosch-ic-stethoscope",
+          "copyOnLoad": true
+        },
+        {
+          "name": "remote-logging",
+          "description": "Log Management settings",
+          "icon": "bosch-ic-stethoscope",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-ethercatmaster",
+      "title": "EtherCAT Master",
+      "version": "4.6.0",
+      "appDirectories": [
+        {
+          "name": "comm.ethercat.master",
+          "description": "EtherCAT Master",
+          "icon": "ctrlx-ic-ethercat",
+          "writeProtected": true
+        }
+      ]
+    },
+    {
+      "name": "rexroth-firewall",
+      "title": "Firewall",
+      "version": "4.6.4",
+      "appDirectories": [
+        {
+          "name": "firewall",
+          "description": "Firewall configuration data",
+          "icon": "bosch-ic-security",
+          "copyOnLoad": true,
+          "writeProtected": true
+        }
+      ]
+    },
+    {
+      "name": "rexroth-kvd",
+      "title": "Key Value Database",
+      "version": "4.6.5",
+      "appDirectories": [
+        {
+          "name": "kvd",
+          "description": "Key Value Database configuration",
+          "icon": "bosch-ic-binary",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-motion",
+      "title": "Motion",
+      "version": "4.6.6",
+      "appDirectories": [
+        {
+          "name": "axisprofile",
+          "description": "Motion: Axis profile configuration",
+          "icon": "bosch-ic-directory",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "cam-data",
+          "description": "Motion: Cam pools",
+          "icon": "bosch-ic-desktop-graph",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "motion",
+          "description": "Motion: Axes and kinematics configuration, coordinate systems and areas",
+          "icon": "ctrlx-ic-motion",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-opcua-server",
+      "title": "OPC UA Server",
+      "version": "4.6.6",
+      "appDirectories": [
+        {
+          "name": "opcuaserver",
+          "description": "OPC UA Server: Endpoint configuration, limit values and certificate configuration",
+          "icon": "ctrlx-ic-opc-ua",
+          "copyOnLoad": true,
+          "writeProtected": true
+        },
+        {
+          "name": "opcuaserver/cert-import",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "opcuaserver/companion-config",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "opcuaserver/companion-config/tools",
+          "writeProtected": true
+        },
+        {
+          "name": "opcuaserver/mirror-companion-config",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-plc",
+      "title": "PLC",
+      "version": "4.6.4",
+      "appDirectories": [
+        {
+          "name": "plc",
+          "description": "PLC: Runtime and optional engineering data",
+          "icon": "ctrlx-ic-plc",
+          "copyOnLoad": true,
+          "writeProtected": true
+        },
+        {
+          "name": "plc/run/linux-gcc-aarch64/data",
+          "copyOnLoad": true,
+          "writeProtected": false
+        },
+        {
+          "name": "plc/run/linux-gcc-x64/data",
+          "copyOnLoad": true,
+          "writeProtected": false
+        }
+      ]
+    },
+    {
+      "name": "rexroth-setup",
+      "title": "Setup",
+      "version": "4.6.4"
+    },
+    {
+      "name": "rexroth-solutions",
+      "title": "Solutions",
+      "version": "4.6.6"
+    },
+    {
+      "name": "rexroth-version-guard",
+      "title": "Version Guard",
+      "version": "4.6.0"
+    },
+    {
+      "name": "snapd",
+      "version": "2.75.2"
+    },
+    {
+      "name": "sqlite-ctrlx",
+      "title": "SQLite Database",
+      "version": "3.0.0"
+    },
+    {
+      "name": "tetris",
+      "title": "Tetris",
+      "version": "1.0.1"
+    }
+  ]
+}

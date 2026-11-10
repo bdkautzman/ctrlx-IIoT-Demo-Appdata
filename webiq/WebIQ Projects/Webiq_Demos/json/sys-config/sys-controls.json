@@ -1,0 +1,180 @@
+{
+    "notificationDialog": {
+        "name": "notification-dialog",
+        "title": "${V_NOTIFICATION}",
+        "template": "default/sys-dialog/dialog-notification"
+    },
+    "confirmDialog": {
+        "class-name": "dialog-box confirm",
+        "title": "${V_CONFIRM_TITLE}",
+        "name": "visuals-confirm-dialog",
+        "template": "default/sys-dialog/dialog-confirm",
+        "cover-background": true
+    },
+    "optionDialog": {
+        "class-name": "dialog-box option",
+        "title": "${V_OPTIONDIALOG_TITLE}",
+        "name": "visuals-option-dialog",
+        "template": "default/sys-dialog/dialog-option",
+        "cover-background": true
+    },
+    "optionDialogButtons": {
+        "class-name": "button",
+        "template": "default/button"
+    },
+    "askSaveDialog": {
+        "class-name": "dialog-box ask-save",
+        "title": "${V_ASK_SAVE_TITLE}",
+        "name": "ask-save-dialog",
+        "template": "default/sys-dialog/dialog-ask-save",
+        "cover-background": true
+    },
+    "chooseFileDialog": {
+        "template": "default/sys-dialog/dialog-file"
+    },
+    "passwordExpiredDialog": {
+        "class-name": "dialog-box password-expired",
+        "name": "password-expired-dialog",
+        "template": "default/sys-dialog/dialog-password-expired",
+        "title": "${V_PASSWORD_EXPIRED_TITLE}",
+        "cover-background": true
+    },
+    "startupLogin": {
+        "ui": "login",
+        "class-name": "login",
+        "template": "default/login",
+        "userEntry": "<div data-ui=\"user\" class=\"user\"><div class=\"userPic\"></div><div class=\"user_detail\"><h1 data-ui=\"user-name\"><%= USER %></h1></div></div>",
+        "authBox": {
+            "class-name": "iq-variant-02 no-icon hidden",
+            "label": "Authentication Realm",
+            "template": "default/iq-select-box.iq-variant-02",
+            "selected": 0
+        }
+    },
+    "loadingOverlay": {
+        "tagName": "DIV",
+        "class-name": "loading-box-overlay",
+        "template": null
+    },
+    "threadsDialogCreate": {
+        "dialogTitle": "${threads.create.dialog.title}",
+        "dialogClassName": "dialog-box threads-dialog",
+        "dialogTemplate": "default/dialog-box",
+        "titleClassName": "iq-input-field iq-variant-02 title",
+        "titleTemplate": "default/iq-input-field.iq-variant-02",
+        "titleLabel": "${threads.create.title.label}",
+        "messageClassName": "iq-input-field iq-variant-02 message",
+        "messageTemplate": "default/iq-input-field.iq-variant-02",
+        "messageLabel": "${threads.create.message.label}",
+        "deleteClassName": "iq-button iq-variant-01 delete",
+        "deleteTemplate": "default/iq-button.iq-variant-01",
+        "deleteLabel": "",
+        "applyClassName": "iq-button iq-variant-01 apply",
+        "applyTemplate": "default/iq-button.iq-variant-01",
+        "applyLabel": "${threads.create.apply.label}",
+        "enterMessageNotification": "${threads.enterMessage.notification}"
+    },
+    "threadsDialogEdit": {
+        "dialogTitle": "${threads.edit.dialog.title}",
+        "dialogClassName": "dialog-box threads-dialog",
+        "dialogTemplate": "default/dialog-box",
+        "titleClassName": "iq-input-field iq-variant-02 title",
+        "titleTemplate": "default/iq-input-field.iq-variant-02",
+        "titleLabel": "${threads.edit.title.label}",
+        "messageClassName": "iq-input-field iq-variant-02 message",
+        "messageTemplate": "default/iq-input-field.iq-variant-02",
+        "messageLabel": "${threads.edit.message.label}",
+        "deleteClassName": "iq-button iq-variant-01 delete",
+        "deleteTemplate": "default/iq-button.iq-variant-01",
+        "deleteLabel": "${threads.edit.delete.label}",
+        "deleteConfirmation": "${threads.edit.delete.confirmation}",
+        "applyClassName": "iq-button iq-variant-01 apply",
+        "applyTemplate": "default/iq-button.iq-variant-01",
+        "applyLabel": "${threads.edit.apply.label}",
+        "enterMessageNotification": "${threads.enterMessage.notification}"
+    },
+    "threadList": {
+        "templateUrl": "default/thread-list",
+        "dateformat": "${V_DATEFORMAT}",
+        "renderReplies": false,
+        "styleSpeechBubble": false
+    },
+    "trendSetsDialogCreate": {
+        "dialogClassName": "dialog-box trend-sets-dialog create",
+        "dialogTemplate": "default/dialog-box",
+        "dialogTitle": "${ui-action.trend-set-create.dialog.title}",
+        "nameClassName": "iq-input-field iq-variant-02 title",
+        "nameTemplate": "default/iq-input-field.iq-variant-02",
+        "nameLabel": "${ui-action.trend-set-create.name.label}",
+        "cancelClassName": "iq-button iq-variant-01 cancel",
+        "cancelTemplate": "default/iq-button.iq-variant-01",
+        "cancelLabel": "${ui-action.trend-set-create.cancel.label}",
+        "applyClassName": "iq-button iq-variant-01 apply",
+        "applyTemplate": "default/iq-button.iq-variant-01",
+        "applyLabel": "${ui-action.trend-set-create.apply.label}",
+        "enterNameMessage": "${ui-action.trend-set-create.enterName.message}",
+        "enterNameTitle": "${ui-action.trend-set-create.enterName.title}",
+        "nameExistsMessage": "${ui-action.trend-set-create.nameExists.message}",
+        "nameExistsTitle": "${ui-action.trend-set-create.nameExists.title}"
+    },
+    "trendSetsDialogEdit": {
+        "dialogClassName": "dialog-box trend-sets-dialog edit",
+        "dialogTemplate": "default/dialog-box",
+        "dialogTitle": "${ui-action.trend-set-rename.dialog.title}",
+        "nameClassName": "iq-input-field iq-variant-02 title",
+        "nameTemplate": "default/iq-input-field.iq-variant-02",
+        "nameLabel": "${ui-action.trend-set-rename.name.label}",
+        "cancelClassName": "iq-button iq-variant-01 cancel",
+        "cancelTemplate": "default/iq-button.iq-variant-01",
+        "cancelLabel": "${ui-action.trend-set-rename.cancel.label}",
+        "applyClassName": "iq-button iq-variant-01 apply",
+        "applyTemplate": "default/iq-button.iq-variant-01",
+        "applyLabel": "${ui-action.trend-set-rename.apply.label}",
+        "enterNameMessage": "${ui-action.trend-set-rename.enterName.message}",
+        "enterNameTitle": "${ui-action.trend-set-rename.enterName.title}",
+        "nameExistsMessage": "${ui-action.trend-set-rename.nameExists.message}",
+        "nameExistsTitle": "${ui-action.trend-set-rename.nameExists.title}"
+    },
+    "trendExportDialog": {
+        "dialogClassName": "dialog-box trend-data-export",
+        "dialogTemplate": "default/dialog-box",
+        "dialogTitle": "${ui-action.trend-export.dialog.title}",
+        "startLabelClassName": "iq-label iq-variant-01 start-label",
+        "startLabelTemplate": "default/iq-label.iq-variant-01",
+        "startLabel": "${ui-action.trend-export.start.label}",
+        "startClassName": "iq-button iq-variant-02 date-time-selection",
+        "startTemplate": "default/iq-button.date-time-selection",
+        "endLabelClassName": "iq-label iq-variant-01 end-label",
+        "endLabelTemplate": "default/iq-label.iq-variant-01",
+        "endLabel": "${ui-action.trend-export.end.label}",
+        "endClassName": "iq-button iq-variant-02 date-time-selection",
+        "endTemplate": "default/iq-button.date-time-selection",
+        "applyClassName": "iq-button iq-variant-01 apply",
+        "applyTemplate": "default/iq-button.iq-variant-01",
+        "applyLabel": "${ui-action.trend-export.apply.label}",
+        "cancelClassName": "iq-button iq-variant-01 cancel",
+        "cancelTemplate": "default/iq-button.iq-variant-01",
+        "cancelLabel": "${ui-action.trend-export.cancel.label}",
+        "dateTimeFormat": "${iqtrend_timestamp_format}"
+    },
+    "dateTimeDialog": {
+        "dialogClassName": "dialog-box date-time-selection",
+        "dialogTemplate": "default/dialog-box",
+        "dateLabelClassName": "iq-label date-label iq-variant-01",
+        "dateLabelTemplate": "default/iq-label.iq-variant-01",
+        "dateLabel": "${date-time-selection.date.label}",
+        "dateSelectClassName": "iq-select-date iq-variant-01 always-open",
+        "dateSelectTemplate": "default/iq-select-date.iq-variant-01",
+        "timeLabelClassName": "iq-label time-label iq-variant-01",
+        "timeLabelTemplate": "default/iq-label.iq-variant-01",
+        "timeLabel": "${date-time-selection.time.label}",
+        "timeSelectClassName": "iq-select-time iq-variant-01 iq-icon-variant-01",
+        "timeSelectTemplate": "default/iq-select-time.iq-variant-01",
+        "applyClassName": "iq-button iq-variant-01",
+        "applyTemplate": "default/iq-button.iq-variant-01",
+        "applyLabel": "${date-time-selection.apply.label}",
+        "cancelClassName": "iq-button iq-variant-01",
+        "cancelTemplate": "default/iq-button.iq-variant-01",
+        "cancelLabel": "${date-time-selection.cancel.label}"
+    }
+}

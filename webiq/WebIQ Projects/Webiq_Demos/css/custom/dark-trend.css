@@ -1,0 +1,100 @@
+/* css/custom/dark-trend.css */
+
+/* control base element */
+.iq-trend.dark-trend {
+   
+    --loading-indicator-color: #ffffff;
+
+    --scale-width: 44px;
+    --scale-marker-width: 4px;
+    --scale-color: white;
+
+    --timeline-height: 44px;
+    --timeline-marker-height: 4px;
+    --timeline-color: white;
+
+    --trend-marker-line-color: white;
+    --trend-marker-line-active-color: var(--iq-highlight-color);
+    --trend-marker-line-width: 1px;
+    --trend-marker-icon-color: white;
+    --trend-marker-icon-active-color: var(--iq-highlight-color);
+    --trend-marker-icon-background-color: black;
+    --trend-marker-info-background-color: rgb(58, 58, 58);
+    --trend-marker-info-height: 138px;
+    --trend-marker-info-width: 400px;
+    --trend-marker-info-close-color: lightgrey;
+    --trend-marker-info-close-size: 16px;
+    --trend-marker-title-font-size: 14px;
+    --trend-marker-title-font-family: RobotoLight;
+    --trend-marker-title-line-height: initial;
+    --trend-marker-title-font-weight: bold;
+    --trend-marker-title-color: white;
+    --trend-marker-text-font-size: 14px;
+    --trend-marker-text-font-family: RobotoLight;
+    --trend-marker-text-line-height: initial;
+    --trend-marker-text-font-weight: initial;
+    --trend-marker-text-color: white;
+    --trend-marker-user-font-size: 14px;
+    --trend-marker-user-font-family: RobotoBold;
+    --trend-marker-user-line-height: initial;
+    --trend-marker-user-font-weight: initial;
+    --trend-marker-user-color: #51697F;
+    --trend-marker-timestamp-font-size: 14px;
+    --trend-marker-timestamp-font-family: RobotoLight;
+    --trend-marker-timestamp-line-height: initial;
+    --trend-marker-timestamp-font-weight: bold;
+    --trend-marker-timestamp-color: #899BAB;   
+
+    --line-color: rgb(0, 0, 0);
+
+    --scale-label-font-size: 12px;
+    --scale-label-font-family: RobotoBold;
+    --scale-label-color: white;
+
+    --unit-info-font-size: 10px;
+    --unit-info-font-color: lightgrey;
+    --unit-info-font-family: RobotoBold;
+
+    --timeline-start-font-size: 10px;
+    --timeline-start-time-line-height: 12px;
+    --timeline-start-time-font-color: white;
+    --timeline-start-time-font-family: RobotoBold;
+    --timeline-start-date-line-height: 14px;
+    --timeline-start-date-font-color: rgb(255, 255, 255);
+    --timeline-start-date-font-family: RobotoLight;
+    --timeline-start-date-background-color: transparent;
+    --timeline-label-font-size: 10px;
+    --timeline-label-font-family: RobotoBold;
+    --timeline-label-color: white;
+
+    --handle-width: 120px;
+    --handle-background-color: rgba(134, 155, 172, 0.5);
+    --handle-close-button-color: white;
+    --handle-close-button-size: 16px;
+    --handle-marker-width: 2px;
+    --handle-marker-color: white;
+    --handle-drag-background-color: #625f93;
+    --handle-drag-marker-color: white;
+    --handle-data-box-background-color: #252525;
+    --handle-data-label-background-color: transparent;
+    --handle-date-font-size: 12px;
+    --handle-date-font-family: RobotoBold;
+    --handle-date-line-height: 14px;
+    --handle-time-font-size: 12px;
+    --handle-time-font-family: RobotoBold;
+    --handle-time-line-height: 14px;
+    --handle-label-color: #d8d8d8;
+    --handle-label-font-size: 12px;
+    --handle-label-line-height: 14px;
+    --handle-label-font-family: RobotoBold;
+    --handle-value-font-size: 18px;
+    --handle-value-line-height: 20px;
+    --handle-value-font-family: RobotoBold;
+    --handle-value-color: #e2e2e2;
+    --handle-unit-font-size: 12px;
+    --handle-unit-line-height: 14px;
+    --handle-unit-font-family: RobotoBold;
+    --handle-unit-color: #e2e2e2;
+    --handle-time-color: white;
+    --handle-date-color: white;
+}

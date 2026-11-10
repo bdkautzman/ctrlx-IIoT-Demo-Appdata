@@ -1,0 +1,974 @@
+{
+  "lettersPalette": [
+    [
+      {
+        "type": "letter",
+        "name": "q",
+        "val": "q",
+        "modifiers": {
+          "shift:val": "Q",
+          "shift:name": "Q"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "w",
+        "val": "w",
+        "modifiers": {
+          "shift:val": "W",
+          "shift:name": "W"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "e",
+        "val": "e",
+        "modifiers": {
+          "shift:val": "E",
+          "shift:name": "E"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "é",
+            "val": "é",
+            "modifiers": {
+              "shift:val": "É",
+              "shift:name": "É"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "è",
+            "val": "è",
+            "modifiers": {
+              "shift:val": "È",
+              "shift:name": "È"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ê",
+            "val": "ê",
+            "modifiers": {
+              "shift:val": "Ê",
+              "shift:name": "Ê"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "r",
+        "val": "r",
+        "modifiers": {
+          "shift:val": "R",
+          "shift:name": "R"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "t",
+        "val": "t",
+        "modifiers": {
+          "shift:val": "T",
+          "shift:name": "T"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "y",
+        "val": "y",
+        "modifiers": {
+          "shift:val": "Y",
+          "shift:name": "Y"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ý",
+            "val": "ý",
+            "modifiers": {
+              "shift:val": "Ý",
+              "shift:name": "Ý"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ÿ",
+            "val": "ÿ",
+            "modifiers": {
+              "shift:val": "Ÿ",
+              "shift:name": "Ÿ"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "u",
+        "val": "u",
+        "modifiers": {
+          "shift:val": "U",
+          "shift:name": "U"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ü",
+            "val": "ü",
+            "modifiers": {
+              "shift:val": "Ü",
+              "shift:name": "Ü"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ù",
+            "val": "ù",
+            "modifiers": {
+              "shift:val": "Ù",
+              "shift:name": "Ù"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ú",
+            "val": "ú",
+            "modifiers": {
+              "shift:val": "Ú",
+              "shift:name": "Ú"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "û",
+            "val": "û",
+            "modifiers": {
+              "shift:val": "Û",
+              "shift:name": "Û"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "i",
+        "val": "i",
+        "modifiers": {
+          "shift:val": "I",
+          "shift:name": "I"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ì",
+            "val": "ì",
+            "modifiers": {
+              "shift:val": "Ì",
+              "shift:name": "Ì"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "í",
+            "val": "í",
+            "modifiers": {
+              "shift:val": "Í",
+              "shift:name": "Í"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "î",
+            "val": "î",
+            "modifiers": {
+              "shift:val": "Î",
+              "shift:name": "Î"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ï",
+            "val": "ï",
+            "modifiers": {
+              "shift:val": "Ï",
+              "shift:name": "Ï"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "o",
+        "val": "o",
+        "modifiers": {
+          "shift:val": "O",
+          "shift:name": "O"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ö",
+            "val": "ö",
+            "modifiers": {
+              "shift:val": "Ö",
+              "shift:name": "Ö"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ò",
+            "val": "ò",
+            "modifiers": {
+              "shift:val": "Ò",
+              "shift:name": "Ò"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ó",
+            "val": "ó",
+            "modifiers": {
+              "shift:val": "Ó",
+              "shift:name": "Ó"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ô",
+            "val": "ô",
+            "modifiers": {
+              "shift:val": "Ô",
+              "shift:name": "Ô"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "õ",
+            "val": "õ",
+            "modifiers": {
+              "shift:val": "Õ",
+              "shift:name": "Õ"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ø",
+            "val": "ø",
+            "modifiers": {
+              "shift:val": "Ø",
+              "shift:name": "Ø"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "œ",
+            "val": "œ",
+            "modifiers": {
+              "shift:val": "Œ",
+              "shift:name": "Œ"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "p",
+        "val": "p",
+        "modifiers": {
+          "shift:val": "P",
+          "shift:name": "P"
+        }
+      }
+    ],
+    [
+      {
+        "type": "space-box",
+        "name": false,
+        "size": 1
+      },
+      {
+        "type": "letter",
+        "name": "a",
+        "val": "a",
+        "modifiers": {
+          "shift:val": "A",
+          "shift:name": "A"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ä",
+            "val": "ä",
+            "modifiers": {
+              "shift:val": "Ä",
+              "shift:name": "Ä"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "à",
+            "val": "à",
+            "modifiers": {
+              "shift:val": "À",
+              "shift:name": "À"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "á",
+            "val": "á",
+            "modifiers": {
+              "shift:val": "Á",
+              "shift:name": "Á"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "â",
+            "val": "â",
+            "modifiers": {
+              "shift:val": "Â",
+              "shift:name": "Â"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "ã",
+            "val": "ã",
+            "modifiers": {
+              "shift:val": "Ã",
+              "shift:name": "Ã"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "å",
+            "val": "å",
+            "modifiers": {
+              "shift:val": "Å",
+              "shift:name": "Å"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "æ",
+            "val": "æ",
+            "modifiers": {
+              "shift:val": "Æ",
+              "shift:name": "Æ"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "s",
+        "val": "s",
+        "modifiers": {
+          "shift:val": "S",
+          "shift:name": "S"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ß",
+            "val": "ß",
+            "modifiers": {
+              "shift:val": "ß",
+              "shift:name": "ß"
+            }
+          },
+          {
+            "type": "letter",
+            "name": "š",
+            "val": "š",
+            "modifiers": {
+              "shift:val": "Š",
+              "shift:name": "Š"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "d",
+        "val": "d",
+        "modifiers": {
+          "shift:val": "D",
+          "shift:name": "D"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ð",
+            "val": "ð",
+            "modifiers": {
+              "shift:val": "Ð",
+              "shift:name": "Ð"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "f",
+        "val": "f",
+        "modifiers": {
+          "shift:val": "F",
+          "shift:name": "F"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "g",
+        "val": "g",
+        "modifiers": {
+          "shift:val": "G",
+          "shift:name": "G"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "h",
+        "val": "h",
+        "modifiers": {
+          "shift:val": "H",
+          "shift:name": "H"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "j",
+        "val": "j",
+        "modifiers": {
+          "shift:val": "J",
+          "shift:name": "J"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "k",
+        "val": "k",
+        "modifiers": {
+          "shift:val": "K",
+          "shift:name": "K"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "l",
+        "val": "l",
+        "modifiers": {
+          "shift:val": "L",
+          "shift:name": "L"
+        }
+      },
+      {
+        "type": "space-box",
+        "name": false,
+        "size": 1
+      }
+    ],
+    [
+      {
+        "type": "modifier",
+        "name": "shift",
+        "hasIcon": true,
+        "iconURL" : "pics/system/controls/alpha-num-keyboard/shift.svg",
+        "val": "⇪",
+        "class-name": "no-preview",
+        "modify": "letter:clipOnce:shift"
+      },
+      {
+        "type": "letter",
+        "name": "z",
+        "val": "z",
+        "modifiers": {
+          "shift:val": "Z",
+          "shift:name": "Z"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ž",
+            "val": "ž",
+            "modifiers": {
+              "shift:val": "Ž",
+              "shift:name": "Ž"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "x",
+        "val": "x",
+        "modifiers": {
+          "shift:name": "X",
+          "shift:val": "X"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "c",
+        "val": "c",
+        "modifiers": {
+          "shift:name": "C",
+          "shift:val": "C"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ç",
+            "val": "ç",
+            "modifiers": {
+              "shift:val": "Ç",
+              "shift:name": "Ç"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "v",
+        "val": "v",
+        "modifiers": {
+          "shift:val": "V",
+          "shift:name": "V"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "b",
+        "val": "b",
+        "modifiers": {
+          "shift:val": "B",
+          "shift:name": "B"
+        }
+      },
+      {
+        "type": "letter",
+        "name": "n",
+        "val": "n",
+        "modifiers": {
+          "shift:val": "N",
+          "shift:name": "N"
+        },
+        "alternatives": [
+          {
+            "type": "letter",
+            "name": "ñ",
+            "val": "ñ",
+            "modifiers": {
+              "shift:val": "Ñ",
+              "shift:name": "Ñ"
+            }
+          }
+        ]
+      },
+      {
+        "type": "letter",
+        "name": "m",
+        "val": "m",
+        "modifiers": {
+          "shift:val": "M",
+          "shift:name": "M"
+        }
+      },
+      {
+        "type": "resolver",
+        "name": "backspace",
+        "hasIcon": true,
+        "iconURL" : "pics/system/icons/delete.svg",
+        "hold": true,
+        "resolve": "backspace",
+        "class-name": "icon-with-border no-preview"
+      }
+    ],
+    [
+      {
+        "type": "palette",
+        "name": "?123",
+        "val": "123",
+        "size": 2,
+        "class-name": "no-preview",
+        "palette": "numbersPalette"
+      },
+      {
+        "type": "letter",
+        "name": "└────────┘",
+        "val": " ",
+        "class-name": "icon-with-border no-preview space-bar",
+        "size": 8
+      },
+      {
+        "type": "character",
+        "name": "enter",
+        "hasIcon": true,
+        "iconURL" : "pics/system/icons/enter.svg",
+        "val": "\n",
+        "class-name": "icon-with-border no-preview enter",
+        "size": 2
+      }
+    ]
+  ],
+  "numbersPalette": [
+    [
+      {
+        "type": "number",
+        "name": "1",
+        "val": "1"
+      },
+      {
+        "type": "number",
+        "name": "2",
+        "val": "2"
+      },
+      {
+        "type": "number",
+        "name": "3",
+        "val": "3"
+      },
+      {
+        "type": "number",
+        "name": "4",
+        "val": "4"
+      },
+      {
+        "type": "number",
+        "name": "5",
+        "val": "5"
+      },
+      {
+        "type": "number",
+        "name": "6",
+        "val": "6"
+      },
+      {
+        "type": "number",
+        "name": "7",
+        "val": "7"
+      },
+      {
+        "type": "number",
+        "name": "8",
+        "val": "8"
+      },
+      {
+        "type": "number",
+        "name": "9",
+        "val": "9"
+      },
+      {
+        "type": "number",
+        "name": "0",
+        "val": "0"
+      }
+    ],
+    [
+      {
+        "type": "character",
+        "name": "-",
+        "val": "-"
+      },
+      {
+        "type": "character",
+        "name": "/",
+        "val": "/"
+      },
+      {
+        "type": "character",
+        "name": ":",
+        "val": ":"
+      },
+      {
+        "type": "character",
+        "name": ";",
+        "val": ";"
+      },
+      {
+        "type": "character",
+        "name": "(",
+        "val": "("
+      },
+      {
+        "type": "character",
+        "name": ")",
+        "val": ")"
+      },
+      {
+        "type": "character",
+        "name": "€",
+        "val": "€"
+      },
+      {
+        "type": "character",
+        "name": "$",
+        "val": "$"
+      },
+      {
+        "type": "character",
+        "name": "&",
+        "val": "&"
+      },
+      {
+        "type": "character",
+        "name": "@",
+        "val": "@"
+      },
+      {
+        "type": "character",
+        "name": "\"",
+        "val": "\""
+      }
+    ],
+    [
+      {
+        "type": "palette",
+        "name": "#+=",
+        "val": "#+=",
+        "size": 2,
+        "class-name": "no-preview",
+        "palette": "specialCharactersPalette"
+      },
+      {
+        "type": "character",
+        "name": ".",
+        "val": "."
+      },
+      {
+        "type": "character",
+        "name": ",",
+        "val": ","
+      },
+      {
+        "type": "character",
+        "name": "?",
+        "val": "?"
+      },
+      {
+        "type": "character",
+        "name": "!",
+        "val": "!"
+      },
+      {
+        "type": "character",
+        "name": "'",
+        "val": "'"
+      },
+      {
+        "type": "resolver",
+        "name": "backspace",
+        "hasIcon": true,
+        "iconURL" : "pics/system/icons/delete.svg",
+        "resolve": "backspace",
+        "hold": true,
+        "class-name": "icon-with-border no-preview"
+      }
+    ],
+    [
+      {
+        "type": "palette",
+        "name": "ABC",
+        "val": "ABC",
+        "size": 2,
+        "class-name": "no-preview",
+        "palette": "lettersPalette"
+      },
+      {
+        "type": "letter",
+        "name": "└────────┘",
+        "val": " ",
+        "size": 8,
+        "class-name": "icon-with-border no-preview space-bar"
+      },
+      {
+        "type": "character",
+        "name": "enter",
+        "hasIcon": true,
+        "iconURL" : "pics/system/icons/enter.svg",
+        "val": "\n",
+        "size": 2,
+        "class-name": "icon-with-border no-preview enter"
+      }
+    ]
+  ],
+  "specialCharactersPalette": [
+    [
+      {
+        "type": "character",
+        "name": "[",
+        "val": "["
+      },
+      {
+        "type": "character",
+        "name": "]",
+        "val": "]"
+      },
+      {
+        "type": "character",
+        "name": "{",
+        "val": "{"
+      },
+      {
+        "type": "character",
+        "name": "}",
+        "val": "}"
+      },
+      {
+        "type": "character",
+        "name": "#",
+        "val": "#"
+      },
+      {
+        "type": "character",
+        "name": "%",
+        "val": "%"
+      },
+      {
+        "type": "character",
+        "name": "^",
+        "val": "^"
+      },
+      {
+        "type": "character",
+        "name": "*",
+        "val": "*"
+      },
+      {
+        "type": "character",
+        "name": "+",
+        "val": "+"
+      },
+      {
+        "type": "character",
+        "name": "=",
+        "val": "="
+      }
+    ],
+    [
+      {
+        "type": "character",
+        "name": "_",
+        "val": "_"
+      },
+      {
+        "type": "character",
+        "name": "\\",
+        "val": "\\"
+      },
+      {
+        "type": "character",
+        "name": "|",
+        "val": "|"
+      },
+      {
+        "type": "character",
+        "name": "~",
+        "val": "~"
+      },
+      {
+        "type": "character",
+        "name": "<",
+        "val": "<"
+      },
+      {
+        "type": "character",
+        "name": ">",
+        "val": ">"
+      },
+      {
+        "type": "character",
+        "name": "$",
+        "val": "$"
+      },
+      {
+        "type": "character",
+        "name": "£",
+        "val": "£"
+      },
+      {
+        "type": "character",
+        "name": "¥",
+        "val": "¥"
+      },
+      {
+        "type": "character",
+        "name": "\"",
+        "val": "\""
+      }
+    ],
+    [
+      {
+        "type": "palette",
+        "name": "?123",
+        "val": "123",
+        "size": 2,
+        "class-name": "no-preview",
+        "palette": "numbersPalette"
+      },
+      {
+        "type": "character",
+        "name": ".",
+        "val": "."
+      },
+      {
+        "type": "character",
+        "name": ",",
+        "val": ","
+      },
+      {
+        "type": "character",
+        "name": "?",
+        "val": "?"
+      },
+      {
+        "type": "character",
+        "name": "!",
+        "val": "!"
+      },
+      {
+        "type": "character",
+        "name": "'",
+        "val": "'"
+      },
+      {
+        "type": "resolver",
+        "name": "backspace",
+        "hasIcon": true,
+        "iconURL" : "pics/system/icons/delete.svg",
+        "hold": true,
+        "resolve": "backspace",
+        "class-name": "icon-with-border no-preview"
+      }
+    ],
+    [
+      {
+        "type": "palette",
+        "name": "ABC",
+        "val": "ABC",
+        "size": 2,
+        "class-name": "no-preview",
+        "palette": "lettersPalette"
+      },
+      {
+        "type": "letter",
+        "name": "└────────┘",
+        "val": " ",
+        "class-name": "icon-with-border no-preview space-bar",
+        "size": 8
+      },
+      {
+        "type": "character",
+        "name": "enter",
+        "hasIcon": true,
+        "iconURL" : "pics/system/icons/enter.svg",
+        "val": "\n",
+        "size": 2,
+        "class-name": "icon-with-border no-preview enter"
+      }
+    ]
+  ]
+}

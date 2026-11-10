@@ -1,0 +1,10 @@
+{
+    "CheckActiveAlarms": {
+        "url": "js/custom-libs/local-scripts/CheckActiveAlarms.js",
+        "description": "Checks for active alarms"
+    },
+    "RecordingControl": {
+        "url": "js/custom-libs/local-scripts/RecordingControl.js",
+        "description": "Starts/Stops recording for the motion trends"
+    }
+}

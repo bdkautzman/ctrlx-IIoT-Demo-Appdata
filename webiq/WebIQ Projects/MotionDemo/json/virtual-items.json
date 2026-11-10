@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "name": "RemoteAccess",
+            "type": 1,
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "step": 0,
+            "digits": 0
+        },
+        {
+            "name": "AlarmActive",
+            "type": 1,
+            "value": 0,
+            "min": 0,
+            "max": 100,
+            "step": 0,
+            "digits": 0
+        }
+    ]
+}

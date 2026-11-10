@@ -1,0 +1,5 @@
+/* css/custom/WOC_RedText.css */
+
+.WOC_RedText {
+    --font-color: #F00000!important;
+}

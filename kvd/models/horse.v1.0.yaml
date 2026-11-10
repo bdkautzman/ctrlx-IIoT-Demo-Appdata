@@ -1,0 +1,18 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: horse
+version: 0.0.1
+elements:
+    speed:
+        description: The speed of the horse.
+        nodeClass: Variable
+        mode: read-write
+        value: 60
+        typeSchema:
+            type: int32
+    jumps:
+        description: The horse jumps.
+        nodeClass: Variable
+        mode: read-write
+        value: true
+        typeSchema:
+            type: bool8

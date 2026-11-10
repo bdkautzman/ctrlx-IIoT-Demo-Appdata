@@ -1,0 +1,80 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"comm_datalayer_ServerSettings" : {
+"type" : "object",
+"properties" : {
+"serverIdlePingTimeout" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "after this time in milliseconds the broker send a ping\nto not used provider is send to test if provider is still alive",
+"default" : 30000
+},
+"serverWaitResponseTimeout" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "after this time in milliseconds a response from provider is expected\nif there is no answer a provider is assumed to be dead --> kick provider out of routing",
+"default" : 30000
+},
+"serverMaxMessageSize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "maximum inbound message size in bytes",
+"default" : 52428800
+},
+"debugAddress" : {
+"type" : "string",
+"description" : "Address to debug disconnect"
+},
+"serverMaxRtSize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Maximum size of a RT area in bytes",
+"default" : 2097152
+},
+"serverEmulatedNvramSize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Emulated NVRam size in bytes if no real NVRAM is found\nChanges will be active after a restart of app.automationcore",
+"default" : 122880
+},
+"experimentalFeatures" : {
+"type" : "array", "items" : {"type" : "string"},
+"description" : "Add the names of the experimental feature you want to enable here"
+},
+"tcpPortFrontend" : {
+"type" : "integer", "minimum" : 0, "maximum" : 65535,
+"description" : "Used port for TCP frontend communication - Use value 0 to deactivate communication\nTakes effect after reboot of control",
+"default" : 2069
+},
+"tcpPortBackend" : {
+"type" : "integer", "minimum" : 0, "maximum" : 65535,
+"description" : "Used port for TCP backend communication - Use value 0 to deactivate communication\nTakes effect after reboot of control",
+"default" : 2070
+},
+"forceEmulatedNvram" : {
+"type" : "boolean",
+"description" : "Force emulation of NVRam even if there is a real NVRAM\nSize of NVRam is serverEmulatedNvramSize\nChanges will be active after reboot of control",
+"default" : false
+},
+"serverZmqHighWaterMark" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "High water mark of ZMQ\nTakes effect after reboot of control",
+"default" : 2000
+},
+"maxBulkRequest" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Number of requests per bulk\nIf set to 0 - all requests will be single requests.\nIf set to a value unequal to 0 - a bulk request will be\nsplited to this count.",
+"default" : 1000
+},
+"maxSortSize" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Maximum browse answer in bytes that are sorted in alphanumeric way in broker",
+"default" : 50000
+},
+"maxAliasDepth" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Maximum alias depth: counts how often an alias can be replaced in one request",
+"default" : 8
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/comm_datalayer_ServerSettings"
+}

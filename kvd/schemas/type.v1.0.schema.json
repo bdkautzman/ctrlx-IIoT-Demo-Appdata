@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "https://boschrexroth/kvd/schema/node.v1.0.schema.json",
+    "description": "Schema for KVD type configuration.",
+    "type": "object",
+    "properties": {
+        "address": {
+            "type": "string",
+            "pattern": "^types/"
+        },
+        "type": {
+            "oneOf": [
+                {
+                    "type": "string",
+                    "pattern": ".bfbs$"
+                }
+            ]
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "nodeClass": {
+                    "type": "string",
+                    "enum": [
+                        "Type"
+                    ]
+                }
+            },
+            "required": [
+                "nodeClass"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "address",
+        "type",
+        "metadata"
+    ]
+}

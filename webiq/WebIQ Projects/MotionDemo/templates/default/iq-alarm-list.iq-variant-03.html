@@ -1,0 +1,93 @@
+<div class="iqel-widget-container">
+    <div class="iqel-widget-header">
+        <div class="iqel-header-row">
+            <div class="iqel-filter-checkbox-level">
+                <div class="iqel-filter-checkbox-error" data-ui="filterCheckBoxError"></div>
+                <div class="iqel-filter-checkbox-warn" data-ui="filterCheckBoxWarn"></div>
+                <div class="iqel-filter-checkbox-advise " data-ui="filterCheckBoxAdvise"></div>
+            </div>
+            <div class="iqel-header-spacer"></div>
+            <div class="iqel-filter-area">
+                <div data-ui="filterGroupSelectBox" class="iqel-filter-group-select-box"></div>
+                <div data-ui="mode-select-box" class="iqel-mode-select-box"></div>
+                <div data-ui="filter-button" class="iqel-filter-toggle iq-button iq-variant-01 outlined icon-and-text">
+                    <div class="iqel-button-element">
+                        <div class="iqel-state-layer">
+                            <div class="iqel-button-icon inlined">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.005 2H13.005L7.995 8.3L3.005 2ZM0.255 1.61C2.275 4.2 6.005 9 6.005 9V15C6.005 15.55 6.455 16 7.005 16H9.005C9.555 16 10.005 15.55 10.005 15V9C10.005 9 13.725 4.2 15.745 1.61C16.255 0.95 15.785 0 14.955 0H1.045C0.215 0 -0.255 0.95 0.255 1.61Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <div data-ui="filter-label" class="iqel-button-label"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iqel-alarm-list-container" data-ui="alarmList">
+        <div data-ui="complex-table2">
+            <div class="iqel-widget-content">
+                <div class="iqel-content-row">
+                    <div data-ui="iqel-ctrl-panel" class="iqel-ctrl-panel"></div>
+                    <div data-ui="iqel-table-container" class="iqel-table-container">
+                        <div data-ui="iqel-table-content-container" class="iqel-table-content-container">
+                            <div data-ui="iqel-table-header-container" class="iqel-table-header-container">
+                                <table data-ui="iqel-table-header" class="iqel-table-header" cellspacing="0"></table>
+                            </div>
+                            <div class="iqel-table-filter-container">
+                                <table data-ui="iqel-table-filters" class="iqel-table-filters" cellspacing="0"></table>
+                            </div>
+                            <div class="iqel-table-loading-overlay">
+                                <svg version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="spinner"></svg>
+                                    <circle cx="16" cy="16" r="14" stroke-width="4" class="outline" />
+                                    <g class="accent-group">
+                                        <circle cx="16" cy="16" r="14" stroke-opacity="0" />
+                                        <path d="m30 16a14 14 0 0 1-14 14" stroke-width="4" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div data-ui="iqel-table-body-container" class="iqel-table-body-container">
+                                <table data-ui="iqel-table" class="iqel-table-body" cellspacing="0">
+                                    <tbody data-ui="iqel-table-body"></tbody>
+                                    <tbody data-ui="iqel-table-body"></tbody>
+                                    <tbody data-ui="iqel-table-body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iqel-content-row">
+                    <div class="alarm-list-details-side" data-ui="alarmListDetails"></div>
+                </div>
+            </div>
+            <div class="iqel-filter-footer">
+                <div data-ui="iqel-table-footer" class="iqel-table-footer"></div>
+                <div class="iqel-filter-display">
+                    <div data-ui="time-frame-label" class="set-filter-info"></div>
+                    <div data-ui="start-date" class="set-filter-info"></div>
+                    <div class="set-filter-info"> - </div>
+                    <div data-ui="end-date" class="set-filter-info"></div>
+                    <div data-ui="reset-button" class="iq-button no-label reset-button">
+                        <div class="iqel-button-element">
+                            <div class="iqel-state-layer">
+                                <div class="iqel-button-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                        <g fill="currentColor" stroke="currentColor" stroke-width="3">
+                                            <line x1="0" x2="18" y1="18" y2="0"></line>
+                                            <line x1="0" x2="18" y1="0" y2="18"></line>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iqel-confirm-button-container" data-ui="confirmButtons"></div>
+            </div>
+        </div>
+    </div>
+</div>

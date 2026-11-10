@@ -1,0 +1,48 @@
+<div class="iqel-widget-content">
+    <div class="upper-row">
+        <div class="iqel-icon" data-ui="icon"></div>
+        <div class="iqel-label" data-ui="label">[label]</div>
+        <div class="iqel-unit" data-ui="unit">[unit]</div>
+    </div>
+    <div class="lower-row">
+        <div class="iqel-value-holder">
+            <span class="iqel-value" data-ui="value">[value]</span>
+        </div>
+        <div class="gauge-outer-container" data-ui="gauge-svg-size-observer">
+            <svg data-ui="gauge-svg" class="gauge-svg">
+                <defs>
+                  <mask data-ui="gauge-mask" x="0" y="0" width="100" height="100">
+                    <path data-ui="gauge-mask-path" d="" style="fill: #FFFFFF; stroke:none"></path>
+                  </mask>
+                </defs>
+                <g data-ui="content-container" class="gauge-container">
+                    <!-- BOUNDING BOX PLACEHOLDERS START -->
+                    <line data-ui="gauge-actual-value-min" class="gauge-fill gauge-actual-value hidden" />
+                    <line data-ui="gauge-actual-value-max" class="gauge-fill gauge-actual-value hidden" />
+                    <!-- BOUNDING BOX PLACEHOLDERS END -->
+                    <path data-ui="gauge-fill" class="gauge-fill iqel-bar-bg" />
+                    <path data-ui="gauge-actual-value-bar" class="gauge-fill gauge-actual-value iqel-bar-fg" />
+                    <line data-ui="gauge-tolerance-value-min" class="gauge-tolerance-value-ticks iqel-tolerance-ticks" />
+                    <line data-ui="gauge-tolerance-value-max" class="gauge-tolerance-value-ticks iqel-tolerance-ticks" />
+                    <g class="gauge-value-range">
+                        <g data-ui="gauge-value-range-nominal" class="nominal">
+                            <path />
+                        </g>
+                        <g data-ui="gauge-value-range-prewarn" class="preWarn">
+                            <path />
+                            <path />
+                        </g>
+                        <g data-ui="gauge-value-range-warn" class="warn">
+                            <path />
+                            <path />
+                        </g>
+                        <g data-ui="gauge-value-range-ticks" class="iqel-ticks"></g>
+                        <g data-ui="gauge-value-range-labels" class="iqel-tick-labels"></g>
+                        <g data-ui="gauge-tol-range-labels" class="iqel-tick-labels"></g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,63 @@
+/* css/custom/dark-trend-time.css */
+
+/* control base element */
+.iq-trend-time.dark-trend-time {
+    --button-background-color: #1f1f1f;
+    --button-border-color: rgba(255, 255, 255, 0.7);
+    --button-border-width: 1px;
+    --button-border-radius: 0px;
+    --button-shadow-color: rgba(60, 60, 60, 0.2);
+    --button-icon-color: #f8f8f8;
+    --button-hover-background-color: #00ABF0;
+    --button-hover-icon-color: #ffffff;
+    --button-hover-border-color: #00ABF0;
+    --button-margin: 8px;
+    --icon-size: 24px;
+    --locked-opacity: var(--iq-locked-opacity);
+    --label-font-size: 14px;
+    --label-font-family: RobotoBold;
+    --label-color: #e7e7e7;
+    --label-font-weight: initial;
+    --button-label-font-size: 14px;
+    --button-label-font-family: RobotoLight;
+    --button-label-color: #d8d8d8;
+    --button-label-font-weight: initial;
+    --button-label-hover-color: #ffffff;
+    --popup-label-font-size: 14px;
+    --popup-label-height: 20px;
+    --popup-label-font-family: RobotoBold;
+    --popup-label-color: #ededed;
+    --popup-label-font-weight: initial;
+    --popup-background-color: #292828;
+    --date-button-color: #dedede;
+    --date-header-font-family: RobotoLight;
+    --date-header-font-size: 16px;
+    --date-header-font-weight: initial;
+    --date-header-color: #fffdfd;
+    --date-days-font-family: RobotoLight;
+    --date-days-font-size: 16px;
+    --date-days-font-weight: initial;
+    --date-days-color: #B1B1B1;
+    --date-calendar-font-family: RobotoLight;
+    --date-calendar-font-size: 16px;
+    --date-calendar-font-weight: initial;
+    --date-calendar-color: #e9e7e7;
+    --date-separator-color: #000000;
+    --date-calendar-inactive-color: #CACACA;
+    --date-calendar-highlight-background-color: #00ABF0;
+    --date-calendar-highlight-color: #ffffff;
+
+    --time-icon-up-highlight: url(../pics/system/controls/iq-select-time/arrow_up_black.svg);
+    --time-icon-up: url(../pics/system/controls/iq-select-time/arrow_up_white.svg);
+    --time-icon-down-highlight: url(../pics/system/controls/iq-select-time/arrow_down_black.svg);
+    --time-icon-down: url(../pics/system/controls/iq-select-time/arrow_down_white.svg);
+    --duration-select-box-icon: url(../pics/system/controls/iq-select-time/arrow_down_white.svg);
+
+    --input-background-color: #3a3a3a;
+    --input-color: #dfdfdf;
+    --input-font-size: 14px;
+    --input-font-family: RobotoLight;
+    --input-font-weight: 400;
+    --input-selection-color: #ffffff;
+    --input-selection-background-color: #00ABF0;
+}

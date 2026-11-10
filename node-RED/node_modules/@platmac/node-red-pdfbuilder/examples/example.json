@@ -1,0 +1,238 @@
+[
+    {
+        "id": "b9ebf893594086f8",
+        "type": "tab",
+        "label": "toPDF",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3a355ff647ef7187",
+        "type": "change",
+        "z": "b9ebf893594086f8",
+        "name": "Step 1  Send Name and Text for QR code",
+        "rules": [
+            {
+                "t": "set",
+                "p": "qr",
+                "pt": "msg",
+                "to": "www.platma.com",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fio",
+                "pt": "msg",
+                "to": "John Doe",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "aa15f27d.18d4d"
+            ]
+        ]
+    },
+    {
+        "id": "1bab2d4b1a6eeb59",
+        "type": "function",
+        "z": "b9ebf893594086f8",
+        "name": "Step 6 PDF formatting",
+        "func": "msg.payload = {\n    \"pageSize\": \"A6\",\n    \"pageOrientation\": \"landscape\",\n    \"pageMargins\": [\n        10,\n        30,\n        10,\n        20\n    ],\n    \"background\": \"PLATMA\",\n    \"content\": [\n        {  \"columns\": [\n            {               \n            \"width\" : \"50%\",\n            \"stack\": [\n                    {\n                        \"text\": msg.fio\n                    },\n                    {\n                        \"text\": \"\\n\"  \n                    },\n                    {\n                        \"text\": \"We would like to offer you the opportunity to participate in our conference at a discount. To receive a discount, use the QRCode during registration.\"\n                    },\n                    {\n                        \"text\": \"\\n\"\n                    },\n                    {\n                       \"qr\": msg.qr\n                    }\n            \n                ]\n            },\n            {\n            \"width\": \"50%\",\n            \"stack\": [\n                    {\n                        \"text\": \"Platma Team\"\n                    },\n                    {\n                        \"text\": \" \"\n                    },\n                    {\n                        \"image\": msg.pict,\n                         width: 150\n                    }\n\n                ]             \n            }\n        ]\n    \n        }\n    ],\n    \"defaultStyle\": {\n        \"fontSize\": 11,\n        \"bold\": true,\n        \"alignment\": \"center\"\n    }\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "506195351bb8fc64"
+            ]
+        ]
+    },
+    {
+        "id": "506195351bb8fc64",
+        "type": "pdfbuilder",
+        "z": "b9ebf893594086f8",
+        "name": "Step 7 Create PDF",
+        "outputType": "base64",
+        "inputProperty": "payload",
+        "options": "{}",
+        "outputProperty": "payload",
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "7c4454b92a3a2a9c"
+            ]
+        ]
+    },
+    {
+        "id": "681768c46615ed05",
+        "type": "inject",
+        "z": "b9ebf893594086f8",
+        "name": "Start process",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "3a355ff647ef7187"
+            ]
+        ]
+    },
+    {
+        "id": "64945d254c5e7872",
+        "type": "change",
+        "z": "b9ebf893594086f8",
+        "name": "Step 5  Send base64",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pict",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 360,
+        "wires": [
+            [
+                "1bab2d4b1a6eeb59"
+            ]
+        ]
+    },
+    {
+        "id": "aa15f27d.18d4d",
+        "type": "http request",
+        "z": "b9ebf893594086f8",
+        "name": "Step 2 Request picture",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://dev.ua/storage/images/33/92/78/95/derived/fc7aa9922b32239e6b6c9b1790058cb8.jpg",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "f1c4d1ff.8a67b"
+            ]
+        ]
+    },
+    {
+        "id": "f1c4d1ff.8a67b",
+        "type": "function",
+        "z": "b9ebf893594086f8",
+        "name": "Step 3 Convert picture to Base64",
+        "func": "msg.payload = msg.payload.toString('base64');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "3731ab610578d85b"
+            ]
+        ]
+    },
+    {
+        "id": "3731ab610578d85b",
+        "type": "function",
+        "z": "b9ebf893594086f8",
+        "name": "Step 4 Add title ",
+        "func": "msg.payload =\"data:application/pdf;base64,\"+msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 360,
+        "wires": [
+            [
+                "64945d254c5e7872"
+            ]
+        ]
+    },
+    {
+        "id": "d6963648f8a43f56",
+        "type": "debug",
+        "z": "b9ebf893594086f8",
+        "name": "End process",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7c4454b92a3a2a9c",
+        "type": "function",
+        "z": "b9ebf893594086f8",
+        "name": "Step 8 Add title ",
+        "func": "msg.payload =\"data:application/pdf;base64,\"+msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 440,
+        "wires": [
+            [
+                "d6963648f8a43f56"
+            ]
+        ]
+    }
+]

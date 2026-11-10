@@ -1,0 +1,23 @@
+{
+    "default": "en-GB",
+    "locales": {
+        "de-DE": {
+            "label": "Deutsch",
+            "region": "DE",
+            "keyboard": "de"
+        },
+        "en-GB": {
+            "label": "English",
+            "region": "GB",
+            "keyboard": "us"
+        }
+    },
+    "keyboards": {
+        "de": {
+            "label": "Deutsch"
+        },
+        "us": {
+            "label": "English"
+        }
+    }
+}

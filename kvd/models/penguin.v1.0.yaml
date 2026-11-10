@@ -1,0 +1,18 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: penguin
+version: 0.0.1
+elements:
+    height:
+        description: The height of the penguin.
+        nodeClass: Variable
+        mode: read-write
+        value: 75
+        typeSchema:
+            type: int32
+    swims:
+        description: The penguin can swim.
+        nodeClass: Variable
+        mode: read-write
+        value: true
+        typeSchema:
+            type: bool8

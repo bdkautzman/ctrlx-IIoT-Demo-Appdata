@@ -1,0 +1,360 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"common_scheduler_controls_fbs_Controls" : {
+"type" : "string",
+"enum": ["NONE", "Debug"]
+},
+"common_scheduler_fbs_CallableWdgConfig" : {
+"type" : "string",
+"enum": ["WDG_HW_TASK", "WDG_HW", "WDG_NONE", "WDG_DEFAULT"]
+},
+"common_scheduler_fbs_CurrentErrorReaction" : {
+"type" : "string",
+"enum": ["STOP", "CONTINUE"]
+},
+"common_scheduler_fbs_CurrentTrigger" : {
+"type" : "string",
+"enum": ["TIMER", "INTERRUPT", "TIMER_MUTABLE_CLOCKS"]
+},
+"common_scheduler_fbs2_ConfigurationMode" : {
+"type" : "string",
+"enum": ["AUTOMATIC", "MANUAL"]
+},
+"common_scheduler_fbs2_CurrentState" : {
+"type" : "string",
+"enum": ["OPERATING", "SETUP", "SERVICE", "EXIT"]
+},
+"common_scheduler_controls_fbs_AdminControls" : {
+"type" : "object",
+"description" : "Special extensions to modify Scheduler and system behavior e.g. activation of DEBUG mode",
+"properties" : {
+"control_type" : {
+"$ref" : "#/definitions/common_scheduler_controls_fbs_Controls",
+"default" : "NONE"
+},
+"control" : {
+"anyOf": [{ "$ref" : "#/definitions/common_scheduler_controls_fbs_Debug" }],
+"description" : "Special extensions to modify Scheduler and system behavior e.g. activation of DEBUG mode"
+}
+},
+"required" : ["control"],
+"additionalProperties" : false
+},
+"common_scheduler_controls_fbs_Debug" : {
+"type" : "object",
+"description" : "Machine ID to use the DEBUG configuration only on the intended machine",
+"properties" : {
+"machine" : {
+"type" : "string",
+"description" : "Machine ID to use the DEBUG configuration only on the intended machine"
+}
+},
+"required" : ["machine"],
+"additionalProperties" : false
+},
+"common_scheduler_cpuload_fbs_CpuLoadSettings" : {
+"type" : "object",
+"properties" : {
+"settings" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/common_scheduler_cpuload_fbs_Settings"},
+"description" : "List of CPU core settings."
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_cpuload_fbs_Settings" : {
+"type" : "object",
+"description" : "Settings to monitor the load on the CPU core. For this purpose, a non real-time thread\nis executed on this CPU core every 'timeout' milliseconds. If the thread does not run\nwithin the 'timeout' multiplied by 'warningFactor' period, a warning is issued for that\nCPU core. If the thread does not run within the 'timeout' multiplied by 'errorFactor'\nperiod, an F8 error is issued, the application is restarted and remains in SERVICE mode.\nCPU core settings.",
+"properties" : {
+"core" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "CPU core.",
+"default" : -1
+},
+"timeout" : {
+"type" : "integer", "minimum" : -9223372036854775808, "maximum" : 9223372036854775807,
+"description" : "Timeout in milliseconds for the non real-time thread to the next test cycle (0 = Disable monitoring for this CPU core).",
+"default" : 0
+},
+"warningFactor" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Factor to calculate the warning period (timeout * warningFactor) (0 = Disable warnings for this CPU core).",
+"default" : 0
+},
+"errorFactor" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Factor to calculate the error period (timeout * errorFactor) (0 = Disable F8 errors for this CPU core).",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs_StartupErrorReaction" : {
+"type" : "object",
+"description" : "Error reaction in case of not all configured components are available on startup",
+"properties" : {
+"errorReaction" : {
+"$ref" : "#/definitions/common_scheduler_fbs_CurrentErrorReaction",
+"description" : "Error reaction in case of not all configured components are available on startup",
+"default" : "STOP"
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs_Trigger" : {
+"type" : "object",
+"description" : "Type selector of trigger sources of Scheduler",
+"properties" : {
+"trigger" : {
+"$ref" : "#/definitions/common_scheduler_fbs_CurrentTrigger",
+"description" : "Type selector of trigger sources of Scheduler",
+"default" : "INTERRUPT"
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_Admin" : {
+"type" : "object",
+"description" : "General settings of Scheduler, startup behavior, callables, tasks and timing",
+"properties" : {
+"startupState" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_CurrentState",
+"description" : "Target operation state of Scheduler after power on ctrlX CORE",
+"default" : "OPERATING"
+},
+"startupTimeout" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Timeout for waiting for missing components before carry on switching to target operation state",
+"default" : 0
+},
+"startupErrorReaction" : {
+"$ref" : "#/definitions/common_scheduler_fbs_CurrentErrorReaction",
+"description" : "Error reaction in case of not all configured components are available",
+"default" : "CONTINUE"
+},
+"triggerSource" : {
+"$ref" : "#/definitions/common_scheduler_fbs_CurrentTrigger",
+"description" : "Trigger source of Scheduler task tick",
+"default" : "INTERRUPT"
+},
+"controlDebug_type" : {
+"$ref" : "#/definitions/common_scheduler_controls_fbs_Controls",
+"default" : "NONE"
+},
+"controlDebug" : {
+"anyOf": [{ "$ref" : "#/definitions/common_scheduler_controls_fbs_Debug" }],
+"description" : "Indication whether the DEBUG mode is active and hardware watchdog and task watchdogs are disabled"
+},
+"cpuInfo" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_CpuInfo",
+"description" : "Information about CPU cores of ctrlX CORE"
+},
+"hardwareWatchdogRequired" : {
+"type" : "boolean",
+"description" : "Indication whether switching to the SERVICE state is required for managing apps",
+"default" : false
+},
+"watchdogDefaultValue" : {
+"$ref" : "#/definitions/common_scheduler_fbs_CallableWdgConfig",
+"description" : "Default behavior of task and hardware watchdog handling when no requirements are given by other",
+"default" : "WDG_DEFAULT"
+},
+"utilization" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_UtilizationThreshold",
+"description" : "Utilization of the cycle time of Scheduler tick task causes by itself"
+},
+"callableTimeouts" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_CallableTimeouts",
+"description" : "General settings for timeouts when switching callable operation states"
+},
+"programConfigurationMode" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_ConfigurationMode",
+"description" : "Program configuration mode of the Scheduler",
+"default" : "AUTOMATIC"
+},
+"waitstateComponents" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/common_scheduler_fbs2_WaitstateComponent"},
+"description" : "Configuration of waitstates on bootup states"
+},
+"cpuLoadSettings" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/common_scheduler_cpuload_fbs_Settings"},
+"description" : "Configuration of the CPU load setting"
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_CallableTimeouts" : {
+"type" : "object",
+"description" : "General settings for timeouts when switching callable operation states",
+"properties" : {
+"begin" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "General settings for timeouts when switching callable operation states - phase BEGIN",
+"default" : 1000
+},
+"execute" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "General settings for timeouts when switching callable operation states - phase EXECUTE",
+"default" : 60000
+},
+"end" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "General settings for timeouts when switching callable operation states - phase END",
+"default" : 1000
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_CpuInfo" : {
+"type" : "object",
+"description" : "Information about CPU cores of ctrlX CORE",
+"properties" : {
+"cpuCoresTotal" : {
+"type" : "array", "items" : {"type" : "integer", "minimum" : 0, "maximum" : 4294967295},
+"description" : "Identification indices of all available CPU cores"
+},
+"cpuCoresActive" : {
+"type" : "array", "items" : {"type" : "integer", "minimum" : 0, "maximum" : 4294967295},
+"description" : "Identification indices of all available active CPU cores"
+},
+"cpuCoresRealtime" : {
+"type" : "array", "items" : {"type" : "integer", "minimum" : 0, "maximum" : 4294967295},
+"description" : "Identification indices of the available CPU cores assigned to real-time processing"
+},
+"cpuCoresNonRealtime" : {
+"type" : "array", "items" : {"type" : "integer", "minimum" : 0, "maximum" : 4294967295},
+"description" : "Identification indices of the available CPU cores assigned to non real-time processing"
+},
+"cpuCoreRealtimeMax" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Highest available identification index of the CPU core for real-time processing",
+"default" : -1
+},
+"cpuCoreRealtimeMin" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Lowest available identification index of the CPU core for real-time processing",
+"default" : -1
+},
+"cpuCoreRealtimeDefault" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Identification index of the CPU core assigned to real-time processing by default",
+"default" : -1
+},
+"cpuCoreNonRealtimeMax" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Highest available identification index of the CPU core for non real-time processing",
+"default" : -1
+},
+"cpuCoreNonRealtimeMin" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Lowest available identification index of the CPU core for non real-time processing",
+"default" : -1
+},
+"cpuCoreNonRealtimeDefault" : {
+"type" : "integer", "minimum" : -2147483648, "maximum" : 2147483647,
+"description" : "Identification index of the CPU core assigned to non real-time processing by default",
+"default" : -1
+},
+"variationId" : {
+"type" : "string",
+"description" : "Variation ID to manage special handling of CPU type"
+},
+"cpuCoreHwWdg" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Identification index of the CPU core on which the hardware watchdog is handled",
+"default" : 0
+},
+"cpuCorePtpTimer" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Identification index of the CPU core on which the FPGA interrupt is handled",
+"default" : 0
+},
+"cpuCoreScheduler" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Identification index of the CPU core on which the Scheduler tick task is executed",
+"default" : 0
+},
+"cpuCoreAutomation" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Identification index of the CPU core on which the user task 'ctrlXAutomation' is executed by default",
+"default" : 0
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_ProgramConfiguration" : {
+"type" : "object",
+"description" : "Program configuration mode",
+"properties" : {
+"mode" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_ConfigurationMode",
+"default" : "AUTOMATIC"
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_State" : {
+"type" : "object",
+"description" : "Type selector of operation state",
+"properties" : {
+"state" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_CurrentState",
+"description" : "Type selector of operation state",
+"default" : "SETUP"
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_UtilizationThreshold" : {
+"type" : "object",
+"description" : "Utilization of the cycle time of Scheduler tick task causes by itself",
+"properties" : {
+"warning" : {
+"type" : "integer", "minimum" : 0, "maximum" : 255,
+"description" : "Threshold of utilization of the cycle time of Scheduler tick task causes by itself for reporting a warning",
+"default" : 50
+},
+"error" : {
+"type" : "integer", "minimum" : 0, "maximum" : 255,
+"description" : "Threshold of utilization of the cycle time of Scheduler tick task causes by itself for reporting an error",
+"default" : 75
+}
+},
+"additionalProperties" : false
+},
+"common_scheduler_fbs2_WaitstateComponent" : {
+"type" : "object",
+"description" : "Configuration of a waitstate that occurs before transitioning to the next operating state 'state'.\nA waitstate represents a pause that is entered before switching to the next operating state 'state'.\nThis waitstate can be cancelled before the timeout is reached by:\n- a component,\n- executing the cancel command, or\n- removing the waitstate from the waitstates configuration.",
+"properties" : {
+"state" : {
+"$ref" : "#/definitions/common_scheduler_fbs2_CurrentState",
+"description" : "The operating state that follows the waitstate pause.",
+"default" : "SERVICE"
+},
+"name" : {
+"type" : "string",
+"description" : "A unique identifier defined by the requester of the waitstate."
+},
+"timeout" : {
+"type" : "integer", "minimum" : 0, "maximum" : 18446744073709551615,
+"description" : "Timeout in milliseconds before switching to the next operating state 'state' (0 = infinite, meaning the cancel command is executed or it is cancelled by a component).",
+"default" : 1000
+},
+"active" : {
+"type" : "boolean",
+"description" : "Flag indicating whether the waitstate is still active or has expired.",
+"default" : true
+},
+"save" : {
+"type" : "boolean",
+"description" : "Save the waitstate component to the persistent storage.",
+"default" : true
+}
+},
+"required" : ["name"],
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/common_scheduler_fbs2_Admin"
+}

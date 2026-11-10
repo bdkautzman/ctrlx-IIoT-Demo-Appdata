@@ -1,0 +1,56 @@
+{
+  "IsSynced": true,
+  "SyncMode": 3,
+  "InSyncWithRuntime": true,
+  "ApplicationType": "plc",
+  "Configuration": "appdata",
+  "Solution": "DefaultSolution",
+  "ControllerGuid": "3e9a8608-3344-4633-be67-cf46c9a5623b",
+  "LastChange": 639298425965224207,
+  "MachineName": "AT2-C-001CN",
+  "UserName": "KAB2HES",
+  "ProjectCompleteFilename": "D:\\Demos\\IIoT_Demo\\26_11_4_Conversion_to_4.6\\4.6 New\\PLC Project\\Motion_Demo_IXON.project",
+  "CompilerVersion": {
+    "Major": 3,
+    "Minor": 5,
+    "Build": 21,
+    "Revision": 60,
+    "MajorRevision": 0,
+    "MinorRevision": 60
+  },
+  "OwnVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 0,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "ProductAdditionalFolder": "Default",
+  "ProductProfileName": "ctrlX PLC 4.6.3",
+  "ProductId": "ctrlx-plc-engineering",
+  "ProductVersion": "4.6.3",
+  "ProductVersionText": "4.6.3",
+  "SyncModeSave": true,
+  "SyncModeDownload": true,
+  "SyncModeAsk": false,
+  "SyncAfterBootApplication": false,
+  "SyncOnOpen": false,
+  "UserMetaData": {
+    "DESKTOP-J6MIONJ:User": {
+      "MachineName": "DESKTOP-J6MIONJ",
+      "UserName": "User",
+      "ProjectCompleteFilename": "Y:\\Motion_Demo_IXON.project"
+    },
+    "AT2-C-001CN:KAB2HES": {
+      "MachineName": "AT2-C-001CN",
+      "UserName": "KAB2HES",
+      "ProjectCompleteFilename": "D:\\Demos\\IIoT_Demo\\26_11_4_Conversion_to_4.6\\4.6 New\\PLC Project\\Motion_Demo_IXON.project"
+    }
+  },
+  "CompileinfoChecksum": null,
+  "SyncDescription": true,
+  "DeviceId": "1001 0080",
+  "DeviceVersion": "4.6.20.0",
+  "UseIoHierachy": true
+}

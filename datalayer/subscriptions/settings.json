@@ -1,0 +1,12 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/comm/datalayer/subscription_settings.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/comm/datalayer/subscription_settings_schema.json",
+    "maximumBufferSize": 50,
+    "maximumRTSubscribedNodes": 50,
+    "minimumErrorInterval": 10000,
+    "minimumPublishInterval": 50,
+    "minimumSampleInterval": 100000
+}

@@ -1,0 +1,103 @@
+{
+    "alarms": [
+        {
+            "acknowledgeable": false,
+            "attributes": {},
+            "condition": {
+                "condition": [
+                    1,
+                    "="
+                ],
+                "item": "Master.Diag.Error",
+                "numericType": "dec"
+            },
+            "contextItems": [
+                "Master.Diag.ErrorNum",
+                "Master.Diag.ErrorMsg"
+            ],
+            "description": "Master Axis general error",
+            "enabled": true,
+            "group": 0,
+            "historic": true,
+            "index": 10001,
+            "outputItem": null,
+            "severity": "alarm",
+            "statusItem": null,
+            "type": "conditional"
+        },
+        {
+            "acknowledgeable": false,
+            "attributes": {},
+            "condition": {
+                "condition": [
+                    1,
+                    "="
+                ],
+                "item": "Slave.Diag.Error",
+                "numericType": "dec"
+            },
+            "contextItems": [
+                "Slave.Diag.ErrorNum",
+                "Slave.Diag.ErrorMsg"
+            ],
+            "description": "Slave Axis general error",
+            "enabled": true,
+            "group": 0,
+            "historic": true,
+            "index": 10002,
+            "outputItem": null,
+            "severity": "alarm",
+            "statusItem": null,
+            "type": "conditional"
+        },
+        {
+            "acknowledgeable": false,
+            "attributes": {},
+            "condition": {
+                "condition": [
+                    99,
+                    ">"
+                ],
+                "item": "Master.Par.Velocity",
+                "numericType": "dec"
+            },
+            "contextItems": [
+                "Master.Par.Velocity"
+            ],
+            "description": "Master Axis velocity setpoint too high",
+            "enabled": true,
+            "group": 1,
+            "historic": true,
+            "index": 20001,
+            "outputItem": null,
+            "severity": "warning",
+            "statusItem": null,
+            "type": "conditional"
+        },
+        {
+            "acknowledgeable": false,
+            "attributes": {},
+            "condition": {
+                "condition": [
+                    99,
+                    ">"
+                ],
+                "item": "Slave.Par.Velocity",
+                "numericType": "dec"
+            },
+            "contextItems": [
+                "Slave.Par.Velocity"
+            ],
+            "description": "Slave Axis velocity setpoint too high",
+            "enabled": true,
+            "group": 1,
+            "historic": true,
+            "index": 20002,
+            "outputItem": null,
+            "severity": "warning",
+            "statusItem": null,
+            "type": "conditional"
+        }
+    ],
+    "version": 0
+}

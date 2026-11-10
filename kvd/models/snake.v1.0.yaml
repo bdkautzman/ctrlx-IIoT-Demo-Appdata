@@ -1,0 +1,18 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: snake
+version: 0.0.1
+elements:
+    weight:
+        description: The weight of the snake.
+        nodeClass: Variable
+        mode: read-write
+        value: 3
+        typeSchema:
+            type: int32
+    venomous:
+        description: The snake bite is venomous.
+        nodeClass: Variable
+        mode: read-write
+        value: true
+        typeSchema:
+            type: bool8

@@ -1,0 +1,10 @@
+$schema: ./schemas/datalayer.v1.0.schema.json
+name: mammals
+version: 0.0.1
+elements:
+    horse:
+        description: The horse.
+        $ref: horse.v1.0.yaml
+    rat:
+        description: The rat.
+        $ref: rat.v1.0.yaml

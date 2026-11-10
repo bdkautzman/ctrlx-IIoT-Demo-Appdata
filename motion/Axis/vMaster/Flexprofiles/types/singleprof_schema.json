@@ -1,0 +1,236 @@
+{
+"$schema": "https://json-schema.org/draft/2019-09/schema",
+"definitions": {
+"motion_sync_fbtypes_SegmentActionMode" : {
+"type" : "string",
+"enum": ["SEG_ACTION_EXTERNAL_INSTANT", "SEG_ACTION_EXTERNAL_AFTERSEG", "SEG_ACTION_EXTERNAL_AFTERGROUP", "SEG_ACTION_EXTERNAL_INSTANT_NEXTSEG"]
+},
+"motion_sync_fbtypes_SegmentLawType" : {
+"type" : "string",
+"enum": ["REST_IN_REST_INCLINED_SINE", "REST_IN_REST_POLYNOMIAL_5", "REST_IN_VELOCITY_POLYNOMIAL_5", "REST_IN_VELOCITY_POLYNOMIAL_7", "VELOCITY_IN_REST_POLYNOMIAL_5", "VELOCITY_IN_REST_POLYNOMIAL_7", "VELOCITY_IN_VELOCITY_LINEAR", "VELOCITY_IN_VELOCITY_POLYNOMIAL_5", "REST_IN_REST_LINEAR", "REST_IN_REST_POLYNOMIAL_7", "REST_IN_REST_SINE", "REST_IN_REST_SINE_GUTMAN", "REST_IN_REST_SINE_ACC", "REST_IN_REST_SINE_TORQUE", "REST_IN_REST_MOD_TRAPEZ", "REST_IN_REST_MOD_SINE", "VELOCITY_IN_VELOCITY_POLYNOMIAL_7", "VELOCITY_IN_VELOCITY_MOD_SINE", "REST_IN_REST_POLYNOMIAL_5_VLIM", "REST_IN_REST_PARABOLA", "REST_IN_REST_POLYNOMIAL_8", "MOTION_IN_MOTION_POLYNOMIAL_5", "MOTION_IN_MOTION_POLYNOMIAL_7", "COMMON_POLYNOMIAL_5", "COMMON_POLYNOMIAL_7", "COMMON_POLYNOMIAL_2", "COMMON_POLYNOMIAL_3", "COMMON_POLYNOMIAL_4", "COMMON_POLYNOMIAL_8", "VELOCITY_IN_VELOCITY_TRAPEZ_ALIM", "MOTION_IN_MOTION_POLYNOMIAL_5_VLIM", "MOTION_IN_MOTION_POLYNOMIAL_5_SLIM", "FIT_VEL_TRAPEZE_ALIM", "FIT_SINE_TRAPEZE_ALIM", "FIT_ACC_TRAPEZE_JLIM", "MOTION_IN_MOTION_ACAM", "MOTION_IN_MOTION_VCAM", "MOTION_IN_MOTION_VCAM2_A", "MOTION_IN_MOTION_VCAM2_B", "POINTS_TABLE_AUTO", "POINTS_TABLE_LIN", "POINTS_TABLE_SPLINE"]
+},
+"motion_sync_fbtypes_SegmentSyncType" : {
+"type" : "string",
+"enum": ["SEG_DEFAULT", "SEG_FLEX_REL_REL", "SEG_FLEX_ABS_REL", "SEG_FLEX_REL_ABS", "SEG_FLEX_ABS_ABS"]
+},
+"motion_sync_fbtypes_SegmentTriggerCondition" : {
+"type" : "string",
+"enum": ["SEG_TRIGGER_EXTERNAL", "SEG_TRIGGER_SLAVE_REACHED_ABS", "SEG_TRIGGER_SLAVE_REACHED_REL", "SEG_TRIGGER_MASTER_REACHED_ABS", "SEG_TRIGGER_MASTER_REACHED_REL", "SEG_TRIGGER_MASTER_TIME_REACHED_REL"]
+},
+"motion_sync_fbtypes_AxsCfgSingleFlexProfile" : {
+"type" : "object",
+"description" : "configuration of a single FlexProfile",
+"properties" : {
+"name" : {
+"type" : "string",
+"description" : "name of the single FlexProfile"
+},
+"segments" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_CfgFlexProfileSegment"},
+"description" : "FlexProfile segment description"
+},
+"events" : {
+"type" : "array", "items" : {"$ref" : "#/definitions/motion_sync_fbtypes_CfgFlexProfileEvent"},
+"description" : "FlexProfile event description"
+},
+"masterAxsRefVel" : {
+"type" : "number",
+"description" : "master axis reference velocity. This value is mandatory when segments are written.",
+"default" : 0.0
+},
+"camBuilderProfileData" : {
+"type" : "string",
+"description" : "cam builder data (profile specific)"
+},
+"units" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_CfgFlexProfileUnits",
+"description" : "FlexProfile unit configuration"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_CfgFlexProfileEvent" : {
+"type" : "object",
+"description" : "configuration of a FlexProfile event",
+"properties" : {
+"segmentNmb" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "The event is configured for this segment number",
+"default" : 0
+},
+"triggerCondition" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_SegmentTriggerCondition",
+"description" : "Trigger condition of the event",
+"default" : "SEG_TRIGGER_EXTERNAL"
+},
+"triggerValue" : {
+"type" : "number",
+"description" : "Trigger value",
+"default" : 0.0
+},
+"masterType" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Trigger master type (0: time master, 1: axis master)",
+"default" : 0
+},
+"actionMode" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_SegmentActionMode",
+"description" : "Action mode of the event",
+"default" : "SEG_ACTION_EXTERNAL_INSTANT"
+},
+"actionBit" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Number of the status bit, that is set by the action",
+"default" : 0
+},
+"segmentNmbFormula" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Cam-Builder data: segment number for formula",
+"default" : 0
+},
+"valueFormula" : {
+"type" : "string",
+"description" : "Cam-Builder data: formula string"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_CfgFlexProfileSegment" : {
+"type" : "object",
+"description" : "configuration of a FlexProfile segment",
+"properties" : {
+"gain" : {
+"type" : "number",
+"description" : "Gain/hub/lift of segment - slave range  (Y)   // Units",
+"default" : 0.0
+},
+"range" : {
+"type" : "number",
+"description" : "Range of segment         - master range (X)   // Units",
+"default" : 0.0
+},
+"v0" : {
+"type" : "number",
+"description" : "Start Velocity                                // Units/s",
+"default" : 0.0
+},
+"a0" : {
+"type" : "number",
+"description" : "Start Acceleration                            // Units/s^2",
+"default" : 0.0
+},
+"j0" : {
+"type" : "number",
+"description" : "Start Jerk                                    // Units/s^3",
+"default" : 0.0
+},
+"v1" : {
+"type" : "number",
+"description" : "End Velocity                                  // Units/s",
+"default" : 0.0
+},
+"a1" : {
+"type" : "number",
+"description" : "End Acceleration                              // Units/s^2",
+"default" : 0.0
+},
+"j1" : {
+"type" : "number",
+"description" : "End Jerk                                      // Units/s^3",
+"default" : 0.0
+},
+"limV" : {
+"type" : "number",
+"description" : "Travel/Limit Velocity                         // Units/s",
+"default" : 0.0
+},
+"limA0" : {
+"type" : "number",
+"description" : "Travel/Limit Acc                              // Units/s^2",
+"default" : 0.0
+},
+"limA1" : {
+"type" : "number",
+"description" : "Travel/Limit Dec                              // Units/s^2",
+"default" : 0.0
+},
+"limJ0" : {
+"type" : "number",
+"description" : "Travel/Limit Acc-Jerk                         // Units/s^3",
+"default" : 0.0
+},
+"limJ1" : {
+"type" : "number",
+"description" : "Travel/Limit Acc-Jerk                         // Units/s^3",
+"default" : 0.0
+},
+"lambda" : {
+"type" : "number",
+"description" : "Inflection point (Range 0.0 to 1.0)",
+"default" : 0.0
+},
+"syncType" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_SegmentSyncType",
+"description" : "Type of the segment transition (fixed or flexible)",
+"default" : "SEG_DEFAULT"
+},
+"lawType" : {
+"$ref" : "#/definitions/motion_sync_fbtypes_SegmentLawType",
+"description" : "Type of the law (e.g. Polynomial 5th order)",
+"default" : "REST_IN_REST_INCLINED_SINE"
+},
+"pointTableReference" : {
+"type" : "string",
+"description" : "Name of the referenced point table for dedicated motion laws"
+},
+"master" : {
+"type" : "integer", "minimum" : 0, "maximum" : 4294967295,
+"description" : "Type of the master (FML_MasterType - axis or time)",
+"default" : 0
+},
+"camBuilderSegmentData" : {
+"type" : "string",
+"description" : "cam builder data (segment specific)"
+}
+},
+"additionalProperties" : false
+},
+"motion_sync_fbtypes_CfgFlexProfileUnits" : {
+"type" : "object",
+"description" : "Configuration of the units in the flexprofile",
+"properties" : {
+"posUnitMaster" : {
+"type" : "string",
+"description" : "position unit of the master axis"
+},
+"velUnitMaster" : {
+"type" : "string",
+"description" : "velocity unit of the master axis"
+},
+"posUnitSlave" : {
+"type" : "string",
+"description" : "position unit of the slave axis"
+},
+"velUnitSlave" : {
+"type" : "string",
+"description" : "velocity unit of the slave axis"
+},
+"accUnitSlave" : {
+"type" : "string",
+"description" : "acceleration of the slave axis"
+},
+"jrkUnitSlave" : {
+"type" : "string",
+"description" : "jerk unit of the slave axis"
+},
+"activateUnits" : {
+"type" : "boolean",
+"description" : "units should be considered",
+"default" : false
+}
+},
+"additionalProperties" : false
+}
+},
+"$ref" : "#/definitions/motion_sync_fbtypes_AxsCfgSingleFlexProfile"
+}

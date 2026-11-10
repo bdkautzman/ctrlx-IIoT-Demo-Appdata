@@ -1,0 +1,243 @@
+{
+    "default": "light",
+    "colors": {
+        "light": {
+            "webiq-primary": "#006875",
+            "webiq-on-primary": "#FFFFFF",
+            "webiq-primary-container": "#9EEFFE",
+            "webiq-on-primary-container": "#001F24",
+            "webiq-primary-fixed": "#9EEFFE",
+            "webiq-on-primary-fixed": "#001F24",
+            "webiq-primary-fixed-dim": "#82D3E1",
+            "webiq-on-primary-fixed-variant": "#004F58",
+
+            "webiq-secondary": "#485D92",
+            "webiq-on-secondary": "#FFFFFF",
+            "webiq-secondary-container": "#DAE2FF",
+            "webiq-on-secondary-container": "#001946",
+            "webiq-secondary-fixed": "#DAE2FF",
+            "webiq-on-secondary-fixed": "#001946",
+            "webiq-secondary-fixed-dim": "#B1C5FF",
+            "webiq-on-secondary-fixed-variant": "#2F4578",
+
+            "webiq-tertiary": "#38608F",
+            "webiq-on-tertiary": "#FFFFFF",
+            "webiq-tertiary-container": "#D2E4FF",
+            "webiq-on-tertiary-container": "#001C37",
+            "webiq-tertiary-fixed": "#D2E4FF",
+            "webiq-on-tertiary-fixed": "#001C37",
+            "webiq-tertiary-fixed-dim": "#A2C9FD",
+            "webiq-on-tertiary-fixed-variant": "#1C4975",
+
+            "webiq-error": "#BA1A1A",
+            "webiq-error-container": "#FFDAD6",
+            "webiq-on-error": "#FFFFFF",
+            "webiq-on-error-container": "#410002",
+
+            "webiq-warning": "#875300",
+            "webiq-warning-container": "#ffddb9",
+            "webiq-on-warning": "#ffffff",
+            "webiq-on-warning-container": "#2b1700",
+
+            "webiq-ok": "#466800",
+            "webiq-ok-container": "#c2f272",
+            "webiq-on-ok": "#ffffff",
+            "webiq-on-ok-container": "#121f00",
+
+            "webiq-inverse-on-surface": "#ECF2F3",
+            "webiq-inverse-surface": "#2B3133",
+            "webiq-inverse-primary": "#82D3E1",
+
+            "webiq-outline": "#6F797B",
+            "webiq-outline-variant": "#BFC8CA",
+
+            "webiq-shadow": "#000000",
+            "webiq-scrim": "#000000",
+
+            "webiq-surface": "#F5FAFC",
+            "webiq-on-surface": "#171D1E",
+            "webiq-on-surface-variant": "#3F484A",
+            "webiq-surface-container-highest": "#DEE3E5",
+            "webiq-surface-container-high": "#E3E9EA",
+            "webiq-surface-container": "#E9EFF0",
+            "webiq-surface-container-low": "#EFF5F6",
+            "webiq-surface-container-lowest": "#FFFFFF",
+            "webiq-surface-dim": "#D5DBDC",
+            "webiq-surface-bright": "#F5FAFC"
+        },
+        "dark": {
+            "webiq-primary": "#82D3E1",
+            "webiq-on-primary": "#00363D",
+            "webiq-primary-container": "#004F58",
+            "webiq-on-primary-container": "#9EEFFE",
+            "webiq-primary-fixed": "#9EEFFE",
+            "webiq-on-primary-fixed": "#001F24",
+            "webiq-primary-fixed-dim": "#82D3E1",
+            "webiq-on-primary-fixed-variant": "#004F58",
+
+            "webiq-secondary": "#B1C5FF",
+            "webiq-on-secondary": "#172E60",
+            "webiq-secondary-container": "#2F4578",
+            "webiq-on-secondary-container": "#DAE2FF",
+            "webiq-secondary-fixed": "#DAE2FF",
+            "webiq-on-secondary-fixed": "#001946",
+            "webiq-secondary-fixed-dim": "#B1C5FF",
+            "webiq-on-secondary-fixed-variant": "#2F4578",
+
+            "webiq-tertiary": "#A2C9FD",
+            "webiq-on-tertiary": "#00325A",
+            "webiq-tertiary-container": "#1C4975",
+            "webiq-on-tertiary-container": "#D2E4FF",
+            "webiq-tertiary-fixed": "#D2E4FF",
+            "webiq-on-tertiary-fixed": "#001C37",
+            "webiq-tertiary-fixed-dim": "#A2C9FD",
+            "webiq-on-tertiary-fixed-variant": "#1C4975",
+
+            "webiq-error": "#FFB4AB",
+            "webiq-error-container": "#93000A",
+            "webiq-on-error": "#690005",
+            "webiq-on-error-container": "#FFDAD6",
+
+            "webiq-warning": "#ffb964",
+            "webiq-warning-container": "#663e00",
+            "webiq-on-warning": "#472a00",
+            "webiq-on-warning-container": "#ffddb9",
+
+            "webiq-ok": "#a7d559",
+            "webiq-ok-container": "#344e00",
+            "webiq-on-ok": "#233600",
+            "webiq-on-ok-container": "#c2f272",
+
+            "webiq-inverse-on-surface": "#2B3133",
+            "webiq-inverse-surface": "#DEE3E5",
+            "webiq-inverse-primary": "#006875",
+
+            "webiq-outline": "#899294",
+            "webiq-outline-variant": "#3F484A",
+
+            "webiq-shadow": "#000000",
+            "webiq-scrim": "#000000",
+
+            "webiq-surface": "#0E1416",
+            "webiq-on-surface": "#DEE3E5",
+            "webiq-on-surface-variant": "#BFC8CA",
+            "webiq-surface-container-highest": "#303637",
+            "webiq-surface-container-high": "#252B2C",
+            "webiq-surface-container": "#1B2122",
+            "webiq-surface-container-low": "#171D1E",
+            "webiq-surface-container-lowest": "#090F10",
+            "webiq-surface-dim": "#0E1416",
+            "webiq-surface-bright": "#343A3B"
+        }
+    },
+    "fonts": {
+        "webiq-font-display-large-family": "Roboto",
+        "webiq-font-display-large-style": "normal",
+        "webiq-font-display-large-weight": 400,
+        "webiq-font-display-large-size": "57px",
+        "webiq-font-display-large-line-height": "64px",
+        "webiq-font-display-large-letter-spacing": "-0.25px",
+
+        "webiq-font-display-medium-family": "Roboto",
+        "webiq-font-display-medium-style": "normal",
+        "webiq-font-display-medium-weight": 400,
+        "webiq-font-display-medium-size": "45px",
+        "webiq-font-display-medium-line-height": "52px",
+        "webiq-font-display-medium-letter-spacing": "0px",
+
+        "webiq-font-display-small-family": "Roboto",
+        "webiq-font-display-small-style": "normal",
+        "webiq-font-display-small-weight": 400,
+        "webiq-font-display-small-size": "36px",
+        "webiq-font-display-small-line-height": "44px",
+        "webiq-font-display-small-letter-spacing": "0px",
+
+
+        "webiq-font-headline-large-family": "Roboto",
+        "webiq-font-headline-large-style": "normal",
+        "webiq-font-headline-large-weight": 400,
+        "webiq-font-headline-large-size": "32px",
+        "webiq-font-headline-large-line-height": "40px",
+        "webiq-font-headline-large-letter-spacing": "0px",
+
+        "webiq-font-headline-medium-family": "Roboto",
+        "webiq-font-headline-medium-style": "normal",
+        "webiq-font-headline-medium-weight": 400,
+        "webiq-font-headline-medium-size": "28px",
+        "webiq-font-headline-medium-line-height": "36px",
+        "webiq-font-headline-medium-letter-spacing": "0px",
+
+        "webiq-font-headline-small-family": "Roboto",
+        "webiq-font-headline-small-style": "normal",
+        "webiq-font-headline-small-weight": 400,
+        "webiq-font-headline-small-size": "24px",
+        "webiq-font-headline-small-line-height": "32px",
+        "webiq-font-headline-small-letter-spacing": "0px",
+
+
+        "webiq-font-body-large-family": "Roboto",
+        "webiq-font-body-large-style": "normal",
+        "webiq-font-body-large-weight": 400,
+        "webiq-font-body-large-size": "16px",
+        "webiq-font-body-large-line-height": "24px",
+        "webiq-font-body-large-letter-spacing": "0px",
+
+        "webiq-font-body-medium-family": "Roboto",
+        "webiq-font-body-medium-style": "normal",
+        "webiq-font-body-medium-weight": 400,
+        "webiq-font-body-medium-size": "14px",
+        "webiq-font-body-medium-line-height": "20px",
+        "webiq-font-body-medium-letter-spacing": "0px",
+
+        "webiq-font-body-small-family": "Roboto",
+        "webiq-font-body-small-style": "normal",
+        "webiq-font-body-small-weight": 400,
+        "webiq-font-body-small-size": "12px",
+        "webiq-font-body-small-line-height": "16px",
+        "webiq-font-body-small-letter-spacing": "0px",
+
+
+        "webiq-font-label-large-family": "Roboto",
+        "webiq-font-label-large-style": "normal",
+        "webiq-font-label-large-weight": 400,
+        "webiq-font-label-large-size": "14px",
+        "webiq-font-label-large-line-height": "20px",
+        "webiq-font-label-large-letter-spacing": "0px",
+
+        "webiq-font-label-medium-family": "Roboto",
+        "webiq-font-label-medium-style": "normal",
+        "webiq-font-label-medium-weight": 400,
+        "webiq-font-label-medium-size": "12px",
+        "webiq-font-label-medium-line-height": "16px",
+        "webiq-font-label-medium-letter-spacing": "0.5px",
+
+        "webiq-font-label-small-family": "Roboto",
+        "webiq-font-label-small-style": "normal",
+        "webiq-font-label-small-weight": 400,
+        "webiq-font-label-small-size": "11px",
+        "webiq-font-label-small-line-height": "16px",
+        "webiq-font-label-small-letter-spacing": "0.5px",
+
+
+        "webiq-font-title-large-family": "Roboto",
+        "webiq-font-title-large-style": "normal",
+        "webiq-font-title-large-weight": 400,
+        "webiq-font-title-large-size": "22px",
+        "webiq-font-title-large-line-height": "28px",
+        "webiq-font-title-large-letter-spacing": "0px",
+
+        "webiq-font-title-medium-family": "Roboto",
+        "webiq-font-title-medium-style": "normal",
+        "webiq-font-title-medium-weight": 400,
+        "webiq-font-title-medium-size": "16px",
+        "webiq-font-title-medium-line-height": "24px",
+        "webiq-font-title-medium-letter-spacing": "0.15px",
+
+        "webiq-font-title-small-family": "Roboto",
+        "webiq-font-title-small-style": "normal",
+        "webiq-font-title-small-weight": 400,
+        "webiq-font-title-small-size": "14px",
+        "webiq-font-title-small-line-height": "20px",
+        "webiq-font-title-small-letter-spacing": "0.1px"
+    }
+}

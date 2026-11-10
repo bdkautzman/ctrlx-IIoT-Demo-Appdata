@@ -1,0 +1,440 @@
+{
+    "accessGroups": [],
+    "apiAcl": {
+        "defaultsVersion": 3,
+        "root": {
+            "accessgroup": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "accessgroup.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "accessgroup.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "alarm.acknowledge": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.acknowledge_all": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.acknowledge_groups": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.get_groups": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.historic": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.live": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "alarm.query": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "connect": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "connect.info": {
+                "default": "allow",
+                "groups": {}
+            },
+            "db": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "db.prepared.execute": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "fs": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "io": {
+                "default": "allow",
+                "groups": {}
+            },
+            "io_extension": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "item": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "item.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "item.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "method": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "method.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "method.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "projectconfig": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "projectconfig.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "recipe": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "recipe.template": {
+                "default": "initial",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "recipe.template.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "recipe.template.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "recorder": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "recorder.record_now": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "recorder.start": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "recorder.stop": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "thread": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "thread.create": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "thread.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "thread.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "thread.reply.create": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "thread.reply.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "thread.reply.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "trend.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend.info": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend.query": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend.subscribe": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend.unsubscribe": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend2": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "trend2.info": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend2.query": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend2.subscribe": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "trend2.unsubscribe": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "user.add": {
+                "default": "inherit",
+                "groups": {
+                    "@nousers": "allow"
+                }
+            },
+            "user.auth": {
+                "default": "allow",
+                "groups": {}
+            },
+            "user.clear_data": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user.impersonate": {
+                "default": "deny",
+                "groups": {}
+            },
+            "user.info": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user.list": {
+                "default": "allow",
+                "groups": {}
+            },
+            "user.login": {
+                "default": "allow",
+                "groups": {}
+            },
+            "user.logout": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user.password_requirements": {
+                "default": "inherit",
+                "groups": {
+                    "@nousers": "allow",
+                    "@user": "allow"
+                }
+            },
+            "user.set_data": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user.setlang": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user.setpw": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "user.token": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "usergroup": {
+                "default": "inherit",
+                "groups": {
+                    "admin": "allow"
+                }
+            },
+            "usergroup.add": {
+                "default": "inherit",
+                "groups": {
+                    "@nousers": "allow"
+                }
+            },
+            "usergroup.get": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "usergroup.list": {
+                "default": "inherit",
+                "groups": {
+                    "@user": "allow"
+                }
+            },
+            "util.islocal": {
+                "default": "allow",
+                "groups": {}
+            }
+        }
+    },
+    "version": 0
+}

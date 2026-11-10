@@ -1,0 +1,19 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/types/datalayer/server-settings.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/types/datalayer/server-settings_schema.json",
+    "forceEmulatedNvram": false,
+    "maxAliasDepth": 8,
+    "maxBulkRequest": 1000,
+    "maxSortSize": 50000,
+    "serverEmulatedNvramSize": 122880,
+    "serverIdlePingTimeout": 30000,
+    "serverMaxMessageSize": 52428800,
+    "serverMaxRtSize": 2097152,
+    "serverWaitResponseTimeout": 30000,
+    "serverZmqHighWaterMark": 1000,
+    "tcpPortBackend": 2070,
+    "tcpPortFrontend": 2069
+}

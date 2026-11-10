@@ -1,0 +1,130 @@
+<div data-ui="calendar" class="calendar">
+
+    <div class="calendar-background" >
+        <div class="calendar-content">
+            <div class="triangle"></div>
+            <div data-ui="selectors" class="selectors">
+                <!-- month selector -->
+                <ul data-ui="month-select" class="month-select">
+                    <li data-ui="previous" class="previous">
+                        <svg width="100%" height="100%" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>        
+                                <line x1="12" y1="0" x2="2" y2="7"/>
+                                <line x1="2" y1="7" x2="12" y2="14"/>
+                            </g>
+                        </svg>
+                    </li>
+                    <li data-ui="current" class="current">September</li>
+                    <li data-ui="next" class="next">
+                        <svg width="100%" height="100%" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>        
+                                <line x1="2" y1="0" x2="12" y2="7"/>
+                                <line x1="12" y1="7" x2="2" y2="14"/>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+                <!-- year selector -->
+                <ul data-ui="year-select" class="year-select">
+                    <li data-ui="previous" class="previous">
+                        <svg width="100%" height="100%" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>        
+                                <line x1="12" y1="0" x2="2" y2="7"/>
+                                <line x1="2" y1="7" x2="12" y2="14"/>
+                            </g>
+                        </svg>
+                    </li>
+                    <li data-ui="current" class="current">2014</li>
+                    <li data-ui="next" class="next">
+                        <svg width="100%" height="100%" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>        
+                                <line x1="2" y1="0" x2="12" y2="7"/>
+                                <line x1="12" y1="7" x2="2" y2="14"/>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div data-ui="day-select" class="day-select">
+                <!-- day-name headers -->
+                <ul data-ui="day-header" class="day-header">
+                    <li data-ui="day-name" class="day-name">Mo</li>
+                    <li data-ui="day-name" class="day-name">Di</li>
+                    <li data-ui="day-name" class="day-name">Mi</li>
+                    <li data-ui="day-name" class="day-name">Do</li>
+                    <li data-ui="day-name" class="day-name">Fr</li>
+                    <li data-ui="day-name" class="day-name">Sa</li>
+                    <li data-ui="day-name" class="day-name">So</li>
+                </ul>
+                <!-- six week rows -->
+                <ul data-ui="week" class="week">
+                    <li data-ui="day" class="day">1</li>
+                    <li data-ui="day" class="day">2</li>
+                    <li data-ui="day" class="day">3</li>
+                    <li data-ui="day" class="day">4</li>
+                    <li data-ui="day" class="day">5</li>
+                    <li data-ui="day" class="day">6</li>
+                    <li data-ui="day" class="day">7</li>
+                </ul>
+                <ul data-ui="week" class="week">
+                    <li data-ui="day" class="day">1</li>
+                    <li data-ui="day" class="day">2</li>
+                    <li data-ui="day" class="day">3</li>
+                    <li data-ui="day" class="day">4</li>
+                    <li data-ui="day" class="day">5</li>
+                    <li data-ui="day" class="day">6</li>
+                    <li data-ui="day" class="day">7</li>
+                </ul>
+                <ul data-ui="week" class="week">
+                    <li data-ui="day" class="day">1</li>
+                    <li data-ui="day" class="day">2</li>
+                    <li data-ui="day" class="day">3</li>
+                    <li data-ui="day" class="day">4</li>
+                    <li data-ui="day" class="day">5</li>
+                    <li data-ui="day" class="day">6</li>
+                    <li data-ui="day" class="day">7</li>
+                </ul>
+                <ul data-ui="week" class="week">
+                    <li data-ui="day" class="day">1</li>
+                    <li data-ui="day" class="day">2</li>
+                    <li data-ui="day" class="day">3</li>
+                    <li data-ui="day" class="day">4</li>
+                    <li data-ui="day" class="day">5</li>
+                    <li data-ui="day" class="day">6</li>
+                    <li data-ui="day" class="day">7</li>
+                </ul>
+                <ul data-ui="week" class="week">
+                    <li data-ui="day" class="day">1</li>
+                    <li data-ui="day" class="day">2</li>
+                    <li data-ui="day" class="day">3</li>
+                    <li data-ui="day" class="day">4</li>
+                    <li data-ui="day" class="day">5</li>
+                    <li data-ui="day" class="day">6</li>
+                    <li data-ui="day" class="day">7</li>
+                </ul>
+                <ul data-ui="week" class="week">
+                    <li data-ui="day" class="day">1</li>
+                    <li data-ui="day" class="day">2</li>
+                    <li data-ui="day" class="day">3</li>
+                    <li data-ui="day" class="day">4</li>
+                    <li data-ui="day" class="day">5</li>
+                    <li data-ui="day" class="day">6</li>
+                    <li data-ui="day" class="day">7</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- display selected date -->
+<div data-ui="selected-date" class="selected-date">
+    <div data-ui="value"></div>
+    <div class="icon">
+        <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>        
+                <line x1="4" y1="8" x2="26" y2="8"/>
+                <line x1="4" y1="15" x2="26" y2="15"/>
+                <line x1="4" y1="22" x2="26" y2="22"/>
+            </g>
+        </svg>
+    </div>
+</div>

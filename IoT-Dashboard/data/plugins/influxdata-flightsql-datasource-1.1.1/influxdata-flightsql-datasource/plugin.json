@@ -1,0 +1,60 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
+  "name": "FlightSQL",
+  "id": "influxdata-flightsql-datasource",
+  "metrics": true,
+  "backend": true,
+  "alerting": true,
+  "executable": "gpx_flightsql_datasource",
+  "info": {
+    "description": "Query databases that support Flight SQL transport.",
+    "author": {
+      "name": "InfluxData",
+      "url": "https://influxdata.com"
+    },
+    "keywords": ["datasource", "apache", "arrow", "flight", "flightsql"],
+    "logos": {
+      "small": "img/arrow-logo.png",
+      "large": "img/arrow-logo.png"
+    },
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/influxdata/grafana-flightsql-datasource"
+      },
+      {
+        "name": "Docs",
+        "url": "https://github.com/influxdata/grafana-flightsql-datasource/blob/main/README.md#usage"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/influxdata/grafana-flightsql-datasource/blob/main/LICENSE"
+      },
+      {
+        "name": "Arrow",
+        "url": "https://arrow.apache.org/blog/2022/02/16/introducing-arrow-flight-sql/"
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "Config Data Source",
+        "path": "img/datasource-configuration.png"
+      },
+      {
+        "name": "Builder View Query",
+        "path": "img/builder-view-query.png"
+      },
+      {
+        "name": "Raw Editor Query",
+        "path": "img/raw-editor-query.png"
+      }
+    ],
+    "version": "1.1.1",
+    "updated": "2024-04-26"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=9.2.5",
+    "plugins": []
+  }
+}

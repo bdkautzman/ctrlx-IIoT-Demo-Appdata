@@ -1,0 +1,1 @@
+module.exports = ["chrome 78","firefox 72","not dead","not ie 11"];

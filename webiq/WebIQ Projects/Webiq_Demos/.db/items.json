@@ -1,0 +1,4926 @@
+{
+    "items": [
+        {
+            "accessGroup": null,
+            "alias": "DSaw",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 150
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSaw"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DSin",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": -100,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSin"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DRandBool",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandBool"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DRandInt",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandInt"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "DRandFloat",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandFloat"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Systemzeit",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 250,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "Systemzeit"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SBool",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 1
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SBool"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SInt",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SInt"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SFloat",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SFloat"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "SString",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SString"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": "value-max-1"
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 2800,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": "value-max-2"
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 3697,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-3",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": "value-max-3"
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 2257,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-3"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-4",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": "value-max-4"
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 1573,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-4"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-max-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 20000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-max-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 20000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-max-3",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 20000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-3"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-max-4",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 20000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-4"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-warn-max-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 15000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-warn-max-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 15000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-warn-max-3",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 15000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-3"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-warn-max-4",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 15000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-4"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-prewarn-max-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 10000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-prewarn-max-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 10000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-prewarn-max-3",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 10000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-3"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-prewarn-max-4",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 10000,
+                "upper": 25000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-4"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "cons-2019",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "cons-2019"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "cons-2020",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "cons-2020"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "cons-2021",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "cons-2021"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kWh",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 250
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 6100,
+            "ioSource": "Internal",
+            "label": "Production Output",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.efficiency",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 3999,
+            "ioSource": "Internal",
+            "label": "Efficiency",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.efficiency"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 70
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": null
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.complaint.new",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "New",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.new"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.complaint.in-progress",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "In Progress",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.in-progress"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.complaint.behind-schedule",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Behind Schedule",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.behind-schedule"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.complaint.completed",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Completed",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.completed"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.complaint.due",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Due",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.due"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.effective-output.act",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 160,
+                "upper": 170
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 6300,
+            "ioSource": "Internal",
+            "label": "Act Value",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.act"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.effective-output.set",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 160,
+                "upper": 170
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 950,
+            "ioSource": "Internal",
+            "label": "Set Value",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.set"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.output-rate.act",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 3645,
+            "ioSource": "Internal",
+            "label": "Output Rate",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.output-rate.act"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": {
+                "lower": 90,
+                "upper": 100
+            }
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.act-thickness",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0.5,
+                "upper": 5
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 970,
+            "ioSource": "Internal",
+            "label": "Current Thickness",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.act-thickness"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "mm",
+            "updateFunction": null,
+            "warnLimits": {
+                "lower": 1.23,
+                "upper": 1.69
+            }
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.set-thickness",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0.5,
+                "upper": 5
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 930,
+            "ioSource": "Internal",
+            "label": "Set Thickness",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.set-thickness"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.error-rate.act",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 3897,
+            "ioSource": "Internal",
+            "label": "Error Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.error-rate.act"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": {
+                "lower": 5,
+                "upper": 100
+            }
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.opacity",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 1100,
+            "ioSource": "Internal",
+            "label": "Opacity",
+            "locks": [],
+            "numberOfDecimals": 3,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.opacity"
+            },
+            "prewarnLimits": {
+                "lower": "13.40",
+                "upper": 100
+            },
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-efficiency-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 2400,
+            "ioSource": "Internal",
+            "label": "Efficiency",
+            "locks": [],
+            "numberOfDecimals": 0,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-efficiency-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 2000,
+            "ioSource": "Internal",
+            "label": "Efficiency",
+            "locks": [],
+            "numberOfDecimals": 0,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-efficiency-3",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 2800,
+            "ioSource": "Internal",
+            "label": "Efficiency",
+            "locks": [],
+            "numberOfDecimals": 0,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-3"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "value-act-efficiency-4",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 2460,
+            "ioSource": "Internal",
+            "label": "Efficiency",
+            "locks": [],
+            "numberOfDecimals": 0,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-4"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.effective-output.upper-prewarn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 160,
+                "upper": 170
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Upper Prewarn Threshold",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.upper-prewarn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.effective-output.upper-warn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 160,
+                "upper": 170
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Upper Warn Threshold",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.upper-warn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.effective-output.lower-warn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 160,
+                "upper": 170
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Lower Warn Threshold",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.lower-warn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.effective-output.lower.prewarn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 160,
+                "upper": 170
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Lower Prewarn Threshold",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.lower.prewarn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg/h",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "quality-index",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Quality Index",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "quality-index"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 85
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": null
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.error-rate.warn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Warn Threshold",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.error-rate.warn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.error-rate.prewarn",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Prewarn Threshold",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.error-rate.prewarn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "production.output-rate.set",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Set Value",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.output-rate.set"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "feed-rate",
+            "attributes": {},
+            "description": "Process variable for the feed rate",
+            "displayLimits": {
+                "lower": 0,
+                "upper": 140
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 846,
+            "ioSource": "Internal",
+            "label": "${feed-rate}",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "feed-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 20
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 120
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "temperature-1",
+            "attributes": {},
+            "description": "Process variable for the temperature 1",
+            "displayLimits": {
+                "lower": 50,
+                "upper": 270
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 1402,
+            "ioSource": "Internal",
+            "label": "${temperature} 1",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 150
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 220
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "°C",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "temperature-2",
+            "attributes": {},
+            "description": "Process variable for the temperature 2",
+            "displayLimits": {
+                "lower": 50,
+                "upper": 270
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 1208,
+            "ioSource": "Internal",
+            "label": "${temperature} 2",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 120
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 210
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "°C",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "temperature-3",
+            "attributes": {},
+            "description": "Process variable for the temperature 3",
+            "displayLimits": {
+                "lower": 50,
+                "upper": 270
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 1354,
+            "ioSource": "Internal",
+            "label": "${temperature} 3",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-3"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": "lower-temperature-offset",
+                    "reference": "temperature-3-set"
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": "upper-temperature-offset",
+                    "reference": "temperature-3-set"
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "°C",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "pressure-1",
+            "attributes": {},
+            "description": "Process variable for the pressure 1",
+            "displayLimits": {
+                "lower": 0,
+                "upper": 50
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 153,
+            "ioSource": "Internal",
+            "label": "${pressure} 1",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "pressure-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": "lower-tolerance-pressure-1"
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": "upper-tolerance-pressure-1"
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": "bar",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "pressure-2",
+            "attributes": {},
+            "description": "Process variable for the pressure 2",
+            "displayLimits": {
+                "lower": 0,
+                "upper": 50
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 178,
+            "ioSource": "Internal",
+            "label": "${pressure} 2",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "pressure-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": "lower-multiplicator-pressure-2",
+                    "offset": null,
+                    "reference": "reference-pressure-2"
+                },
+                "upper": {
+                    "multiplicator": "upper-multiplicator-pressure-2",
+                    "offset": null,
+                    "reference": "reference-pressure-2"
+                }
+            },
+            "trendDisplayLimits": {
+                "lower": 0,
+                "upper": 40
+            },
+            "unit": "bar",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "valve-1",
+            "attributes": {},
+            "description": "Process variable for the valve 1",
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 600,
+            "ioSource": "Internal",
+            "label": "${valve} 1",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "valve-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "valve-2",
+            "attributes": {},
+            "description": "Process variable for the valve 2",
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 500,
+            "ioSource": "Internal",
+            "label": "${valve} 2",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "valve-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "ultra-fast",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 20,
+            "ioSource": "Internal",
+            "label": "${ultra-fast}",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "ultra-fast"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": {
+                "lower": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 30
+                },
+                "upper": {
+                    "multiplicator": null,
+                    "offset": null,
+                    "reference": 70
+                }
+            },
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "recipe-name",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "${recipe-name}",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "recipe-name"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "upper-tolerance-pressure-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 25,
+                "upper": 40
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Upper Tolerance",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "upper-tolerance-pressure-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "bar",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "reference-pressure-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 50
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Reference Value",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "reference-pressure-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "bar",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "lower-tolerance-pressure-1",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 10,
+                "upper": 25
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Lower Tolerance",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "lower-tolerance-pressure-1"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "bar",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "lower-multiplicator-pressure-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": -1,
+                "upper": 0
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Lower Offset Multiplicator",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "lower-multiplicator-pressure-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "upper-multiplicator-pressure-2",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 1
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Upper Offset Multiplicator",
+            "locks": [],
+            "numberOfDecimals": 2,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "upper-multiplicator-pressure-2"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "upper-temperature-offset",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 50
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Upper SIGMA Offset",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "upper-temperature-offset"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 1,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "°C",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "temperature-3-set",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 50,
+                "upper": 270
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Set Value",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-3-set"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "°C",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "lower-temperature-offset",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": -50,
+                "upper": 0
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Lower SIGMA Offset",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "lower-temperature-offset"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "°C",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[0].achieved-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Achieved Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].achieved-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[0].error-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Error Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].error-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[0].name",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Name",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].name"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[0].output-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Output Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].output-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[0].target-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Target Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].target-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[1].achieved-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Achieved Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].achieved-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[1].error-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Error Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].error-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[1].name",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Name",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].name"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[1].output-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Output Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].output-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[1].target-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Target Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].target-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[2].achieved-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Achieved Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].achieved-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[2].error-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Error Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].error-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[2].name",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Name",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].name"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[2].output-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Output Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].output-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[2].target-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Target Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].target-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[3].achieved-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Achieved Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].achieved-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[3].error-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Error Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].error-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[3].name",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Name",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].name"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[3].output-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Output Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].output-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[3].target-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Target Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].target-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[4].achieved-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Achieved Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].achieved-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[4].error-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Error Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].error-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[4].name",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Name",
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].name"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[4].output-rate",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Output Rate",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].output-rate"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "%",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "job-data[4].target-output",
+            "attributes": {},
+            "description": null,
+            "displayLimits": {
+                "lower": 0,
+                "upper": 10000
+            },
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": "Target Output",
+            "locks": [],
+            "numberOfDecimals": 1,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].target-output"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": "kg",
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Email.Content",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "Email/Content"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Email.Send",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "Email/Send"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "Email.To",
+            "attributes": {},
+            "description": null,
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "ctrlX Core",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": "http://www.boschrexroth.com/OpcUa/Datalayer",
+                "node": "Email/To"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        },
+        {
+            "accessGroup": null,
+            "alias": "RecordingOn",
+            "attributes": {},
+            "description": "",
+            "displayLimits": null,
+            "flags": {
+                "auditable": false,
+                "discrete": false
+            },
+            "interval": 100,
+            "ioSource": "Internal",
+            "label": null,
+            "locks": [],
+            "numberOfDecimals": null,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "RecordingOn"
+            },
+            "prewarnLimits": null,
+            "recordingThreshold": null,
+            "step": 0,
+            "tolerances": null,
+            "trendDisplayLimits": null,
+            "unit": null,
+            "updateFunction": null,
+            "warnLimits": null
+        }
+    ],
+    "methods": [],
+    "simulationVariables": [
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "triangle",
+            "initialValue": 1,
+            "interval": 100,
+            "limits": {
+                "lower": 0,
+                "upper": 150
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSaw"
+            }
+        },
+        {
+            "dataType": "float",
+            "description": null,
+            "function": "sine",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": -100.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                1
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DSin"
+            }
+        },
+        {
+            "dataType": "boolean",
+            "description": null,
+            "function": "random",
+            "initialValue": false,
+            "interval": 100,
+            "limits": {
+                "lower": false,
+                "upper": true
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandBool"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "random",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandInt"
+            }
+        },
+        {
+            "dataType": "float",
+            "description": null,
+            "function": "random",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "DRandFloat"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "time",
+            "initialValue": "",
+            "interval": 250,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "Systemzeit"
+            }
+        },
+        {
+            "dataType": "boolean",
+            "description": null,
+            "function": "storage",
+            "initialValue": false,
+            "interval": 100,
+            "limits": {
+                "lower": false,
+                "upper": true
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SBool"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0,
+                "upper": 100
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SInt"
+            }
+        },
+        {
+            "dataType": "float",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SFloat"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "SString"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "increment",
+            "initialValue": 15873.4,
+            "interval": 2800,
+            "limits": {
+                "lower": 0.0,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 17000,
+            "interval": 3697,
+            "limits": {
+                "lower": 0.0,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [
+                15
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 20000,
+            "interval": 2257,
+            "limits": {
+                "lower": 0.0,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [
+                36
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-3"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 23587.1,
+            "interval": 1573,
+            "limits": {
+                "lower": 0.0,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [
+                23.8
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-4"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 25000,
+            "interval": 100,
+            "limits": {
+                "lower": 20000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 25000,
+            "interval": 100,
+            "limits": {
+                "lower": 20000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 25000,
+            "interval": 100,
+            "limits": {
+                "lower": 20000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-3"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 25000,
+            "interval": 100,
+            "limits": {
+                "lower": 20000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-max-4"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 20000,
+            "interval": 100,
+            "limits": {
+                "lower": 15000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 20000,
+            "interval": 100,
+            "limits": {
+                "lower": 15000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 20000,
+            "interval": 100,
+            "limits": {
+                "lower": 15000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-3"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 20000,
+            "interval": 100,
+            "limits": {
+                "lower": 15000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-warn-max-4"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 17000,
+            "interval": 100,
+            "limits": {
+                "lower": 10000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 17000,
+            "interval": 100,
+            "limits": {
+                "lower": 10000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 17000,
+            "interval": 100,
+            "limits": {
+                "lower": 10000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-3"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 17000,
+            "interval": 100,
+            "limits": {
+                "lower": 10000.0,
+                "upper": 25000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-prewarn-max-4"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 23789.7,
+            "interval": 100,
+            "limits": {
+                "lower": -1.7976931348623157e+308,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "cons-2019"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 17894.6,
+            "interval": 100,
+            "limits": {
+                "lower": -1.7976931348623157e+308,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "cons-2020"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 23471.9,
+            "interval": 100,
+            "limits": {
+                "lower": -1.7976931348623157e+308,
+                "upper": 1.7976931348623157e+308
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "cons-2021"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 165.73,
+            "interval": 6100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 250.0
+            },
+            "parameters": [
+                3.77
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 93.42,
+            "interval": 3999,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                2.58
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.efficiency"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 5,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.new"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 3,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.in-progress"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 1,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.behind-schedule"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 15,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.completed"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 4,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.complaint.due"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 165.73,
+            "interval": 6300,
+            "limits": {
+                "lower": 160.0,
+                "upper": 170.0
+            },
+            "parameters": [
+                3.77
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.act"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 165,
+            "interval": 950,
+            "limits": {
+                "lower": 160.0,
+                "upper": 170.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.set"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomramp",
+            "initialValue": 93.47,
+            "interval": 3645,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                "production.output-rate.set",
+                5,
+                1.5
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.output-rate.act"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 1.46,
+            "interval": 970,
+            "limits": {
+                "lower": 0.5,
+                "upper": 5.0
+            },
+            "parameters": [
+                0.25
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.act-thickness"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 1.5,
+            "interval": 930,
+            "limits": {
+                "lower": 0.5,
+                "upper": 5.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.set-thickness"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 3.77,
+            "interval": 3897,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                3.7
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.error-rate.act"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 3.58,
+            "interval": 1100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                1
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.opacity"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 97,
+            "interval": 2400,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                2
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 93,
+            "interval": 2000,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                2
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 95,
+            "interval": 2800,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                3
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-3"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 94,
+            "interval": 2460,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                2
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "value-act-efficiency-4"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 168,
+            "interval": 100,
+            "limits": {
+                "lower": 160.0,
+                "upper": 170.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.upper-prewarn"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 169,
+            "interval": 100,
+            "limits": {
+                "lower": 160.0,
+                "upper": 170.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.upper-warn"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 161,
+            "interval": 100,
+            "limits": {
+                "lower": 160.0,
+                "upper": 170.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.lower-warn"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 162,
+            "interval": 100,
+            "limits": {
+                "lower": 160.0,
+                "upper": 170.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.effective-output.lower.prewarn"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 92.8,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                5.8
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "quality-index"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 7,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.error-rate.warn"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 5,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.error-rate.prewarn"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 93,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "production.output-rate.set"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 83.8,
+            "interval": 846,
+            "limits": {
+                "lower": 0.0,
+                "upper": 140.0
+            },
+            "parameters": [
+                10
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "feed-rate"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 202.6,
+            "interval": 1402,
+            "limits": {
+                "lower": 50.0,
+                "upper": 270.0
+            },
+            "parameters": [
+                11
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 197.5,
+            "interval": 1208,
+            "limits": {
+                "lower": 50.0,
+                "upper": 270.0
+            },
+            "parameters": [
+                5
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact2",
+            "initialValue": 146,
+            "interval": 1354,
+            "limits": {
+                "lower": 50.0,
+                "upper": 270.0
+            },
+            "parameters": [
+                "temperature-3-set",
+                14
+            ],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-3"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 26.5,
+            "interval": 153,
+            "limits": {
+                "lower": 0.0,
+                "upper": 50.0
+            },
+            "parameters": [
+                4
+            ],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "pressure-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 23.8,
+            "interval": 178,
+            "limits": {
+                "lower": 0.0,
+                "upper": 50.0
+            },
+            "parameters": [
+                3
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "pressure-2"
+            }
+        },
+        {
+            "dataType": "boolean",
+            "description": null,
+            "function": "random",
+            "initialValue": true,
+            "interval": 600,
+            "limits": {
+                "lower": false,
+                "upper": true
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "valve-1"
+            }
+        },
+        {
+            "dataType": "boolean",
+            "description": null,
+            "function": "random",
+            "initialValue": false,
+            "interval": 500,
+            "limits": {
+                "lower": false,
+                "upper": true
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "valve-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "randomact",
+            "initialValue": 85.8,
+            "interval": 20,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [
+                10
+            ],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "ultra-fast"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "re-30165-validate05214",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "recipe-name"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 31,
+            "interval": 100,
+            "limits": {
+                "lower": 25.0,
+                "upper": 40.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "upper-tolerance-pressure-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 23.8,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 50.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "reference-pressure-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 12,
+            "interval": 100,
+            "limits": {
+                "lower": 10.0,
+                "upper": 25.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "lower-tolerance-pressure-1"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": -0.13,
+            "interval": 100,
+            "limits": {
+                "lower": -1.0,
+                "upper": 0.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "lower-multiplicator-pressure-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0.13,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 1.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "upper-multiplicator-pressure-2"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 15,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 50.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "upper-temperature-offset"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 146,
+            "interval": 100,
+            "limits": {
+                "lower": 50.0,
+                "upper": 270.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "temperature-3-set"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": -15,
+            "interval": 100,
+            "limits": {
+                "lower": -50.0,
+                "upper": 0.0
+            },
+            "parameters": [],
+            "persistent": true,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "lower-temperature-offset"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].achieved-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].error-rate"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].name"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].output-rate"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[0].target-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].achieved-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].error-rate"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].name"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].output-rate"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[1].target-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].achieved-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].error-rate"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].name"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].output-rate"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[2].target-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].achieved-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].error-rate"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].name"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].output-rate"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[3].target-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].achieved-output"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].error-rate"
+            }
+        },
+        {
+            "dataType": "string",
+            "description": null,
+            "function": "storage",
+            "initialValue": "",
+            "interval": 100,
+            "limits": null,
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].name"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 100.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].output-rate"
+            }
+        },
+        {
+            "dataType": "double",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": 0.0,
+                "upper": 10000.0
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "job-data[4].target-output"
+            }
+        },
+        {
+            "dataType": "i32",
+            "description": null,
+            "function": "storage",
+            "initialValue": 0,
+            "interval": 100,
+            "limits": {
+                "lower": -2147483648,
+                "upper": 2147483647
+            },
+            "parameters": [],
+            "persistent": false,
+            "plcIdentifier": {
+                "namespace": null,
+                "node": "RecordingOn"
+            }
+        }
+    ],
+    "version": 0
+}

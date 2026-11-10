@@ -1,0 +1,21 @@
+/* css/custom/dark-trend-live.css */
+
+/* control base element */
+.iq-trend-live.dark-trend-live {
+    /** Change the colors here as desired **/
+    --button-background-color: #1f1f1f;
+    --button-border-color: rgba(255, 255, 255, 0.7);
+    --button-border-width: 1px;
+    --button-border-radius: 4px;
+    --button-shadow-color: rgba(60, 60, 60, 0.2);
+    --button-icon-color: #f8f8f8;
+    --button-hover-border-color: #00ABF0;
+    --button-active-background-color: #00ABF0;
+    --button-active-border-color: #00ABF0;
+    --button-active-icon-color: #ffffff;
+    --button-active-hover-border-color: #ffffff;
+    --button-margin: 8px;
+    --button-initial-size: 40px;
+    --icon-size: 24px;
+    --locked-opacity: var(--iq-locked-opacity);
+}

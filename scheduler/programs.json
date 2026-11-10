@@ -1,0 +1,9 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/programs2.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/programs2_schema.json",
+    "callablePool": [],
+    "programs": []
+}

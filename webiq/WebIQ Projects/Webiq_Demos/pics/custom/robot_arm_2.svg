@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
+	 height="60px" viewBox="0 0 200 60" enable-background="new 0 0 200 60" xml:space="preserve">
+<g id="Ebene_1" display="none">
+	
+		<image display="inline" overflow="visible" width="260" height="280" xlink:href="2CF86BB5.jpg"  transform="matrix(0.9999 0 0 0.9999 -51.6665 -101.6665)">
+	</image>
+</g>
+<g id="Arm1" display="none">
+	<g id="Ebene_3" display="inline">
+		<circle fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="35.666" cy="30.334" r="28.666"/>
+	</g>
+	<g id="Ebene_7" display="inline">
+		<circle fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="175.999" cy="30.666" r="16.999"/>
+	</g>
+	<g id="Ebene_8" display="inline">
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="52.667" x2="176.667" y2="48"/>
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35.833" y1="8.334" x2="177" y2="13.333"/>
+	</g>
+	<g id="Ebene_4" display="inline">
+		<circle fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="35.832" cy="30.5" r="22.166"/>
+	</g>
+</g>
+<g id="Arm2">
+	<g id="Ebene_9">
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M182.664,42.333"/>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M41.665,44"/>
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="175.999" y1="19.667" x2="34.998" y2="19.333"/>
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="175.664" y1="41.333" x2="35.665" y2="42"/>
+	</g>
+	<circle fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="35.999" cy="30.667" r="16.999"/>
+	<g id="Ebene_6">
+		<circle fill="#41AAEC" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="175.999" cy="30.666" r="11"/>
+	</g>
+</g>
+</svg>

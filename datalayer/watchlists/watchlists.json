@@ -1,0 +1,15 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/comm/datalayer/watchlists.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/comm/datalayer/watchlists_schema.json",
+    "watchlists": [
+        {
+            "items": [
+                "sdk/py/provider/simple/string-value"
+            ],
+            "name": "watchlist"
+        }
+    ]
+}

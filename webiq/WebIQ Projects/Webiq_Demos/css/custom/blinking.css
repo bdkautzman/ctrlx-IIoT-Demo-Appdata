@@ -1,0 +1,23 @@
+/* css/custom/blinking.css */
+
+/* control base element */
+.iq-text.blinking {
+    
+}
+
+/* Text */
+.iq-text.blinking.iq-variant-01 .iq-text {
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0.1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}

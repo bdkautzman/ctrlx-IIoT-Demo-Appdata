@@ -1,0 +1,8 @@
+{
+    "$persistence_header": {
+        "bfbs": "./bfbs/comm/datalayer/scopes.bfbs",
+        "version": "0.0.2"
+    },
+    "$schema": "./types/comm/datalayer/scopes_schema.json",
+    "scopes": []
+}

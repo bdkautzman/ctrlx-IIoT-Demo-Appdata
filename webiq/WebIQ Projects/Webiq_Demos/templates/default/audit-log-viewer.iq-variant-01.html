@@ -1,0 +1,65 @@
+<div class="iqel-widget-container">
+    <div class="iqel-widget-header">
+        <div class="widget-name"></div>
+        <div class="iqel-buttons-container">
+            <div data-ui="button-anchor-refresh"></div>
+            <div data-ui="button-anchor-filter"></div>
+            <div data-ui="button-anchor-clear-filter"></div>
+        </div>
+    </div>
+    <div data-ui="table-anchor">
+        <div data-ui="ct2-ctrl-panel" class="ct2-ctrl-panel"></div>
+        <div class="iqel-table-border"></div>
+        <div class="iqel-meta-border"></div>
+        <div class="iqel-meta-spacer"></div>
+        <div data-ui="ct2-table-container" class="ct2-table-container">
+            <div data-ui="ct2-table-content-container" class="ct2-table-content-container">
+                <div data-ui="ct2-table-header-container" class="ct2-table-header-container">
+                    <table data-ui="ct2-table-header" class="ct2-table-header"></table>
+                </div>
+                <div data-ui="ct2-table-filters-container" class="ct2-table-filter-container">
+                    <table data-ui="ct2-table-filters" class="ct2-table-filters"></table>
+                </div>
+                <div class="table-loading-overlay">
+                    <svg version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="spinner">
+                        <circle cx="16" cy="16" r="14" stroke-width="4" class="outline" />
+                        <g class="accent-group">
+                            <circle cx="16" cy="16" r="14" stroke-opacity="0" />
+                            <path d="m30 16a14 14 0 0 1-14 14" stroke-width="4" />
+                        </g>
+                    </svg>
+                </div>
+                <div data-ui="ct2-table-body-container" class="ct2-table-body-container">
+                    <table data-ui="ct2-table" class="ct2-table-body">
+                        <tbody data-ui="ct2-table-body"></tbody>
+                        <tbody data-ui="ct2-table-body"></tbody>
+                        <tbody data-ui="ct2-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="iqel-entry-content-wrapper">
+            <div class="iqel-entry-content" data-ui="entry-content"></div>
+            <div class="iqel-entry-raw" data-ui="entry-raw"></div>
+        </div>
+        <div class="iqel-entry-meta-container" data-ui="entry-meta-container">
+            <!-- COLUMN 1 -->
+            <div class="entry-meta record-type label">${audit-log-viewer.metaTable.label.type}</div>
+            <div class="entry-meta record-type value" data-ui="record-type">[recordType]</div>
+            <div class="entry-meta remote-endpoint label">${audit-log-viewer.metaTable.label.remoteEndpoint}</div>
+            <div class="entry-meta remote-endpoint value" data-ui="remote-endpoint">[remoteEndpoint]</div>
+            <div class="entry-meta record-id label">${audit-log-viewer.metaTable.label.recordId}</div>
+            <div class="entry-meta record-id value" data-ui="record-id">[recordId]</div>
+            <div class="entry-meta severity label">${audit-log-viewer.metaTable.label.severity}</div>
+            <div class="entry-meta severity value" data-ui="severity">[severity]</div>
+            <div class="entry-meta user-id label">${audit-log-viewer.metaTable.label.userId}</div>
+            <div class="entry-meta user-id value" data-ui="user-id">[userId]</div>
+            <!-- COLUMN 2 -->
+            <div class="entry-meta timestamp-in label">${audit-log-viewer.metaTable.label.timestampIn}</div>
+            <div class="entry-meta timestamp-in value" data-ui="timestamp-in">[timestampIn]</div>
+            <div class="entry-meta timestamp-out label">${audit-log-viewer.metaTable.label.timestampOut}</div>
+            <div class="entry-meta timestamp-out value" data-ui="timestamp-out">[timestampOut]</div>
+        </div>
+        <div data-ui="ct2-footer" class="ct2-footer"></div>
+    </div>
+</div>

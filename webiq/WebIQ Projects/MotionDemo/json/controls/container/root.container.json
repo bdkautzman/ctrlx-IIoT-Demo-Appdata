@@ -1,0 +1,16 @@
+{
+    "ui": "container",
+    "class-name": "iq-container",
+    "type" : "iqflex",
+    "flex-orientation": "column",
+    "flex-none": true,
+    "flex-wrap": false,
+    "flex-primary-align": "start",
+    "flex-secondary-align": "stretch",
+    "flex-line-align": "start",
+    "name": "root",
+    "template": null,
+    "_designer_": {
+        "variant": "iq-flex-v-layout"
+    }
+}
